@@ -64,6 +64,8 @@ python scripts/run_simulation.py
 | **Nonlocality** | Requires Extra Structure | Unclear | Structural Variable $\Delta f$ |
 | **GR Limit** | Requires Compactification | Nontrivial | Exact ($\Phi \to 0$) |
 
+Note on Distinction: This Thickness Structure Hypothesis (TSH) is a distinct structural framework based on internal variables (\(p(x), \Delta f, \gamma_T\)) and is not related to older speculative "thickness" models in black hole horizon physics.
+
 ## 2. Internal Variables and Phase Structure
 
 The three internal variables $p(x)$, $\Delta f$, $\gamma_T$ encode thickness, structural deviation, and structural tension, forming the minimal state description of physical existence in TSH.
