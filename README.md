@@ -174,8 +174,6 @@ code/
     __init__.py
 
 scripts/
-  extract_text.py
-  generate_qa_dataset.py
   run_simulation.py
 
 data/
