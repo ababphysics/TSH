@@ -65,6 +65,7 @@ python scripts/run_simulation.py
 ## 2. Internal Variables and Phase Structure
 
 The three internal variables $p(x)$, $\Delta f$, $\gamma_T$ encode thickness, structural deviation, and structural tension, forming the minimal state description of physical existence in TSH.
+<img src="assets/three_phases.png" width="500">
 
 TSH introduces three internal quantities:
 
