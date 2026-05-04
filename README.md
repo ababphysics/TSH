@@ -14,14 +14,14 @@ This repository provides the official computational model and reference material
 TSH provides a structural unification of the major physical frameworks. It derives three distinct structural phases from the same underlying principles: reproducing the geodesic equation of general relativity (Core phase), the Bohm‑type quantum force (Stable phase), and the classical limit of quantum mechanics (Composite phase).
 
 **2. Plug-and-Play Interaction Slot**  
-Because the structural tensor equation \(E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}\) accepts arbitrary interaction tensors, TSH effortlessly incorporates the Standard Model and potential GUT sectors without modifying the underlying structural dynamics.
+Because the structural tensor equation \( E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu} \) accepts arbitrary interaction tensors, TSH effortlessly incorporates the Standard Model and potential GUT sectors without modifying the underlying structural dynamics.
 
 **3. Resolving Quantum Inconsistencies**  
-The Δf–γT phase structure provides a continuous bridge between regimes, natively resolving long‑standing paradoxes such as the measurement problem (wave‑packet collapse) and the tension between quantum nonlocality and relativistic locality.
+The \( \Delta f \)–\( \gamma_T \) phase structure provides a continuous bridge between regimes, natively resolving long‑standing paradoxes such as the measurement problem (wave‑packet collapse) and the tension between quantum nonlocality and relativistic locality.
 
 ### Runnable Implementation
 
-The `tsh_core/` module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables \(p(x), \Delta f, \gamma_T\) across the phase diagram.
+The `tsh_core/` module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables \( p(x), \Delta f, \gamma_T \) across the phase diagram.
 
 ### Quick Start (Copy & Paste)
 
@@ -40,7 +40,7 @@ Semiclassical Limit	Complex	Difficult	Natural (Phase Transition)
 Unification Mechanism	Strings / Branes	Spin Networks	Δf–γT Phase Structure
 Treatment of Measurement	External Postulate	Not Addressed	Internal Phase Transition (γT)
 Nonlocality	Requires Extra Structure	Unclear	Structural Variable Δf
-GR Limit	Requires Compactification	Nontrivial	Exact (Φ → 0)
+GR Limit	Requires Compactification	Nontrivial	Exact (Φ→0)
 2. Internal Variables and Phase Structure
 
 TSH introduces three internal quantities that characterize physical existence:
@@ -69,7 +69,7 @@ Fμ=−∇μΦstruct(Δf,γT)
 
 TSH dynamics form a closed feedback loop:
 
-phase → structural force → motion → update of (p, Δf, γT) → phase
+phase → structural force → motion → update of p,Δf,γT → phase
 
 This mechanism continuously connects the quantum, classical, and gravitational regimes.
 4. Minimal Covariant Action
@@ -129,7 +129,7 @@ The position on the phase diagram directly determines the structural force and t
 The TSH tensor equation:
 Eμν=Gμν+Uμν
 
-depends only on the internal variables p, Δf, γT.
+depends only on the internal variables p,Δf,γT.
 
 Because external gauge and matter fields do not appear in the structural action, arbitrary interaction energy‑momentum tensors can be added to the right‑hand side without modifying the structural dynamics.
 
