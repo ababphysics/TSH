@@ -166,12 +166,6 @@ Includes:
 ## 9. Repository Structure
 
 ```text
-code/
-  tsh_core/
-    phase_diagram.py
-    action.py
-    unified_equation.py
-    __init__.py
 
 scripts/
   run_simulation.py
