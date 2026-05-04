@@ -3,7 +3,7 @@
 **Author:** Hirokazu Abe (2026)
 
 ---
-
+<img src="assets/three_phases.png" width="1000">
 ## 1. Overview
 
 TSH is a unified structural theory that derives quantum mechanics, classical physics, and general relativity as phase‑dependent limits of a single covariant action.
