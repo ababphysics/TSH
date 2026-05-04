@@ -1,4 +1,4 @@
-# TSH (Thickness Structure Hypothesis) — Official README
+# TSH (Thickness Structure Hypothesis)
 
 **Author:** Hirokazu Abe (2026)
 
