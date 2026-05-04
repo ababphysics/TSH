@@ -1,3 +1,5 @@
+--------------------------------------------------
+```markdown
 # TSH (Thickness Structure Hypothesis)
 
 **Author:** Hirokazu Abe (2026)
@@ -29,7 +31,7 @@ cd TSH
 
 # Run a sample simulation (replace with the actual script name)
 python scripts/run_simulation.py
-```
+
 1.1 Comparison with Existing Approaches
 Feature	String Theory	Loop Quantum Gravity	TSH (This Model)
 Background Independence	No	Yes	Yes
@@ -192,3 +194,5 @@ python scripts/generate_qa_dataset.py
 Hirokazu Abe (2026). Thickness Structure Hypothesis.
 
 Zenodo DOI: 10.5281/zenodo.19564362
+
+--------------------------------------------------
