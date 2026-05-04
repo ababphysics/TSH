@@ -12,6 +12,7 @@ This repository provides the official computational model and reference material
 TSH treats these three regimes as distinct structural phases—Stable, Composite, and Core—of one underlying system.
 
 TSH provides a continuous structural resolution to the measurement problem, quantum nonlocality, and the classical–quantum transition.
+<img src="assets/phase_diagram.png" width="500">
 
 ### Key Breakthroughs of TSH
 
