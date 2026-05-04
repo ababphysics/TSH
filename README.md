@@ -6,8 +6,16 @@
 
 This repository provides the official computational model and reference materials for the Thickness Structure Hypothesis (TSH), a structural framework that unifies quantum, classical, and gravitational behavior within a single minimal covariant action.
 
-TSH treats these three regimes as distinct structural phases—Stable, Composite, and Core—of one underlying system.  
+TSH provides a structural unification of the major physical frameworks: it reproduces the geodesic equation of general relativity in the Core phase, the Bohm‑type quantum force in the Stable phase, and the classical limit of quantum mechanics in the Composite phase.
+
+The Δf–γT phase structure resolves long‑standing inconsistencies across these theories—such as the measurement problem, the tension between quantum nonlocality and relativistic locality, and the lack of a continuous bridge between quantum, classical, and gravitational behavior.
+
+Because the structural tensor equation Eμν = Gμν + Uμν accepts arbitrary interaction tensors, TSH incorporates the Standard Model and potential GUT sectors without modifying the structural dynamics.
+
+TSH treats these three regimes as distinct structural phases—Stable, Composite, and Core—of one underlying system.
 The framework is self‑contained and derives all regimes from the same structural principles.
+
+The tsh_core/ module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables p(x),Δf,γT across the Δf–γT phase diagram.
 
 ## 2. Internal Variables and Phase Structure
 
