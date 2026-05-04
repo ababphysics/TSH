@@ -6,14 +6,20 @@
 
 ## 1. Overview
 
-TSH is a unified structural theory that derives quantum mechanics, classical physics, and general relativity as phase-dependent limits of a single covariant action
+TSH is a unified structural theory that derives quantum mechanics, classical physics, and general relativity as phase‑dependent limits of a single covariant action.
 
-This repository provides the official computational model and reference materials for the Thickness Structure Hypothesis (TSH), a structural framework that unifies quantum, classical, and gravitational behavior within a single minimal covariant action.
+This repository provides the official computational model and reference materials for the Thickness Structure Hypothesis (TSH), a structural framework that unifies quantum, classical, and gravitational behavior within a single minimal covariant action.  
+TSH treats these three regimes as distinct structural phases—Stable, Composite, and Core—of one underlying system.
+
+TSH provides a continuous structural resolution to the measurement problem, quantum nonlocality, and the classical–quantum transition.
 
 ### Key Breakthroughs of TSH
 
 **1. One Action, Three Regimes**  
-TSH provides a structural unification of the major physical frameworks. It derives three distinct structural phases from the same underlying principles: reproducing the geodesic equation of general relativity (Core phase), the Bohm‑type quantum force (Stable phase), and the classical limit of quantum mechanics (Composite phase).
+TSH derives three distinct structural phases from the same underlying principles:
+- **Core phase** → geodesic equation of general relativity
+- **Stable phase** → Bohm‑type quantum force
+- **Composite phase** → classical limit of quantum mechanics
 
 **2. Plug-and-Play Interaction Slot**  
 Because the structural tensor equation:
@@ -22,10 +28,12 @@ $$
 E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
 $$
 
-accepts arbitrary interaction tensors, TSH effortlessly incorporates the Standard Model and potential GUT sectors without modifying the underlying structural dynamics.
+accepts arbitrary interaction tensors, TSH incorporates the Standard Model and potential GUT sectors without modifying the structural dynamics.
 
 **3. Resolving Quantum Inconsistencies**  
-The $\Delta f$ - $\gamma_T$ phase structure provides a continuous bridge between regimes, natively resolving long‑standing paradoxes such as the measurement problem (wave‑packet collapse) and the tension between quantum nonlocality and relativistic locality.
+The $\Delta f$ - $\gamma_T$ phase structure provides a continuous bridge between regimes, resolving paradoxes such as wave‑packet collapse and the tension between quantum nonlocality and relativistic locality.
+
+TSH is positioned as a structural alternative to string theory and loop quantum gravity, offering a phase‑based unification rather than quantization of geometry or extended objects.
 
 ### Runnable Implementation
 
@@ -55,23 +63,23 @@ python scripts/run_simulation.py
 
 ## 2. Internal Variables and Phase Structure
 
-TSH introduces three internal quantities that characterize physical existence:
+The three internal variables $p(x)$, $\Delta f$, $\gamma_T$ encode thickness, structural deviation, and structural tension, forming the minimal state description of physical existence in TSH.
 
-- **$p(x)$**: existence thickness, providing a unified basis for quantum spreading and gravitational localization.
-- **$\Delta f$**: structural deviation in the spreading direction, governing interference, nonlocality, and entanglement.
-- **$\gamma_T$**: structural tension in the contracting direction, governing phase transitions, irreversibility, and wave‑packet collapse.
+TSH introduces three internal quantities:
 
-These variables span the $\Delta f$ - $\gamma_T$ phase diagram, which contains three regimes:
+- **$p(x)$** — existence thickness, governing quantum spreading and gravitational localization
+- **$\Delta f$** — structural deviation, governing interference, nonlocality, and entanglement
+- **$\gamma_T$** — structural tension, governing phase transitions, irreversibility, and collapse
+
+These variables span the $\Delta f$ - $\gamma_T$ phase diagram:
 
 - Stable (quantum)
 - Composite (classical)
 - Core (gravitational / measurement)
 
-The differences among quantum, classical, and gravitational behavior arise from the relative balance among these three quantities.
-
 ## 3. Phase Diagram and Dynamic Feedback
 
-The $\Delta f$ - $\gamma_T$ phase diagram functions both as a classification tool and as a dynamical map.
+The $\Delta f$ - $\gamma_T$ phase diagram functions as both a classification tool and a dynamical map.
 
 The structural force is defined by:
 
@@ -87,14 +95,14 @@ This mechanism continuously connects the quantum, classical, and gravitational r
 
 ## 4. Minimal Covariant Action
 
-The minimal covariant action consists of four components:
+The minimal covariant action consists of:
 
-- the curvature term of general relativity
-- an entropy‑like term $p \ln p$
-- a quantum gradient term $(\nabla \ln p)^2$
-- the structural potential $\Phi_{\text{struct}}(\Delta f, \gamma_T)$
+- curvature term of general relativity
+- entropy‑like term $p \ln p$
+- quantum gradient term $(\nabla \ln p)^2$
+- structural potential $\Phi_{\text{struct}}(\Delta f, \gamma_T)$
 
-Variation of this action yields a unified dynamical equation in which geometric, quantum, and structural contributions appear in a cleanly separated form.
+Variation yields a unified dynamical equation with geometric, quantum, and structural contributions cleanly separated.
 
 ## 5. Unified Dynamical Equation
 
@@ -108,12 +116,12 @@ This single equation reproduces:
 - classical trajectories in the Composite phase
 - the geodesic equation of general relativity in the Core phase
 
-The transitions among these regimes occur continuously through changes in the internal structural variables.
+In the limit $\Phi_{\text{struct}} \to 0$, TSH reproduces the exact geodesic equation without approximation.
 
 ## 6. Limiting Regimes
 
 ### Quantum limit (Stable)
-The gradient term $-\nabla \ln p$ dominates, reproducing a Bohm‑type quantum force.
+The gradient term $-\nabla \ln p$ dominates, reproducing a Bohm‑type quantum force and the statistical structure of quantum mechanics.
 
 ### Classical limit (Composite)
 Both the gradient and structural force are small, yielding deterministic trajectories.
@@ -123,7 +131,7 @@ As $\Phi \to 0$, the unified equation reduces exactly to the geodesic equation o
 
 ## 7. Phase‑Diagram Compression
 
-The $\Delta f$ - $\gamma_T$ phase diagram compresses the following structural hierarchy into a single representation:
+The $\Delta f$ - $\gamma_T$ phase diagram compresses:
 
 - phase structure
 - structural potential
@@ -132,28 +140,22 @@ The $\Delta f$ - $\gamma_T$ phase diagram compresses the following structural hi
 - tensor equation
 - hierarchical interaction slot
 
-The position on the phase diagram directly determines the structural force and therefore the system’s dynamics.
+into a single representation.
 
 ## 8. Hierarchical Interaction Slot
-
-The TSH tensor equation:
 
 $$
 E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
 $$
 
-depends only on the internal variables $p$, $\Delta f$, $\gamma_T$.
+Because external gauge and matter fields do not appear in the structural action, arbitrary interaction tensors can be added without modifying structural dynamics.
 
-Because external gauge and matter fields do not appear in the structural action, arbitrary interaction energy‑momentum tensors can be added to the right‑hand side without modifying the structural dynamics.
+Includes:
 
-This includes:
-
-- Standard Model fields
-- GUT fields
+- Standard Model
+- GUT sectors
 - effective string‑theoretic sectors
-- fluid or condensed‑matter tensors
-
-The classical limit reproduces GR + SM without requiring reconstruction of the interaction sectors.
+- fluid / condensed‑matter tensors
 
 ## 9. Repository Structure
 
@@ -180,18 +182,9 @@ requirements.txt
 
 ## 10. Usage
 
-**Extract text from the paper**
 ```bash
 python scripts/extract_text.py
-```
-
-**Run the TSH RAG chatbot**
-```bash
 python rag_chatbot.py
-```
-
-**Generate the AI training dataset**
-```bash
 python scripts/generate_qa_dataset.py
 ```
 
@@ -208,4 +201,15 @@ Unauthorized redistribution is prohibited.
 
 Hirokazu Abe (2026).  
 *Thickness Structure Hypothesis.*  
-Zenodo DOI: [10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
+Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
+
+## 13. Experimental Predictions (Future Work)
+
+TSH suggests several experimentally testable signatures:
+
+- Critical on/off behavior of interference fringes near phase boundaries
+- Rapid collapse under weak measurement due to structural tension transitions
+- Non‑Gaussian quantum noise emerging from $\Delta f$ fluctuations
+- Two‑component spectral structure near the Composite–Core boundary
+
+These predictions provide potential avenues for empirical validation of the theory.
