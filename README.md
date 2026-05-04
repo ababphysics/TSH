@@ -39,6 +39,7 @@ TSH is positioned as a structural alternative to string theory and loop quantum 
 ### Runnable Implementation
 
 The `tsh_core/` module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables $p(x)$, $\Delta f$, $\gamma_T$ across the phase diagram.
+<img src="assets/simulation_demo.gif" width="600">
 
 ### Quick Start (Copy & Paste)
 
