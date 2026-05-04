@@ -39,7 +39,8 @@ TSH derives three distinct structural phases from the same underlying principles
 - **Stable phase** → Bohm‑type quantum force
 - **Composite phase** → classical limit of quantum mechanics
 
-**2. Plug-and-Play Interaction Slot**  
+**2. Plug-and-Play Interaction Slot**
+
 $$
 E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
 $$
@@ -151,11 +152,13 @@ $$
 $$
 
 **Covariant derivative**
+
 $$
 \frac{D u^\mu}{D\tau} = \frac{d u^\mu}{d\tau} + \Gamma^\mu_{\alpha\beta} u^\alpha u^\beta
 $$
 
 **Structural force**
+
 $$
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}
 $$
