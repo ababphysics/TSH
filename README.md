@@ -166,16 +166,9 @@ Includes:
 ## 9. Repository Structure
 
 ```text
-code/
-  tsh_core/
-    phase_diagram.py
-    action.py
-    unified_equation.py
-    __init__.py
 
 scripts/
-  extract_text.py
-  generate_qa_dataset.py
+  run_simulation.py
 
 data/
   Thickness Structure Hypothesis.html
