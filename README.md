@@ -167,6 +167,11 @@ Includes:
 
 ```text
 
+assets/
+  phase_diagram.png
+  simulation_demo.gif
+  three_phases.png
+
 scripts/
   run_simulation.py
 
