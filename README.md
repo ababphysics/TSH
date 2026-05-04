@@ -12,7 +12,7 @@ The animation above is generated directly from the Ultimate TSH Simulator,
 a fully runnable implementation of the unified dynamical equation.
 The simulator computes:
 
-- the $\Delta f$–$\gamma_T$ phase deformation
+- the $\Delta f - \gamma_T$ phase deformation
 - mass‑dependent boundary scaling
 - irreversible phase transitions
 - the evolving thickness distribution $p(x)$
@@ -46,7 +46,7 @@ E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
 $$
 
 **3. Resolving Quantum Inconsistencies**  
-The $\Delta f$–$\gamma_T$ phase structure provides a continuous bridge between regimes.
+The $\Delta f - \gamma_T$ phase structure provides a continuous bridge between regimes.
 
 ## 3. Internal Variables and Phase Structure
 
@@ -56,7 +56,7 @@ TSH introduces three internal quantities:
 - $\Delta f$ — structural deviation
 - $\gamma_T$ — structural tension
 
-These span the $\Delta f$–$\gamma_T$ phase diagram:
+These span the $\Delta f - \gamma_T$ phase diagram:
 
 - Stable (quantum)
 - Composite (classical)
@@ -105,7 +105,7 @@ $\Phi_{\text{struct}} \to 0$ → exact geodesic equation
 
 ## 8. Phase‑Diagram Compression
 
-The $\Delta f$–$\gamma_T$ diagram compresses:
+The $\Delta f - \gamma_T$ diagram compresses:
 
 - phase structure
 - structural potential
