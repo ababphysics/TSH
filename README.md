@@ -186,7 +186,7 @@ Thickness Structure Hypothesis.pdf
 
 rag_chatbot.py
 requirements.txt
-コード
+
 
 
 ---
@@ -196,19 +196,19 @@ requirements.txt
 ### Extract text from the paper
 
 python scripts/extract_text.py
-コード
+
 
 
 ### Run the TSH RAG chatbot
 
 python rag_chatbot.py
-コード
+
 
 
 ### Generate the AI training dataset
 
 python scripts/generate_qa_dataset.py
-コード
+
 
 
 ---
