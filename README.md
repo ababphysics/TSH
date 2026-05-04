@@ -6,6 +6,8 @@
 
 ## 1. Overview
 
+TSH is a unified structural theory that derives quantum mechanics, classical physics, and general relativity as phase-dependent limits of a single covariant action
+
 This repository provides the official computational model and reference materials for the Thickness Structure Hypothesis (TSH), a structural framework that unifies quantum, classical, and gravitational behavior within a single minimal covariant action.
 
 ### Key Breakthroughs of TSH
