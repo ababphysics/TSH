@@ -122,30 +122,14 @@ $$
 E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
 $$
 
-## 10. Usage
-
-```bash
-python scripts/run_simulation.py
-```
-
-## 11. License
-
-MIT for code.  
-Theory & figures © 2026 Hirokazu Abe.
-
-## 12. Citation
-
-Hirokazu Abe (2026). *Thickness Structure Hypothesis.*  
-DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
-
-## 13. Experimental Predictions
+## 10. Experimental Predictions
 
 - Interference fringe on/off
 - Weak‑measurement collapse
 - Non‑Gaussian noise
 - Two‑component spectra
 
-## 14. Tensor Form of the Unified Equation
+## 11. Tensor Form of the Unified Equation
 
 $$
 \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)
@@ -163,31 +147,31 @@ $$
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}
 $$
 
-## 15. Full Lagrangian Density
+## 12. Full Lagrangian Density
 
 $$
 \mathcal{L} = R + p \ln p + (\nabla \ln p)^2 + \Phi_{\text{struct}}
 $$
 
-## 16. Phase‑Diagram Boundary Conditions
+## 13. Phase‑Diagram Boundary Conditions
 
 $$
 \Delta f = c_1(\gamma_T), \quad \Delta f = c_2(\gamma_T)
 $$
 
-## 17. GR Limit (One‑Line Proof)
+## 14. GR Limit (One‑Line Proof)
 
 $$
 \Phi_{\text{struct}} \to 0 \implies F^\mu \to 0 \implies \frac{D u^\mu}{D\tau} = 0
 $$
 
-## 18. Quantum Limit and Born Rule
+## 15. Quantum Limit and Born Rule
 
 $$
 \int p(x) \, dx = 1 \implies p(x) = |\psi(x)|^2
 $$
 
-## 19. Theory ↔ Code Mapping Table
+## 16. Theory ↔ Code Mapping Table
 
 | Theory | Code | Function |
 | :--- | :--- | :--- |
@@ -197,7 +181,7 @@ $$
 | $c_1, c_2$ | `get_ultimate_boundaries` | `boundaries` |
 | Phase | `color` | `generate_wave` |
 
-## 20. Mathematical Closure of TSH
+## 17. Mathematical Closure of TSH
 
 - Closed action
 - Closed variables
@@ -206,7 +190,7 @@ $$
 - Closed limits
 - Closed simulator
 
-## 21. Notation Summary
+## 18. Notation Summary
 
 | Symbol | Meaning |
 | :--- | :--- |
@@ -218,7 +202,7 @@ $$
 | $u^\mu$ | Four‑velocity |
 | $c_1, c_2$ | Phase boundaries |
 
-## 22. Formal Definitions
+## 19. Formal Definitions
 
 **Definition 1 — Existence Thickness**  
 $p(x)$ is a normalized scalar field representing structural thickness.
@@ -229,7 +213,7 @@ $\Delta f$ quantifies deviation from minimal‑spread configuration.
 **Definition 3 — Structural Tension**  
 $\gamma_T$ controls phase transitions and collapse.
 
-## 23. Proposition (Exact GR Limit)
+## 20. Proposition (Exact GR Limit)
 
 **Proposition.**  
 If $\Phi_{\text{struct}} \to 0$, then the unified equation reduces to the geodesic equation.
@@ -243,17 +227,31 @@ $$
 \frac{D u^\mu}{D\tau} = 0.
 $$
 
-
-## 24. TSH in One Equation
+## 21. TSH in One Equation
 
 $$
 \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p - \nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
 $$
 
-## 25. Unified Regime Table
+## 22. Unified Regime Table
 
 | Regime | Dominant Term | Behavior |
 | :--- | :--- | :--- |
 | Quantum | $-\nabla \ln p$ | Interference, nonlocality |
 | Classical | small gradients | Deterministic motion |
 | GR | $\Phi_{\text{struct}} \to 0$ | Geodesic motion |
+
+## 23. License
+
+All code and scripts in this repository are released under the **MIT License**.
+The code may be used, modified, and redistributed with attribution.
+
+The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory, as well as the figures (e.g., `Figure_1.png`) and theoretical content in this README, are **© 2026 Hirokazu Abe**.
+These materials are not covered by the MIT License.
+Unauthorized redistribution is prohibited.
+
+## 24. Citation
+
+Hirokazu Abe (2026).  
+*Thickness Structure Hypothesis.*  
+Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
