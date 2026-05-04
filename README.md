@@ -23,7 +23,7 @@ $$
 accepts arbitrary interaction tensors, TSH effortlessly incorporates the Standard Model and potential GUT sectors without modifying the underlying structural dynamics.
 
 **3. Resolving Quantum Inconsistencies**  
-The $\Delta f$–$\gamma_T$ phase structure provides a continuous bridge between regimes, natively resolving long‑standing paradoxes such as the measurement problem (wave‑packet collapse) and the tension between quantum nonlocality and relativistic locality.
+The $\Delta f$ - $\gamma_T$ phase structure provides a continuous bridge between regimes, natively resolving long‑standing paradoxes such as the measurement problem (wave‑packet collapse) and the tension between quantum nonlocality and relativistic locality.
 
 ### Runnable Implementation
 
@@ -46,7 +46,7 @@ python scripts/run_simulation.py
 | :--- | :--- | :--- | :--- |
 | **Background Independence** | No | Yes | Yes |
 | **Semiclassical Limit** | Complex | Difficult | Natural (Phase Transition) |
-| **Unification Mechanism** | Strings / Branes | Spin Networks | $\Delta f$–$\gamma_T$ Phase Structure |
+| **Unification Mechanism** | Strings / Branes | Spin Networks | $\Delta f$ - $\gamma_T$ Phase Structure |
 | **Treatment of Measurement**| External Postulate | Not Addressed | Internal Phase Transition ($\gamma_T$) |
 | **Nonlocality** | Requires Extra Structure | Unclear | Structural Variable $\Delta f$ |
 | **GR Limit** | Requires Compactification | Nontrivial | Exact ($\Phi \to 0$) |
@@ -59,7 +59,7 @@ TSH introduces three internal quantities that characterize physical existence:
 - **$\Delta f$**: structural deviation in the spreading direction, governing interference, nonlocality, and entanglement.
 - **$\gamma_T$**: structural tension in the contracting direction, governing phase transitions, irreversibility, and wave‑packet collapse.
 
-These variables span the $\Delta f$–$\gamma_T$ phase diagram, which contains three regimes:
+These variables span the $\Delta f$ - $\gamma_T$ phase diagram, which contains three regimes:
 
 - Stable (quantum)
 - Composite (classical)
@@ -69,7 +69,7 @@ The differences among quantum, classical, and gravitational behavior arise from 
 
 ## 3. Phase Diagram and Dynamic Feedback
 
-The $\Delta f$–$\gamma_T$ phase diagram functions both as a classification tool and as a dynamical map.
+The $\Delta f$ - $\gamma_T$ phase diagram functions both as a classification tool and as a dynamical map.
 
 The structural force is defined by:
 
@@ -121,7 +121,7 @@ As $\Phi \to 0$, the unified equation reduces exactly to the geodesic equation o
 
 ## 7. Phase‑Diagram Compression
 
-The $\Delta f$–$\gamma_T$ phase diagram compresses the following structural hierarchy into a single representation:
+The $\Delta f$ - $\gamma_T$ phase diagram compresses the following structural hierarchy into a single representation:
 
 - phase structure
 - structural potential
