@@ -194,4 +194,4 @@ Unauthorized redistribution is prohibited.
 
 Hirokazu Abe (2026).
 Thickness Structure Hypothesis.  
-Zenodo DOI: 10.5281/zenodo.19564362
+Zenodo DOI: 
