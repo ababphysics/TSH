@@ -1,26 +1,36 @@
 # TSH (Thickness Structure Hypothesis)
+
 **Author:** Hirokazu Abe (2026)
 
 ---
 
 ## 1. Overview
+
 This repository provides the official computational model and reference materials for the Thickness Structure Hypothesis (TSH), a structural framework that unifies quantum, classical, and gravitational behavior within a single minimal covariant action.
 
 ### Key Breakthroughs of TSH
 
-**1. One Action, Three Regimes**
+**1. One Action, Three Regimes**  
 TSH provides a structural unification of the major physical frameworks. It derives three distinct structural phases from the same underlying principles: reproducing the geodesic equation of general relativity (Core phase), the Bohm‑type quantum force (Stable phase), and the classical limit of quantum mechanics (Composite phase).
 
-**2. Plug-and-Play Interaction Slot**
-Because the structural tensor equation $E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}$ accepts arbitrary interaction tensors, TSH effortlessly incorporates the Standard Model and potential GUT sectors without modifying the underlying structural dynamics.
+**2. Plug-and-Play Interaction Slot**  
+Because the structural tensor equation:
 
-**3. Resolving Quantum Inconsistencies**
+$$
+E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
+$$
+
+accepts arbitrary interaction tensors, TSH effortlessly incorporates the Standard Model and potential GUT sectors without modifying the underlying structural dynamics.
+
+**3. Resolving Quantum Inconsistencies**  
 The $\Delta f$–$\gamma_T$ phase structure provides a continuous bridge between regimes, natively resolving long‑standing paradoxes such as the measurement problem (wave‑packet collapse) and the tension between quantum nonlocality and relativistic locality.
 
 ### Runnable Implementation
-The `tsh_core/` module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables $p(x), \Delta f, \gamma_T$ across the phase diagram.
+
+The `tsh_core/` module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables $p(x)$, $\Delta f$, $\gamma_T$ across the phase diagram.
 
 ### Quick Start (Copy & Paste)
+
 ```bash
 # Clone the repository
 git clone https://github.com/ababphysics/TSH.git
@@ -42,6 +52,7 @@ python scripts/run_simulation.py
 | **GR Limit** | Requires Compactification | Nontrivial | Exact ($\Phi \to 0$) |
 
 ## 2. Internal Variables and Phase Structure
+
 TSH introduces three internal quantities that characterize physical existence:
 
 - **$p(x)$**: existence thickness, providing a unified basis for quantum spreading and gravitational localization.
@@ -57,10 +68,14 @@ These variables span the $\Delta f$–$\gamma_T$ phase diagram, which contains t
 The differences among quantum, classical, and gravitational behavior arise from the relative balance among these three quantities.
 
 ## 3. Phase Diagram and Dynamic Feedback
+
 The $\Delta f$–$\gamma_T$ phase diagram functions both as a classification tool and as a dynamical map.
 
-The structural force is defined by: 
-$$ F_\mu = -\nabla_\mu \Phi_{\text{struct}}(\Delta f, \gamma_T) $$
+The structural force is defined by:
+
+$$
+F_\mu = -\nabla_\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
+$$
 
 TSH dynamics form a closed feedback loop:
 
@@ -69,6 +84,7 @@ TSH dynamics form a closed feedback loop:
 This mechanism continuously connects the quantum, classical, and gravitational regimes.
 
 ## 4. Minimal Covariant Action
+
 The minimal covariant action consists of four components:
 
 - the curvature term of general relativity
@@ -79,7 +95,10 @@ The minimal covariant action consists of four components:
 Variation of this action yields a unified dynamical equation in which geometric, quantum, and structural contributions appear in a cleanly separated form.
 
 ## 5. Unified Dynamical Equation
-$$ \frac{Du^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T) $$
+
+$$
+\frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)
+$$
 
 This single equation reproduces:
 
@@ -90,6 +109,7 @@ This single equation reproduces:
 The transitions among these regimes occur continuously through changes in the internal structural variables.
 
 ## 6. Limiting Regimes
+
 ### Quantum limit (Stable)
 The gradient term $-\nabla \ln p$ dominates, reproducing a Bohm‑type quantum force.
 
@@ -100,6 +120,7 @@ Both the gradient and structural force are small, yielding deterministic traject
 As $\Phi \to 0$, the unified equation reduces exactly to the geodesic equation of general relativity.
 
 ## 7. Phase‑Diagram Compression
+
 The $\Delta f$–$\gamma_T$ phase diagram compresses the following structural hierarchy into a single representation:
 
 - phase structure
@@ -112,10 +133,14 @@ The $\Delta f$–$\gamma_T$ phase diagram compresses the following structural hi
 The position on the phase diagram directly determines the structural force and therefore the system’s dynamics.
 
 ## 8. Hierarchical Interaction Slot
-The TSH tensor equation: 
-$$ E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu} $$
 
-depends only on the internal variables $p, \Delta f, \gamma_T$.
+The TSH tensor equation:
+
+$$
+E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
+$$
+
+depends only on the internal variables $p$, $\Delta f$, $\gamma_T$.
 
 Because external gauge and matter fields do not appear in the structural action, arbitrary interaction energy‑momentum tensors can be added to the right‑hand side without modifying the structural dynamics.
 
@@ -129,6 +154,7 @@ This includes:
 The classical limit reproduces GR + SM without requiring reconstruction of the interaction sectors.
 
 ## 9. Repository Structure
+
 ```text
 code/
   tsh_core/
@@ -151,6 +177,7 @@ requirements.txt
 ```
 
 ## 10. Usage
+
 **Extract text from the paper**
 ```bash
 python scripts/extract_text.py
@@ -167,11 +194,16 @@ python scripts/generate_qa_dataset.py
 ```
 
 ## 11. License
-All code and scripts in this repository are released under the **MIT License**. The code may be used, modified, and redistributed with attribution.
 
-The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory, as well as the figures (e.g., `Figure_1.png`) and theoretical content in this README, are **© 2026 Hirokazu Abe**. These materials are not covered by the MIT License. Unauthorized redistribution is prohibited.
+All code and scripts in this repository are released under the **MIT License**.
+The code may be used, modified, and redistributed with attribution.
+
+The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory, as well as the figures (e.g., `Figure_1.png`) and theoretical content in this README, are **© 2026 Hirokazu Abe**.
+These materials are not covered by the MIT License.
+Unauthorized redistribution is prohibited.
 
 ## 12. Citation
-Hirokazu Abe (2026).
-*Thickness Structure Hypothesis.*
+
+Hirokazu Abe (2026).  
+*Thickness Structure Hypothesis.*  
 Zenodo DOI: [10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
