@@ -176,6 +176,7 @@ code/
 scripts/
   extract_text.py
   generate_qa_dataset.py
+  run_simulation.py
 
 data/
   Thickness Structure Hypothesis.html
