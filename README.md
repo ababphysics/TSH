@@ -4,6 +4,20 @@
 
 ---
 <img src="assets/simulation_demo.gif" width="800">
+The animation above is generated directly from the Ultimate TSH Simulator,
+a fully runnable implementation of the unified dynamical equation.
+The simulator computes:
+
+    the Δf–γT phase deformation
+
+    mass‑dependent boundary scaling
+
+    irreversible phase transitions
+
+    the evolving thickness distribution p(x)
+
+This ensures that the GIF reflects the exact mathematical structure of TSH,
+not an illustration.
 ## 1. Overview
 
 TSH is a unified structural theory that derives quantum mechanics, classical physics, and general relativity as phase‑dependent limits of a single covariant action.
