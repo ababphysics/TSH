@@ -6,16 +6,16 @@
 
 This repository provides the official computational model and reference materials for the Thickness Structure Hypothesis (TSH), a structural framework that unifies quantum, classical, and gravitational behavior within a single minimal covariant action.
 
-TSH provides a structural unification of the major physical frameworks: it reproduces the geodesic equation of general relativity in the Core phase, the Bohm‑type quantum force in the Stable phase, and the classical limit of quantum mechanics in the Composite phase.
+Key Breakthroughs of TSH:
 
-The Δf–γT phase structure resolves long‑standing inconsistencies across these theories—such as the measurement problem, the tension between quantum nonlocality and relativistic locality, and the lack of a continuous bridge between quantum, classical, and gravitational behavior.
+    One Action, Three Regimes: TSH provides a structural unification of the major physical frameworks. It derives three distinct structural phases from the same underlying principles: reproducing the geodesic equation of general relativity (Core phase), the Bohm‑type quantum force (Stable phase), and the classical limit of quantum mechanics (Composite phase).
 
-Because the structural tensor equation Eμν = Gμν + Uμν accepts arbitrary interaction tensors, TSH incorporates the Standard Model and potential GUT sectors without modifying the structural dynamics.
+    Plug-and-Play Interaction Slot: Because the structural tensor equation Eμν​=Gμν​+Uμν​ accepts arbitrary interaction tensors, TSH effortlessly incorporates the Standard Model and potential GUT sectors without modifying the underlying structural dynamics.
 
-TSH treats these three regimes as distinct structural phases—Stable, Composite, and Core—of one underlying system.
-The framework is self‑contained and derives all regimes from the same structural principles.
+    Resolving Quantum Inconsistencies: The Δf–γT​ phase structure provides a continuous bridge between regimes, natively resolving long‑standing paradoxes such as the measurement problem (wave-packet collapse) and the tension between quantum nonlocality and relativistic locality.
 
-The tsh_core/ module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables p(x),Δf,γT across the Δf–γT phase diagram.
+Runnable Implementation:
+The tsh_core/ module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables (p(x),Δf,γT​) across the phase diagram.　
 
 ## 2. Internal Variables and Phase Structure
 
