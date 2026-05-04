@@ -237,13 +237,12 @@ If $\Phi_{\text{struct}} \to 0$, then the unified equation reduces to the geodes
 **Proof.**  
 $F^\mu = -\nabla^\mu \Phi_{\text{struct}}$.  
 Thus $\Phi_{\text{struct}} \to 0 \implies F^\mu \to 0$.  
-Substituting yields
+Thus the unified equation reduces to the geodesic equation:
 
 $$
 \frac{D u^\mu}{D\tau} = 0.
 $$
 
-∎
 
 ## 24. TSH in One Equation
 
