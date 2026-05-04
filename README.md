@@ -31,7 +31,7 @@ TSH provides a continuous structural resolution to the measurement problem, quan
 
 <img src="assets/phase_diagram.png" width="400">
 
-### Key Breakthroughs of TSH
+## 3. Key Breakthroughs of TSH
 
 **1. One Action, Three Regimes**  
 TSH derives three distinct structural phases from the same underlying principles:
@@ -48,7 +48,7 @@ $$
 **3. Resolving Quantum Inconsistencies**  
 The $\Delta f - \gamma_T$ phase structure provides a continuous bridge between regimes.
 
-## 3. Internal Variables and Phase Structure
+## 4. Internal Variables and Phase Structure
 
 TSH introduces three internal quantities:
 
@@ -64,7 +64,7 @@ These span the $\Delta f - \gamma_T$ phase diagram:
 
 <img src="assets/three_phases.png" width="1000">
 
-## 4. Phase Diagram and Dynamic Feedback
+## 5. Phase Diagram and Dynamic Feedback
 
 $$
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
@@ -74,13 +74,13 @@ Feedback loop:
 
 `phase` → `structural force` → `motion` → `update of` $p, \Delta f, \gamma_T$ → `phase`
 
-## 5. Minimal Covariant Action
+## 6. Minimal Covariant Action
 
 $$
 \mathcal{L} = R + p \ln p + (\nabla \ln p)^2 + \Phi_{\text{struct}}(\Delta f, \gamma_T)
 $$
 
-## 6. Unified Dynamical Equation
+## 7. Unified Dynamical Equation
 
 $$
 \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)
@@ -92,7 +92,7 @@ This single equation reproduces:
 - classical trajectories (Composite)
 - GR geodesics (Core)
 
-## 7. Limiting Regimes
+## 8. Limiting Regimes
 
 **Quantum limit**  
 $-\nabla \ln p$ dominates → Bohm‑type force
@@ -103,7 +103,7 @@ Gradients small → deterministic motion
 **GR limit**  
 $\Phi_{\text{struct}} \to 0$ → exact geodesic equation
 
-## 8. Phase‑Diagram Compression
+## 9. Phase‑Diagram Compression
 
 The $\Delta f - \gamma_T$ diagram compresses:
 
@@ -116,20 +116,20 @@ The $\Delta f - \gamma_T$ diagram compresses:
 
 into one representation.
 
-## 9. Hierarchical Interaction Slot
+## 10. Hierarchical Interaction Slot
 
 $$
 E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
 $$
 
-## 10. Experimental Predictions
+## 11. Experimental Predictions
 
 - Interference fringe on/off
 - Weak‑measurement collapse
 - Non‑Gaussian noise
 - Two‑component spectra
 
-## 11. Tensor Form of the Unified Equation
+## 12. Tensor Form of the Unified Equation
 
 $$
 \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)
@@ -147,31 +147,31 @@ $$
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}
 $$
 
-## 12. Full Lagrangian Density
+## 13. Full Lagrangian Density
 
 $$
 \mathcal{L} = R + p \ln p + (\nabla \ln p)^2 + \Phi_{\text{struct}}
 $$
 
-## 13. Phase‑Diagram Boundary Conditions
+## 14. Phase‑Diagram Boundary Conditions
 
 $$
 \Delta f = c_1(\gamma_T), \quad \Delta f = c_2(\gamma_T)
 $$
 
-## 14. GR Limit (One‑Line Proof)
+## 15. GR Limit (One‑Line Proof)
 
 $$
 \Phi_{\text{struct}} \to 0 \implies F^\mu \to 0 \implies \frac{D u^\mu}{D\tau} = 0
 $$
 
-## 15. Quantum Limit and Born Rule
+## 16. Quantum Limit and Born Rule
 
 $$
 \int p(x) \, dx = 1 \implies p(x) = |\psi(x)|^2
 $$
 
-## 16. Theory ↔ Code Mapping Table
+## 17. Theory ↔ Code Mapping Table
 
 | Theory | Code | Function |
 | :--- | :--- | :--- |
@@ -181,7 +181,7 @@ $$
 | $c_1, c_2$ | `get_ultimate_boundaries` | `boundaries` |
 | Phase | `color` | `generate_wave` |
 
-## 17. Mathematical Closure of TSH
+## 18. Mathematical Closure of TSH
 
 - Closed action
 - Closed variables
@@ -190,7 +190,7 @@ $$
 - Closed limits
 - Closed simulator
 
-## 18. Notation Summary
+## 19. Notation Summary
 
 | Symbol | Meaning |
 | :--- | :--- |
@@ -202,7 +202,7 @@ $$
 | $u^\mu$ | Four‑velocity |
 | $c_1, c_2$ | Phase boundaries |
 
-## 19. Formal Definitions
+## 20. Formal Definitions
 
 **Definition 1 — Existence Thickness**  
 $p(x)$ is a normalized scalar field representing structural thickness.
@@ -213,7 +213,7 @@ $\Delta f$ quantifies deviation from minimal‑spread configuration.
 **Definition 3 — Structural Tension**  
 $\gamma_T$ controls phase transitions and collapse.
 
-## 20. Proposition (Exact GR Limit)
+## 21. Proposition (Exact GR Limit)
 
 **Proposition.**  
 If $\Phi_{\text{struct}} \to 0$, then the unified equation reduces to the geodesic equation.
@@ -227,13 +227,13 @@ $$
 \frac{D u^\mu}{D\tau} = 0.
 $$
 
-## 21. TSH in One Equation
+## 22. TSH in One Equation
 
 $$
 \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p - \nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
 $$
 
-## 22. Unified Regime Table
+## 23. Unified Regime Table
 
 | Regime | Dominant Term | Behavior |
 | :--- | :--- | :--- |
@@ -241,7 +241,7 @@ $$
 | Classical | small gradients | Deterministic motion |
 | GR | $\Phi_{\text{struct}} \to 0$ | Geodesic motion |
 
-## 23. License
+## 24. License
 
 All code and scripts in this repository are released under the **MIT License**.
 The code may be used, modified, and redistributed with attribution.
@@ -250,7 +250,7 @@ The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory
 These materials are not covered by the MIT License.
 Unauthorized redistribution is prohibited.
 
-## 24. Citation
+## 25. Citation
 
 Hirokazu Abe (2026).  
 *Thickness Structure Hypothesis.*  
