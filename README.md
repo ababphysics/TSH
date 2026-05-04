@@ -12,7 +12,7 @@ This repository provides the official computational model and reference material
 TSH treats these three regimes as distinct structural phases—Stable, Composite, and Core—of one underlying system.
 
 TSH provides a continuous structural resolution to the measurement problem, quantum nonlocality, and the classical–quantum transition.
-<img src="assets/phase_diagram.png" width="500">
+<img src="assets/phase_diagram.png" width="400">
 
 ### Key Breakthroughs of TSH
 
@@ -39,7 +39,7 @@ TSH is positioned as a structural alternative to string theory and loop quantum 
 ### Runnable Implementation
 
 The `tsh_core/` module provides a runnable simulation of the unified dynamical equation, allowing numerical evolution of the internal variables $p(x)$, $\Delta f$, $\gamma_T$ across the phase diagram.
-<img src="assets/simulation_demo.gif" width="600">
+<img src="assets/simulation_demo.gif" width="800">
 
 ### Quick Start (Copy & Paste)
 
@@ -66,7 +66,7 @@ python scripts/run_simulation.py
 ## 2. Internal Variables and Phase Structure
 
 The three internal variables $p(x)$, $\Delta f$, $\gamma_T$ encode thickness, structural deviation, and structural tension, forming the minimal state description of physical existence in TSH.
-<img src="assets/three_phases.png" width="500">
+<img src="assets/three_phases.png" width="800">
 
 TSH introduces three internal quantities:
 
