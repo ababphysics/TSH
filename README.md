@@ -37,6 +37,15 @@ TSH provides a continuous structural resolution to the measurement problem, quan
      alt="TSH Phase Diagram showing the three structural phases—Stable (quantum), Composite (classical), and Core (gravitational)—as regions in the Δf–γT plane, with smooth boundaries c1(γT) and c2(γT) defining phase transitions."
      width="400">
 
+TSH provides structural resolutions to several long‑standing problems in modern physics:
+
+- the measurement problem and objective wave‑packet collapse
+- the lack of a continuous bridge between Bohmian mechanics and general relativity
+- quantum nonlocality vs relativistic locality
+- the absence of a unified dynamical equation covering quantum, classical, and gravitational regimes
+- the need for a covariant formulation of collapse‑like behavior
+- the incompatibility between decoherence models and gravitational localization
+
 ## 3. Key Breakthroughs of TSH
 
 **1. One Action, Three Regimes**  
