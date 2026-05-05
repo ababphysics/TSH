@@ -29,7 +29,7 @@ TSH treats these three regimes as distinct structural phases—Stable, Composite
 
 TSH provides a continuous structural resolution to the measurement problem, quantum nonlocality, and the classical–quantum transition.
 
-<img src="assets/phase_diagram.png" width="400">
+<img src="assets/phase_diagram.png" width="350">
 
 ## 3. Key Breakthroughs of TSH
 
