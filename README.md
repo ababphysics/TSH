@@ -30,8 +30,6 @@ TSH is a unified structural theory that derives quantum mechanics, classical phy
 
 ## 3. Key Breakthroughs of TSH
 
-### 3.1 One Action, Three Regimes
-
 TSH derives three structural phases from one covariant action:
 - **Core** → GR geodesics
 - **Composite** → classical limit
