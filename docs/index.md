@@ -46,10 +46,10 @@ $$
 ---
 
 <div align="center">
-  <img src="../assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
+  <img src="assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
 </div>
 
-### Simulation Demo
+### Simulation Demo (simulation_demo.gif)
 
 This animation is generated directly from the **Ultimate TSH Simulator**,  
 a fully executable implementation of the unified TSH dynamical equation.
