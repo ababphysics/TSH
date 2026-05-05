@@ -29,6 +29,8 @@ math: true
 
 **TSH (Thickness Structure Hypothesis)** is a unified structural framework in which **quantum, classical, and gravitational behaviors** emerge as **three phases** of a single underlying system.
 
+TSH provides a single structural framework in which **quantum, classical, gravitational, and all interaction sectors (Standard Model, Condensed Matter, and Dark Sector)** are treated in a unified way through the same internal variables and the same phase‑diagram dynamics.
+
 The theory introduces three key internal variables:
 
 $$p(x)$$ — existence thickness  
