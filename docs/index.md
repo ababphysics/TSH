@@ -46,9 +46,7 @@ $$
 ---
 
 <div align="center">
-
-![TSH Simulation Demo](assets/simulation_demo.gif)
-
+  <img src="assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
 </div>
 
 ### Simulation Demo (simulation_demo.gif)
