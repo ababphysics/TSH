@@ -80,10 +80,12 @@ TSH introduces three internal quantities:
 
 ## 6. Structural Force and Phase‑Diagram Mapping
 
-The structural force in the unified equation,
+The structural force in the unified equation:
+
 $$
-F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
+F^{\mu} = -\nabla^{\mu} \Phi_{\text{struct}}(\Delta f, \gamma_T)
 $$
+
 is determined directly by the position on the $\Delta f - \gamma_T$ phase diagram:
 
 - **Stable phase (quantum)**  
