@@ -287,3 +287,9 @@ The code may be used, modified, and redistributed with attribution.
 The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory, as well as the figures (e.g., `Figure_1.png`) and theoretical content in this README, are **© 2026 Hirokazu Abe**.
 These materials are not covered by the MIT License.
 Unauthorized redistribution is prohibited.
+
+## 27. Citation
+
+Hirokazu Abe (2026).  
+*Thickness Structure Hypothesis.*  
+Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
