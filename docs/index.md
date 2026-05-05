@@ -5,9 +5,7 @@ math: true
 ---
 
 # Thickness Structure Hypothesis (TSH)
-
-[![Status](https://img.shields.io/badge/Status-Theoretical-blueviolet)](https://github.com/ababphysics/TSH)
-[![Year](https://img.shields.io/badge/Year-2026-blue)](https://github.com/ababphysics/TSH)
+**Unified Structural Theory + Universal Physics OS for Humans and AI**
 
 **Author:** Hirokazu Abe  
 **Year:** 2026  
@@ -32,6 +30,50 @@ $$
 
 ---
 
+## TSH Execution Stack — Physics Engine & AI Physics Engine
+
+TSH is not only a theoretical model.  
+It is also a **fully executable physics platform**, implemented in two complementary layers:
+
+### **1. TSH Physics Engine (Unified Physics Engine)**  
+A high‑performance GPU‑accelerated engine that numerically integrates the unified TSH dynamics.
+
+**Capabilities**
+- Real‑time evolution of $p(x)$  
+- Automatic phase transitions (Stable → Composite → Core)  
+- Structural‑force computation from the phase diagram  
+- Mass‑dependent boundary scaling  
+- Implemented in Unity ECS, HLSL, and Python  
+
+**Applications**
+- Physics simulation  
+- Game physics (particles, fluids, force fields)  
+- Scientific visualization and phase‑diagram analysis  
+
+---
+
+### **2. TSH AI Physics Engine (Differentiable Physics OS)**  
+A three‑layer architecture enabling AI to **perceive**, **learn**, and **edit** physical laws.
+
+**Layer 1 — Perception**  
+TSH states exported as:
+- `.npy` tensors (Base / Channel / Phase)
+- `materials.json` (material dictionary)
+- `compiler_out.json` (phase thresholds)
+
+**Layer 2 — Learning**  
+Differentiable PyTorch implementation:
+- Learnable parameters $(\alpha, \beta)$  
+- Supports inverse physics and phase‑diagram optimization  
+
+**Layer 3 — Agency**  
+AI can rewrite the universe at runtime:
+- `TSHAI_API.edit_material()`  
+- Unity FieldCompiler regenerates HLSL from JSON  
+- GPU simulator updates instantly  
+
+---
+
 ## Unified Dynamical Equation
 
 TSH dynamics are governed by the **Unified Dynamical Equation**:
@@ -41,13 +83,13 @@ $$
 $$
 
 ### Components:
-- **$-\nabla^\mu \ln p$**: Intrinsic quantum spreading (Structural pressure)
-- **$F^\mu$**: Structural force determined by the $\Delta f - \gamma_T$ phase diagram
+- **$-\nabla^\mu \ln p$**: Intrinsic quantum spreading (structural pressure)  
+- **$F^\mu$**: Structural force determined by the $\Delta f - \gamma_T$ phase diagram  
 
 This single equation reproduces:
-- **Quantum behavior** (Stable phase)
-- **Classical trajectories** (Composite phase)
-- **GR geodesics** (Core phase, $\Phi \to 0$)
+- **Quantum behavior** (Stable phase)  
+- **Classical trajectories** (Composite phase)  
+- **GR geodesics** (Core phase, $\Phi \to 0$)  
 
 ---
 
@@ -55,42 +97,32 @@ This single equation reproduces:
 
 The $\Delta f - \gamma_T$ diagram defines three distinct structural phases:
 
-1.  **Stable** (Quantum phase)
-2.  **Composite** (Classical phase)
-3.  **Core** (Gravitational / Measurement phase)
+1. **Stable** (Quantum phase)  
+2. **Composite** (Classical phase)  
+3. **Core** (Gravitational / Measurement phase)  
 
 Crossing the boundaries $c_1(\gamma_T)$ and $c_2(\gamma_T)$ triggers:
-- Interference on/off
-- Collapse-like localization
-- Irreversible phase transitions
+- Interference on/off  
+- Collapse‑like localization  
+- Irreversible phase transitions  
 
 ---
 
 ## Ultimate TSH Simulator
 
-This repository includes the **Ultimate TSH Simulator**, the first executable model that numerically integrates the Unified Dynamical Equation.
+This repository includes the **Ultimate TSH Simulator**,  
+the first executable model that numerically integrates the Unified Dynamical Equation.
 
-### Key Features:
-- Numerical integration of phase transitions
-- Dynamic calculation of structural forces
-- Evolution of the thickness density $p(x)$
-- Mass-dependent boundary scaling
+**Key Features**
+- Numerical integration of phase transitions  
+- Dynamic structural‑force computation  
+- Evolution of the thickness density $p(x)$  
+- Mass‑dependent boundary scaling  
 
 ---
 
 ## Repository Access
 
-Full source code, theoretical manuscripts, and high-fidelity figures are available at:
+Full source code, theoretical manuscripts, and high‑fidelity figures are available at:
 
-[**https://github.com/ababphysics/TSH**](https://github.com/ababphysics/TSH)
-
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$']],
-      processEscapes: true
-    }
-  };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+**https://github.com/ababphysics/TSH**
