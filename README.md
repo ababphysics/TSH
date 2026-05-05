@@ -30,6 +30,8 @@ TSH is a unified structural theory that derives quantum mechanics, classical phy
 
 ## 3. Key Breakthroughs of TSH
 
+### 3.1 One Action, Three Regimes
+
 TSH derives three structural phases from one covariant action:
 - **Core** → GR geodesics
 - **Composite** → classical limit
@@ -245,10 +247,14 @@ $$
 
 ## 25. Experimental Predictions
 
-- Interference fringe on/off
-- Weak‑measurement collapse
-- Non‑Gaussian noise
-- Two‑component spectra
+- **Interference fringe on/off**  
+  → Crossing the phase‑boundary $c_1(\gamma_T)$ suppresses or restores interference by altering the structural deviation $\Delta f$.
+- **Weak‑measurement collapse**  
+  → When $\gamma_T$ exceeds its critical value, the Stable → Core transition produces a discontinuous localization of $p(x)$.
+- **Non‑Gaussian noise**  
+  → Near the phase boundaries, nonlinear changes in $\Phi_{\text{struct}}$ generate non‑Gaussian quantum noise.
+- **Two‑component spectra**  
+  → In the mixed Stable/Composite region, the structural force produces a split, two‑component noise spectrum.
 
 ---
 
