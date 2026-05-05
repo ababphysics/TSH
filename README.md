@@ -1,6 +1,7 @@
 # TSH (Thickness Structure Hypothesis)
 
 **Author:** Hirokazu Abe (2026)
+
 *Thickness Structure Hypothesis.*  
 Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
 
