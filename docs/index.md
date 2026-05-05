@@ -24,9 +24,9 @@ The theory introduces three key internal variables:
 
 These variables span the **$\Delta f - \gamma_T$ phase diagram**, which determines the **structural force**:
 
-$$
+\[
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
-$$
+\]
 
 ---
 
@@ -78,9 +78,9 @@ AI can rewrite the universe at runtime:
 
 TSH dynamics are governed by the **Unified Dynamical Equation**:
 
-$$
+\[
 \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)
-$$
+\]
 
 ### Components:
 - **$-\nabla^\mu \ln p$**: Intrinsic quantum spreading (structural pressure)  
