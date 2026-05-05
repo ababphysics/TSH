@@ -1,7 +1,6 @@
 # TSH (Thickness Structure Hypothesis)
 
 **Author:** Hirokazu Abe (2026)
-
 *Thickness Structure Hypothesis.*  
 Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
 
@@ -64,6 +63,17 @@ $$
 
 **3. Resolving Quantum Inconsistencies**  
 The $\Delta f - \gamma_T$ phase structure provides a continuous bridge between regimes.
+
+### 3.4 Comparison with Existing Approaches
+
+| Feature | String Theory | Loop Quantum Gravity | TSH (This Model) |
+| :--- | :--- | :--- | :--- |
+| **Unification Mechanism** | Strings / Branes | Spin Networks | $\Delta f - \gamma_T$ Phase Structure |
+| **Measurement Problem** | External Postulate | Not Addressed | Internal Phase Transition ($\gamma_T$) |
+| **GR Limit** | Requires Compactification | Nontrivial | Exact ($\Phi \to 0$) |
+| **Quantum–Classical Bridge** | Not Explicit | Not Explicit | Continuous Structural Transition |
+| **Collapse‑like Behavior** | Absent | Absent | Core Phase Localization |
+| **Executable Model** | No | No | Yes (Ultimate TSH Simulator) |
 
 ## 4. Internal Variables and Phase Structure
 
