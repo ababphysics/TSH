@@ -11,13 +11,13 @@ All physical phenomena in TSH are derived from the **Geometric Distribution of E
 
 ### 2.1 The Existence Thickness Field ($p$)
 The field $p(x)$ is defined as a superposition of Gaussian kernels representing localized "thickness" packets:
-$$ p(x) = \sum_{k} p_{amp,k} \cdot \exp\left( -\frac{\|x - x_k\|^2}{2\sigma_k^2} \right) $$
+$$ p(x) = \sum_{k} p_{amp,k} \cdot \exp\left( -\frac{|x - x_k|^2}{2\sigma_k^2} \right) $$
 - **Strict Positivity**: $p(x) > 0$ holds globally due to the exponential nature of the kernels.
 - **No Singularities**: Unlike standard point-mass models, $p(x)$ is infinitely differentiable and finite everywhere.
 
 ### 2.2 Deviation Gradient ($\Delta f$)
 Interference and local structural tension are measured by the Deviation Gradient:
-$$ \Delta f = \frac{\|\nabla p\|}{p + \epsilon} $$
+$$ \Delta f = \frac{|\nabla p|}{p + \epsilon} $$
 - **Stability**: The inclusion of the structural epsilon ($\epsilon > 10^{-7}$) ensures that the expression is always well-defined and non-singular, even in regions of low thickness.
 
 ### 2.3 Contracting Tension ($\gamma_T$)
