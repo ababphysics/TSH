@@ -15,7 +15,9 @@ This work shows that by shifting perspective and introducing only three structur
 one obtains a single covariant equation whose behavior changes according to the internal structural state of the system. These three quantities form the minimal structural principle capable of reproducing quantum, classical, and gravitational behavior within one unified framework.
 
 The unified equation
+
 $$ \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T) $$
+
 contains three structurally distinct contributions:
 - The left-hand side represents the geometric (GR) covariant acceleration.
 - The middle term represents the quantum spreading tendency encoded in $p$.
