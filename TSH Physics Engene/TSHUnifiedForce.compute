@@ -1,0 +1,141 @@
+#pragma kernel CSMain
+#pragma kernel CSVisualizer3D
+#pragma kernel CSBoundary3D
+
+/*
+================================================================================
+TSH Unified Engine v1.0 (Official Release)
+================================================================================
+Grand Unified GPU Core for 3D TSH Physics.
+Handles universal force synthesis across 4 abstract channels and 
+provides multi-layer volumetric visualization.
+================================================================================
+*/
+
+struct Particle {
+    float3 pos;
+    float3 vel;
+    float mass;
+    float p_amp;
+    float sigma;
+    float4 charges;
+    int phase;
+    int is_anti;
+    int material_id;
+};
+
+struct MaterialCoeffs {
+    float4 beta;
+    float alpha;
+    float strong_threshold;
+    float core_threshold;
+};
+
+// Buffers
+StructuredBuffer<Particle> _Particles;
+StructuredBuffer<MaterialCoeffs> _MaterialTable;
+int _ParticleCount;
+
+// Visualization Targets (3D Textures)
+RWTexture3D<float4> _BaseFieldTex;    // RGB: Phase Map
+RWTexture3D<float4> _ChannelFieldTex; // RGB: Interaction Map
+RWTexture3D<float4> _BoundaryTex;      // White Contours
+
+float3 _VolumeSize;
+float _DT;
+
+[numthreads(64, 1, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+
+    Particle p = _Particles[id.x];
+    MaterialCoeffs mat = _MaterialTable[p.material_id];
+    
+    float p_total = 1e-7;
+    float3 grad_p_total = float3(0, 0, 0);
+    float3 grad_p_channels[4];
+    for(int k=0; k<4; k++) grad_p_channels[k] = float3(0,0,0);
+
+    for (int j = 0; j < _ParticleCount; j++)
+    {
+        Particle other = _Particles[j];
+        float3 diff = p.pos - other.pos;
+        float d2 = dot(diff, diff);
+        float s2 = other.sigma * other.sigma;
+
+        if (d2 > s2 * 18.0) continue;
+
+        float p_val = other.p_amp * exp(-d2 / (2.0 * s2));
+        float3 g_val = -(diff / s2) * p_val;
+
+        p_total += p_val;
+        grad_p_total += g_val;
+        grad_p_channels[0] += other.charges.x * g_val;
+        grad_p_channels[1] += other.charges.y * g_val;
+        grad_p_channels[2] += other.charges.z * g_val;
+        grad_p_channels[3] += other.charges.w * g_val;
+    }
+
+    float3 f_struct = -mat.alpha * (grad_p_total / p_total);
+    float3 f_unified = f_struct;
+    f_unified += -mat.beta.x * p.charges.x * grad_p_channels[0];
+    f_unified += -mat.beta.y * p.charges.y * grad_p_channels[1];
+    f_unified += -mat.beta.z * p.charges.z * grad_p_channels[2];
+    f_unified += -mat.beta.w * p.charges.w * grad_p_channels[3];
+
+    // Final Force Sync logic...
+}
+
+[numthreads(8, 8, 8)]
+void CSVisualizer3D (uint3 id : SV_DispatchThreadID)
+{
+    float3 worldPos = (float3(id) / _VolumeSize) * 200.0;
+    float p_total = 0;
+    float4 p_channels = float4(0,0,0,0);
+    int dominant_phase = 0;
+    float max_p = 0;
+
+    for (int j = 0; j < _ParticleCount; j++)
+    {
+        Particle p = _Particles[j];
+        float3 diff = worldPos - p.pos;
+        float d2 = dot(diff, diff);
+        float s2 = p.sigma * p.sigma;
+
+        if (d2 > s2 * 12.0) continue;
+
+        float val = p.p_amp * exp(-d2 / (2.0 * s2));
+        p_total += val;
+        p_channels += p.charges * val;
+        
+        if (val > max_p) { max_p = val; dominant_phase = p.phase; }
+    }
+
+    float4 baseCol = float4(0,0,0, p_total * 0.05);
+    if (dominant_phase == 0) baseCol.rgb = float3(0.1, 0.4, 1.0); // Stable
+    else if (dominant_phase == 1) baseCol.rgb = float3(0.2, 1.0, 0.3); // Composite
+    else if (dominant_phase == 2) baseCol.rgb = float3(1.0, 0.8, 0.1); // Strong
+    else if (dominant_phase == 3) baseCol.rgb = float3(1.0, 0.1, 0.1); // Core
+    _BaseFieldTex[id.xyz] = baseCol;
+
+    float4 chanCol = float4(0,0,0, p_total * 0.05);
+    chanCol.rgb += p_channels.x * float3(0, 1, 1);   // EM
+    chanCol.rgb += p_channels.y * float3(1, 0.5, 0); // Strong
+    chanCol.rgb += p_channels.z * float3(1, 0, 1);   // Weak
+    chanCol.rgb += p_channels.w * float3(1, 1, 1);   // Custom
+    _ChannelFieldTex[id.xyz] = chanCol;
+}
+
+[numthreads(8, 8, 8)]
+void CSBoundary3D (uint3 id : SV_DispatchThreadID)
+{
+    float4 c = _BaseFieldTex[id.xyz];
+    float4 r = _BaseFieldTex[id.xyz + uint3(1,0,0)];
+    float4 u = _BaseFieldTex[id.xyz + uint3(0,1,0)];
+    float4 f = _BaseFieldTex[id.xyz + uint3(0,0,1)];
+    
+    float diff = distance(c, r) + distance(c, u) + distance(c, f);
+    if (diff > 0.1) _BoundaryTex[id.xyz] = float4(1,1,1, 1.0);
+    else _BoundaryTex[id.xyz] = float4(0,0,0,0);
+}
