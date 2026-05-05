@@ -18,7 +18,7 @@
 | :--- | :--- | :--- |
 | **Fundamental Equations** | PDE / ODE (e.g., Navier-Stokes) | Gaussian Superposition + Phase Map |
 | **Lower Bound of $p(x)$** | $0 \to$ Potential Divergence | $p > 0$ (Strictly Positive via Kernels) |
-| **Structural Deviation ($\Delta f$)** | Simple Gradient / $|\nabla p|$ | $\|\nabla p\| / (p + \epsilon)$ (Singularity-Free) |
+| **Structural Deviation ($\Delta f$)** | Simple Gradient / $\vert \nabla p \vert$ | $\Vert \nabla p \Vert / (p + \epsilon)$ (Singularity-Free) |
 | **Collapse Dynamics** | Prone to Divergence/Explosion | Forced Decay in Core Phase |
 | **Conservation Laws** | Mandatory / Strict Constraints | Non-conservative (History-dependent) |
 
