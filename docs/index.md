@@ -45,6 +45,28 @@ $$
 
 ---
 
+<div align="center">
+  <img src="../assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
+</div>
+
+### Simulation Demo
+
+This animation is generated directly from the **Ultimate TSH Simulator**,  
+a fully executable implementation of the unified TSH dynamical equation.
+
+The simulation visualizes the real‑time evolution of the existence‑thickness field **$$p(x)$$** under the full TSH dynamics. It demonstrates:
+
+- Structural deformation across the **$$\Delta f - \gamma_T$$** phase diagram  
+- Automatic transitions between **Stable (quantum)**, **Composite (classical)**, and **Core (gravitational/measurement)** phases  
+- Collapse‑like localization when the trajectory enters the Core region  
+- Recovery of interference‑like patterns in the Stable phase  
+- Mass‑dependent scaling of the phase‑boundary curves  
+- Irreversible behavior driven by structural tension **$$\gamma_T$$** and deviation **$$\Delta f$$**
+
+In essence, the animation shows how **quantum, classical, and gravitational behaviors emerge as phase transitions of a single structural field** governed by the unified TSH equation.
+
+---
+
 ## TSH Execution Stack — Physics Engine & AI Physics Engine
 
 TSH is not only a theoretical model.  
