@@ -1,4 +1,4 @@
-# TSH (Thickness Structure Hypothesis)
+# Thickness Structure Hypothesis (TSH)
 **Unified Structural Theory + Universal Physics OS for Humans and AI**
 
 **Author:** Hirokazu Abe (2026)  
