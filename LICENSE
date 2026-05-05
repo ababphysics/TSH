@@ -19,3 +19,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------------------------
+Exception Notice (Non‑MIT Materials)
+------------------------------------------------------------
+
+The following materials in this repository are **NOT** covered by the MIT License
+and remain © 2026 Hirokazu Abe.  
+They may not be copied, redistributed, or modified without explicit permission:
+
+- The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory  
+- All figures and images (e.g., `Figure_1.png`)  
+- All theoretical content in the `README.md`  
+- All website content in the `docs/` directory (GitHub Pages)
+
+These materials are provided for academic reference only and are **not** licensed
+for reuse under the MIT License.
