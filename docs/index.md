@@ -1,15 +1,10 @@
-# Thickness Structure Hypothesis (TSH)
+---
+layout: default
+title: Thickness Structure Hypothesis (TSH)
+math: true
+---
 
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    }
-  };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+# Thickness Structure Hypothesis (TSH)
 
 [![Status](https://img.shields.io/badge/Status-Theoretical-blueviolet)](https://github.com/ababphysics/TSH)
 [![Year](https://img.shields.io/badge/Year-2026-blue)](https://github.com/ababphysics/TSH)
@@ -29,7 +24,7 @@ The theory introduces three key internal variables:
 - $\Delta f$ — **spreading deviation**
 - $\gamma_T$ — **contracting tension**
 
-These variables span the **$\Delta f \text{--} \gamma_T$ phase diagram**, which determines the **structural force**:
+These variables span the **$\Delta f - \gamma_T$ phase diagram**, which determines the **structural force**:
 
 $$
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
@@ -47,7 +42,7 @@ $$
 
 ### Components:
 - **$-\nabla^\mu \ln p$**: Intrinsic quantum spreading (Structural pressure)
-- **$F^\mu$**: Structural force determined by the $\Delta f \text{--} \gamma_T$ phase diagram
+- **$F^\mu$**: Structural force determined by the $\Delta f - \gamma_T$ phase diagram
 
 This single equation reproduces:
 - **Quantum behavior** (Stable phase)
@@ -58,7 +53,7 @@ This single equation reproduces:
 
 ## Phase Diagram
 
-The $\Delta f \text{--} \gamma_T$ diagram defines three distinct structural phases:
+The $\Delta f - \gamma_T$ diagram defines three distinct structural phases:
 
 1.  **Stable** (Quantum phase)
 2.  **Composite** (Classical phase)
@@ -88,3 +83,14 @@ This repository includes the **Ultimate TSH Simulator**, the first executable mo
 Full source code, theoretical manuscripts, and high-fidelity figures are available at:
 
 [**https://github.com/ababphysics/TSH**](https://github.com/ababphysics/TSH)
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
