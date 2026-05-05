@@ -283,9 +283,14 @@ $$
 
 ## 26. License
 
-All code and scripts in this repository are released under the **MIT License**.
+All code and scripts in this repository are released under the MIT License.  
 The code may be used, modified, and redistributed with attribution.
 
-The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory, as well as the figures (e.g., `Figure_1.png`) and theoretical content in this README, are **© 2026 Hirokazu Abe**.
-These materials are not covered by the MIT License.
+The Thickness Structure Hypothesis paper (PDF and HTML) in the data/ directory,  
+the figures (e.g., Figure_1.png),  
+the theoretical content in this README,  
+and the website content in the docs/ directory  
+are © 2026 Hirokazu Abe.  
+
+These materials are not covered by the MIT License.  
 Unauthorized redistribution is prohibited.
