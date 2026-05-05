@@ -8,6 +8,8 @@
 
 For more than a century, quantum theory has been formulated as a probabilistic framework, while gravity has remained a deterministic geometric theory. Because these two descriptions rely on fundamentally different assumptions, no minimal common structural unit has ever been identified from which both could be derived.
 
+Before introducing these quantities, it is important to note that TSH treats all physical behavior—quantum spreading, classical motion, and gravitational localization—as different structural states of a single scalar field $p(x)$, called “thickness.” There is no separate wavefunction, probability density, or curvature equation; all regimes arise from changes in the structural state of $p(x)$.
+
 This work shows that by shifting perspective and introducing only three structural quantities—
 (1) how strongly something exists at a location ($p$),
 (2) the spreading degree of freedom ($\Delta f$), and
