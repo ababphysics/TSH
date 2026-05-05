@@ -36,9 +36,9 @@ TSH provides a continuous structural resolution to the measurement problem, quan
 **1. One Action, Three Regimes**  
 TSH derives three distinct structural phases from the same underlying principles:
 - **Core phase** → geodesic equation of general relativity
-- **Stable phase** → Bohm‑type quantum force
 - **Composite phase** → classical limit of quantum mechanics
-
+- **Stable phase** → Bohm‑type quantum force
+- 
 **2. Plug-and-Play Interaction Slot**
 
 $$
@@ -58,9 +58,9 @@ TSH introduces three internal quantities:
 
 These span the $\Delta f - \gamma_T$ phase diagram:
 
-- Stable (quantum)
-- Composite (classical)
 - Core (gravitational / measurement)
+- Composite (classical)
+- Stable (quantum)
 
 <img src="assets/three_phases.png" width="1000">
 
