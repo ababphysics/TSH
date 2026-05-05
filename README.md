@@ -1,3 +1,9 @@
+---
+layout: default
+title: TSH (Thickness Structure Hypothesis)
+math: true
+---
+
 # TSH (Thickness Structure Hypothesis)
 
 **Author:** Hirokazu Abe (2026)
@@ -280,13 +286,3 @@ and the website content in the docs/ directory
 are © 2026 Hirokazu Abe.  
 Unauthorized redistribution is prohibited.
 
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$']],
-      processEscapes: true
-    }
-  };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
