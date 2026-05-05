@@ -1,3 +1,18 @@
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$','$$'], ['\
+
+\[','\\]
+
+']]
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 # Thickness Structure Hypothesis (TSH)
 
 [![Status](https://img.shields.io/badge/Status-Theoretical-blueviolet)](https://github.com/ababphysics/TSH)
