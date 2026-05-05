@@ -8,7 +8,9 @@ Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/ze
 
 ## 1. Executable Structural Model
 
-<img src="assets/simulation_demo.gif" width="700">
+<img src="assets/simulation_demo.gif"
+     alt="Dynamic TSH simulation: irreversible phase transitions of existence thickness p(x) across Stable (quantum), Composite (classical), and Core (gravitational/measurement) phases, driven by structural deviation Δf, structural tension γ_T, and mass-dependent boundary scaling in the unified dynamical equation."
+     width="700">
 
 The animation above is generated directly from the Ultimate TSH Simulator,
 a fully runnable implementation of the unified dynamical equation.
