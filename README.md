@@ -1,9 +1,3 @@
----
-layout: default
-title: TSH (Thickness Structure Hypothesis)
-math: true
----
-
 # TSH (Thickness Structure Hypothesis)
 
 **Author:** Hirokazu Abe (2026)
@@ -285,4 +279,3 @@ the theoretical content in this README,
 and the website content in the docs/ directory  
 are © 2026 Hirokazu Abe.  
 Unauthorized redistribution is prohibited.
-
