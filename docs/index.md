@@ -18,7 +18,7 @@ The theory introduces three key internal variables:
 - $\Delta f$ — **spreading deviation**
 - $\gamma_T$ — **contracting tension**
 
-These variables span the **$\Delta f$–$\gamma_T$ phase diagram**, which determines the **structural force**:
+These variables span the **$\Delta f \text{--} \gamma_T$ phase diagram**, which determines the **structural force**:
 
 $$
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
@@ -36,7 +36,7 @@ $$
 
 ### Components:
 - **$-\nabla^\mu \ln p$**: Intrinsic quantum spreading (Structural pressure)
-- **$F^\mu$**: Structural force determined by the $\Delta f$–$\gamma_T$ phase diagram
+- **$F^\mu$**: Structural force determined by the $\Delta f \text{--} \gamma_T$ phase diagram
 
 This single equation reproduces:
 - **Quantum behavior** (Stable phase)
@@ -47,7 +47,7 @@ This single equation reproduces:
 
 ## Phase Diagram
 
-The $\Delta f$–$\gamma_T$ diagram defines three distinct structural phases:
+The $\Delta f \text{--} \gamma_T$ diagram defines three distinct structural phases:
 
 1.  **Stable** (Quantum phase)
 2.  **Composite** (Classical phase)
