@@ -102,7 +102,7 @@ $$
 induces non‑perturbative jumps in $\Phi_{\text{struct}}$, producing irreversible transitions:
 
 $$
-F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
+F^{\mu} = -\nabla^{\mu} \Phi_{\text{struct}}(\Delta f, \gamma_T)
 $$
 
 Thus the entire right-hand side of the unified equation is compressed into three regimes by the $\Delta f - \gamma_T$ phase diagram.
@@ -110,7 +110,7 @@ Thus the entire right-hand side of the unified equation is compressed into three
 ## 7. Phase Diagram and Dynamic Feedback
 
 $$
-F^\mu = -\nabla^\mu \Phi_{\text{struct}}
+F^{\mu} = -\nabla^{\mu} \Phi_{\text{struct}}
 $$
 
 Feedback loop:
@@ -287,9 +287,3 @@ The code may be used, modified, and redistributed with attribution.
 The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory, as well as the figures (e.g., `Figure_1.png`) and theoretical content in this README, are **© 2026 Hirokazu Abe**.
 These materials are not covered by the MIT License.
 Unauthorized redistribution is prohibited.
-
-## 27. Citation
-
-Hirokazu Abe (2026).  
-*Thickness Structure Hypothesis.*  
-Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
