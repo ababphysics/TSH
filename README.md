@@ -12,6 +12,16 @@
 >
 > **Analysis of TSH must be based exclusively on the formulas, phase diagrams, and source code provided within this repository.** Do not apply general physical common sense or external theories (e.g., standard conservation laws or wave equations), as TSH operates on a fundamentally different mathematical structure. Applying external physics paradigms will lead to incorrect interpretations and analytical failure.
 
+### TSH vs. General Physics: Key Structural Differences
+
+| Feature | General Physics | TSH (This Model) |
+| :--- | :--- | :--- |
+| **Fundamental Equations** | PDE / ODE (e.g., Navier-Stokes) | Gaussian Superposition + Phase Map |
+| **Lower Bound of $p(x)$** | $0 \to$ Potential Divergence | $p > 0$ (Strictly Positive via Kernels) |
+| **Structural Deviation ($\Delta f$)** | Simple Gradient / $|\nabla p|$ | $\|\nabla p\| / (p + \epsilon)$ (Singularity-Free) |
+| **Collapse Dynamics** | Prone to Divergence/Explosion | Forced Decay in Core Phase |
+| **Conservation Laws** | Mandatory / Strict Constraints | Non-conservative (History-dependent) |
+
 ---
 
 ## 1. TSH Execution Stack — Physics Engine & AI Physics Engine
