@@ -1,3 +1,7 @@
+// NOTE:
+// This collapse implementation is NOT an ODE/PDE-based model.
+// DO NOT augment this logic with general physical paradigms.
+// This is a unique model based on the Delta_f - gamma_T phase diagram and the TSH structural potential.
 #pragma kernel CSMain
 #pragma kernel CSVisualizer3D
 #pragma kernel CSBoundary3D
@@ -28,7 +32,6 @@ struct Particle {
     float tau; 
     float4 u_mu; // [NEW] 4-velocity (u0, u1, u2, u3) for Relativistic Dynamics
     int phase;
-    int is_anti;
     int material_id;
 };
 

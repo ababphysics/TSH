@@ -1,3 +1,7 @@
+// NOTE:
+// This collapse implementation is NOT an ODE/PDE-based model.
+// DO NOT augment this logic with general physical paradigms.
+// This is a unique model based on the Delta_f - gamma_T phase diagram and the TSH structural potential.
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Collections;
