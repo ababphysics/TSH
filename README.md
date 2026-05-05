@@ -35,10 +35,11 @@ TSH provides a continuous structural resolution to the measurement problem, quan
 
 **1. One Action, Three Regimes**  
 TSH derives three distinct structural phases from the same underlying principles:
+
 - **Core phase** → geodesic equation of general relativity
 - **Composite phase** → classical limit of quantum mechanics
 - **Stable phase** → Bohm‑type quantum force
-- 
+
 **2. Plug-and-Play Interaction Slot**
 
 $$
