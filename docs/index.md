@@ -46,7 +46,7 @@ $$
 ---
 
 <div align="center">
-  <img src="assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
+  <img src="{{ '/assets/simulation_demo.gif' | relative_url }}" width="700" alt="TSH Simulation Demo">
 </div>
 
 ### Simulation Demo (simulation_demo.gif)
