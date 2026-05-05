@@ -48,6 +48,7 @@ TSH derives three structural phases from one covariant action:
 - **Stable** → Bohm‑type quantum force
 
 ### 3.2 Unified Tensor Equation
+
 $$
 E_{\mu\nu} = G_{\mu\nu} + U_{\mu\nu}
 $$
@@ -178,11 +179,13 @@ $$
 $$
 
 **Covariant derivative**
+
 $$
 \frac{D u^\mu}{D\tau} = \frac{d u^\mu}{d\tau} + \Gamma^\mu_{\alpha\beta} u^\alpha u^\beta
 $$
 
 **Structural force**
+
 $$
 F^\mu = -\nabla^\mu \Phi_{\text{struct}}
 $$
@@ -263,6 +266,7 @@ $F^\mu = -\nabla^\mu \Phi_{\text{struct}}$.
 Thus $\Phi_{\text{struct}} \to 0 \implies F^\mu \to 0$.  
 
 Thus the unified equation reduces to the geodesic equation:
+
 $$
 \frac{D u^\mu}{D\tau} = 0.
 $$
@@ -294,3 +298,14 @@ are © 2026 Hirokazu Abe.
 
 These materials are not covered by the MIT License.  
 Unauthorized redistribution is prohibited.
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
