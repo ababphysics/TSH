@@ -33,7 +33,9 @@ TSH treats these three regimes as distinct structural phases—Stable, Composite
 
 TSH provides a continuous structural resolution to the measurement problem, quantum nonlocality, and the classical–quantum transition.
 
-<img src="assets/phase_diagram.png" width="400">
+<img src="assets/phase_diagram.png"
+     alt="TSH Phase Diagram showing the three structural phases—Stable (quantum), Composite (classical), and Core (gravitational)—as regions in the Δf–γT plane, with smooth boundaries c1(γT) and c2(γT) defining phase transitions."
+     width="400">
 
 ## 3. Key Breakthroughs of TSH
 
@@ -67,7 +69,9 @@ These span the $\Delta f - \gamma_T$ phase diagram:
 - Composite (classical)
 - Stable (quantum)
 
-<img src="assets/three_phases.png" width="1000">
+<img src="assets/three_phases.png"
+     alt="Comparison of the three TSH structural phases via p(x): Stable phase shows quantum interference fringes and wide nonlocal spreading; Composite phase shows a smooth classical Gaussian-like packet with suppressed fringes; Core phase shows strong gravitational localization with collapse-like sharp peak."
+     width="1000">
 
 ## 5. Phase Diagram and Dynamic Feedback
 
