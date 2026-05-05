@@ -6,7 +6,7 @@
 
 ## 1. Executable Structural Model
 
-<img src="assets/simulation_demo.gif" width="800">
+<img src="assets/simulation_demo.gif" width="700">
 
 The animation above is generated directly from the Ultimate TSH Simulator,
 a fully runnable implementation of the unified dynamical equation.
