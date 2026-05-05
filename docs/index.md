@@ -18,15 +18,13 @@ math: true
 
 The theory introduces three key internal variables:
 
-- $p(x)$ — **existence thickness**
-- $\Delta f$ — **spreading deviation**
-- $\gamma_T$ — **contracting tension**
+$p(x)$ — existence thickness
+$\Delta f$ — spreading deviation
+$\gamma_T$ — contracting tension
 
-These variables span the **$\Delta f - \gamma_T$ phase diagram**, which determines the **structural force**:
+These variables span the $\Delta f - \gamma_T$ phase diagram, which determines the structural force:
 
-$$
-F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
-$$
+$$F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)$$
 
 ---
 
@@ -78,9 +76,7 @@ AI can rewrite the universe at runtime:
 
 TSH dynamics are governed by the **Unified Dynamical Equation**:
 
-$$
-\frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)
-$$
+$$\frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)$$
 
 ### Components:
 - **$-\nabla^\mu \ln p$**: Intrinsic quantum spreading (structural pressure)  
