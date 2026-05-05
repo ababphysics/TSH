@@ -94,10 +94,16 @@ is determined directly by the position on the $\Delta f - \gamma_T$ phase diagra
   $\Phi_{\text{struct}}$ steep → $F^\mu$ strongly attractive → collapse-like localization
 
 Crossing the boundaries
+
 $$
 \Delta f = c_1(\gamma_T), \quad \Delta f = c_2(\gamma_T)
 $$
-induces non‑perturbative jumps in $\Phi_{\text{struct}}$, producing irreversible transitions.
+
+induces non‑perturbative jumps in $\Phi_{\text{struct}}$, producing irreversible transitions:
+
+$$
+F^\mu = -\nabla^\mu \Phi_{\text{struct}}(\Delta f, \gamma_T)
+$$
 
 Thus the entire right-hand side of the unified equation is compressed into three regimes by the $\Delta f - \gamma_T$ phase diagram.
 
@@ -287,4 +293,3 @@ Unauthorized redistribution is prohibited.
 Hirokazu Abe (2026).  
 *Thickness Structure Hypothesis.*  
 Zenodo DOI: [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
-
