@@ -12,7 +12,7 @@ Quantum theory and gravity have long been described using fundamentally differen
 
 - **$p(x)$** — structural thickness
 - **$\Delta f$** — spreading degree of freedom
-- **$\gamma_T$** — contracting degree of freedom
+- **$\gamma_{T}$** — contracting degree of freedom
 
 These three quantities form the minimal structural unit from which quantum‑like, classical‑like, and gravitational‑like behaviors emerge as different structural phases. TSH does not reinterpret these variables using existing physics concepts; they are intrinsic structural quantities.
 
@@ -23,12 +23,12 @@ These three quantities form the minimal structural unit from which quantum‑lik
 TSH introduces a single covariant structural update rule that determines how the system evolves. The rule combines:
 1. **Geometric contribution**
 2. **Spreading tendency**
-3. **Structural force** from the competition between $\Delta f$ and $\gamma_T$
+3. **Structural force** from the competition between $\Delta f$ and $\gamma_{T}$
 
 This provides an intuitive picture:
 > **“Next-step trajectory = spreading tendency + structural force.”**
 
-Quantum‑like, classical‑like, and gravitational‑like behaviors appear as different structural phases determined by the internal state of $(p, \Delta f, \gamma_T)$.
+Quantum‑like, classical‑like, and gravitational‑like behaviors appear as different structural phases determined by the internal state of $(p, \Delta f, \gamma_{T})$.
 
 ---
 
@@ -39,7 +39,7 @@ The internal variables define a structural phase diagram with three regimes: **S
 The system evolves through a continuous loop:
 **Phase Diagram → Structural Force → Motion → Updated Variables → Phase Diagram**
 
-$$ (p, \Delta f, \gamma_T)_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t} $$
+$$ (p, \Delta f, \gamma_{T})_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_{T})_{t+\delta t} $$
 
 This loop allows smooth transitions among the three regimes within a single structural framework.
 
@@ -47,11 +47,11 @@ This loop allows smooth transitions among the three regimes within a single stru
 
 ## 4. TSH Execution Stack — Structural Engine & AI Structural Engine
 
-TSH is not only a theoretical framework; it is an executable structural environment that directly runs the structural dynamics defined by $p(x), \Delta f, \gamma_T$.
+TSH is not only a theoretical framework; it is an executable structural environment that directly runs the structural dynamics defined by $p(x), \Delta f, \gamma_{T}$.
 
 ### 4.1 TSH Structural Engine — Unified Structural Engine
 
-A GPU‑accelerated execution layer that computes the evolution of the structural field $p(x)$ and its associated terms $\Delta f$ and $\gamma_T$ in real time.
+A GPU‑accelerated execution layer that computes the evolution of the structural field $p(x)$ and its associated terms $\Delta f$ and $\gamma_{T}$ in real time.
 
 **Features**
 - Single structural field $p(x)$ representing existence‑thickness
@@ -86,7 +86,7 @@ This enables iterative exploration without altering the underlying TSH laws.
 </div>
 
 The **Ultimate TSH Simulator** provides a fully runnable implementation of the structural dynamics. It computes:
-- $\Delta f$–$\gamma_T$ phase deformation
+- $\Delta f$–$\gamma_{T}$ phase deformation
 - Mass‑dependent boundary scaling
 - Irreversible phase transitions
 - Evolving thickness distribution $p(x)$
