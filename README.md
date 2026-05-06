@@ -154,231 +154,116 @@ The simulator computes:
 - irreversible phase transitions
 - the evolving thickness distribution $p(x)$
 
+---
 
+## 3. Minimal Covariant Action and Unified Dynamical Equation
 
-<h2 class="section-title">3. Minimal Covariant Action and Unified Dynamical Equation</h2>
+The minimal covariant action of TSH is given by:
 
-<p>The minimal covariant action of TSH is given by:</p>
+$$ S = \int d^4x \sqrt{-g} \left[ \frac{R}{16\pi G} + p \ln p + \alpha_Q (\nabla \ln p)^2 + \Phi_{\text{struct}}(\Delta f, \gamma_T) \right] $$
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-S = \int d^4x \sqrt{-g} \left[
-\frac{R}{16\pi G}
-+ p \ln p
-+ \alpha_Q (\nabla \ln p)^2
-+ \Phi_{\text{struct}}(\Delta f, \gamma_T)
-\right].
-$$
-</div>
-
-<p>
 Varying this action naturally yields a unified dynamical equation in which the geometric, quantum, and structural contributions separate cleanly.
-</p>
 
-<p>
 First, the metric variation absorbs all geometric contributions—including the Levi-Civita connection—into the left-hand side:
-</p>
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-\frac{D u^\mu}{D \tau}
-$$
-</div>
+$$ \frac{D u^\mu}{D \tau} $$
 
-<p>
 thus preserving the geodesic structure of General Relativity (GR).
-</p>
 
-<p>
-Next, variation with respect to the thickness field \(p(x)\) produces the quantum contribution:
-</p>
+Next, variation with respect to the thickness field $p(x)$ produces the quantum contribution:
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
--\nabla^\mu \ln p
-$$
-</div>
+$$ -\nabla^\mu \ln p $$
 
-<p>
 which reduces to a Bohm-type quantum force in the quantum limit.
-</p>
 
-<p>
-Finally, variation of the structural potential \(\Phi_{\text{struct}}(\Delta f, \gamma_T)\) yields
-</p>
+Finally, variation of the structural potential $\Phi_{\text{struct}}(\Delta f, \gamma_T)$ yields
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-F^\mu(\Delta f, \gamma_T)
-$$
-</div>
+$$ F^\mu(\Delta f, \gamma_T) $$
 
-<p>
-a structural force uniquely determined by the \(\Delta f\)–\(\gamma_T\) phase diagram.
-</p>
+a structural force uniquely determined by the $\Delta f$–$\gamma_T$ phase diagram.
 
-<p>Putting everything together, the unified dynamical equation becomes:</p>
+Putting everything together, the unified dynamical equation becomes:
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-\frac{D u^\mu}{D \tau}
-=
--\nabla^\mu \ln p
-+
-F^\mu(\Delta f, \gamma_T)
-$$
-</div>
+$$ \frac{D u^\mu}{D \tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T) $$
 
-<p>
-This equation contains three structurally distinct terms:<br>
-<strong>LHS = Geometry (GR) / Middle = Quantum Contribution / RHS = Structural Force (Phase Diagram)</strong>.
-</p>
+This equation contains three structurally distinct terms:  
+**LHS = Geometry (GR) / Middle = Quantum Contribution / RHS = Structural Force (Phase Diagram)**.
 
-<p>
-These three terms form the minimal decomposition of how the structural state of the thickness field \(p(x)\) tends to change.  
-The quantum, classical, and gravitational phases appear as different ratios of this decomposition.
-</p>
+These three terms form the minimal decomposition of how the structural state of the thickness field $p(x)$ tends to change. The quantum, classical, and gravitational phases appear as different ratios of this decomposition.
 
-<p>
 In intuitive language:
-</p>
+> **"Next-step trajectory (LHS) = quantum spreading tendency (−∇μ ln p) + structural force from the competition between Δf and γT (Fμ)."**
 
-<p>
-“Next-step trajectory (LHS)<br>
-&nbsp;&nbsp;= quantum spreading tendency (−∇<sup>μ</sup> ln p)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;+ structural force from the competition between Δf and γ<sub>T</sub> (F<sup>μ</sup>).”
-</p>
-
-<p>
 This relation shows how quantum, classical, and gravitational behaviors branch out from a single structural dynamics.
-</p>
 
-<h2 class="section-title">4. Three Physical Limits: Quantum, Classical, and Gravitational</h2>
+---
 
-<h3 class="subsection-title">4.1 Quantum Limit (Stable Phase)</h3>
+## 4. Three Physical Limits: Quantum, Classical, and Gravitational
 
-<p>In the quantum limit, the gradient of the thickness field dominates:</p>
+### 4.1 Quantum Limit (Stable Phase)
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-p = R^2, \qquad
-|\nabla_\mu \ln p| \gg |F_\mu|.
-$$
-</div>
+In the quantum limit, the gradient of the thickness field dominates:
 
-<p>This yields:</p>
+$$ p = R^2, \qquad |\nabla_\mu \ln p| \gg |F_\mu| $$
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
--\nabla_\mu \ln p
-= -2\,\nabla_\mu R / R,
-$$
-</div>
+This yields:
 
-<p>
+$$ -\nabla_\mu \ln p = -2\,\nabla_\mu R / R $$
+
 and the unified dynamical equation reproduces a Bohm-type quantum force.
-</p>
 
+### 4.2 Classical Limit (Composite Phase)
 
-<h3 class="subsection-title">4.2 Classical Limit (Composite Phase)</h3>
+In the classical limit, the thickness field is nearly flat and internal fluctuations are small:
 
-<p>In the classical limit, the thickness field is nearly flat and internal fluctuations are small:</p>
+$$ |\nabla_\mu p|/p \ll 1, \qquad \Delta f \ll 1, \qquad \gamma_T \ll 1 $$
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-|\nabla_\mu p|/p \ll 1, \qquad
-\Delta f \ll 1, \qquad
-\gamma_T \ll 1.
-$$
-</div>
+Thus,
 
-<p>Thus,</p>
+$$ \nabla_\mu \ln p \approx 0, \qquad F_\mu \approx 0 $$
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-\nabla_\mu \ln p \approx 0, \qquad
-F_\mu \approx 0,
-$$
-</div>
-
-<p>
 and the unified equation reduces to deterministic classical trajectories.
-</p>
 
+### 4.3 Gravitational Limit (Core Phase / $\Phi \to 0$)
 
-<h3 class="subsection-title">4.3 Gravitational Limit (Core Phase / $\Phi \to 0$)</h3>
+In the geometric limit:
 
-<p>In the geometric limit:</p>
+$$ \Phi \to 0, \qquad \nabla_\mu \ln p \to 0, \qquad F_\mu \to 0 $$
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-\Phi \to 0, \qquad
-\nabla_\mu \ln p \to 0, \qquad
-F_\mu \to 0,
-$$
-</div>
+the unified equation becomes:
 
-<p>the unified equation becomes:</p>
+$$ \frac{D u^\mu}{D \tau} = 0 $$
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-\frac{D u^\mu}{D \tau} = 0,
-$$
-</div>
-
-<p>
 which exactly reproduces the geodesic equation of General Relativity.
-</p>
 
-<h2 class="section-title">5. Computational Reduction via Phase Diagram Structure</h2>
+---
 
-<p>
+## 5. Computational Reduction via Phase Diagram Structure
+
 The structural tensor equation of TSH is:
-</p>
 
-<div style="text-align: center; margin: 1.5rem 0;">
-$$
-E_{\mu\nu}^{\text{TSH}} = G_{\mu\nu} + U_{\mu\nu},
-$$
-</div>
+$$ E_{\mu\nu}^{\text{TSH}} = G_{\mu\nu} + U_{\mu\nu} $$
 
-<p>
-where all structural contributions arise solely from the internal variables  
-\(p(x)\), \(\Delta f\), and \(\gamma_T\).
-</p>
+where all structural contributions arise solely from the internal variables $p(x)$, $\Delta f$, and $\gamma_T$.
 
-<p>
-Crucially, the structural force \(F_\mu\) is not computed from PDEs but from a  
-<strong>two‑dimensional Δf–γT phase diagram</strong>.
-This replaces complex differential operators with a simple lookup on a compact structural map.
-</p>
+Crucially, the structural force $F_\mu$ is not computed from PDEs but from a **two‑dimensional Δf–γT phase diagram**. This replaces complex differential operators with a simple lookup on a compact structural map.
 
-<h3>Computational Advantages</h3>
+### Computational Advantages
+- **No Schrödinger PDE**
+- **No Navier–Stokes PDE**
+- **No Einstein PDE**
+- All interactions unified into a single $p$‑field update
+- GPU execution with $O(N)$ scaling
+- Phase transitions handled by table lookup (no branching)
 
-<ul>
-<li>No Schrödinger PDE</li>
-<li>No Navier–Stokes PDE</li>
-<li>No Einstein PDE</li>
-<li>All interactions unified into a single p‑field update</li>
-<li>GPU execution with O(N) scaling</li>
-<li>Phase transitions handled by table lookup (no branching)</li>
-</ul>
+### Resulting Performance Gains
+- **Quantum wave evolution**: 50–100× faster
+- **Fluid / smoke simulation**: 30–80× faster
+- **100k interacting particles**: 200–300× faster
+- **Quantum + gravity hybrid**: previously impossible → 0.5–2 ms
+- **AI inverse physics**: 100–1000× fewer trials
 
-<h3>Resulting Performance Gains</h3>
-
-<ul>
-<li>Quantum wave evolution: 50–100× faster</li>
-<li>Fluid / smoke simulation: 30–80× faster</li>
-<li>100k interacting particles: 200–300× faster</li>
-<li>Quantum + gravity hybrid: previously impossible → 0.5–2 ms</li>
-<li>AI inverse physics: 100–1000× fewer trials</li>
-</ul>
-
-<p>
-The Δf–γT phase diagram therefore provides not only a unified physical description  
-but also a unified computational framework, enabling real‑time simulation of  
-quantum, classical, and gravitational behavior within a single structural loop.
-</p>
+The $\Delta f – \gamma_T$ phase diagram therefore provides not only a unified physical description but also a unified computational framework, enabling real‑time simulation of quantum, classical, and gravitational behavior within a single structural loop.
 
 ---
 
