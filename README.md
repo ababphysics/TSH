@@ -87,7 +87,8 @@ This enables iterative exploration without altering the underlying TSH laws.
 </div>
 
 The **Ultimate TSH Simulator** provides a fully runnable implementation of the structural dynamics. It computes:
-- $\Delta f$–$\gamma_{T}$ phase deformation
+
+- $\Delta f - \gamma_{T}$ phase deformation
 - Mass‑dependent boundary scaling
 - Irreversible phase transitions
 - Evolving thickness distribution $p(x)$
