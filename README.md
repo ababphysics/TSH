@@ -28,7 +28,7 @@
 > - **Core phase**: Defined by $(\Delta f, \gamma_T)$ in the Core region. Not equivalent to gravitational collapse, measurement postulate, or relativistic curvature.
 >
 > #### Structural Dynamics Loop
-> - **Loop**: $(p, \Delta f, \gamma_T)_t \implies F^\mu \implies u^\mu(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t}$
+> - **Loop**: $(p, \Delta f, \gamma_T)_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t}$
 >   - **Definition**: Continuous update cycle of internal structural variables.
 >   - **Not equivalent to**: wavefunction time evolution, classical trajectory update, GR curvature evolution, or PDE time‑stepping.
 >
@@ -79,7 +79,7 @@ The system operates through a continuous dynamical loop:
 
 **Phase Diagram → Structural Force → Motion → Internal Variable Update → Phase Diagram**
 
-$$ (p, \Delta f, \gamma_T)_t \implies F^\mu \implies u^\mu(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t} \implies \text{Phase Diagram} $$
+$$ (p, \Delta f, \gamma_T)_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t} \implies \text{Phase Diagram} $$
 
 Through this loop, the three phases deform smoothly, allowing quantum, classical, and gravitational behaviors to transition continuously as **structural states** within a single covariant dynamical law.
 
