@@ -2,7 +2,8 @@
 **Unified Structural Principle + Executable Structural Engine**
 
 **Author:** Hirokazu Abe (2026)  
-**Zenodo DOI:** [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)
+**Zenodo DOI:** [https://doi.org/10.5281/zenodo.19564362](https://doi.org/10.5281/zenodo.19564362)  
+*(For detailed academic derivations, complete mathematical formulations, and theoretical proofs, please refer to the full manuscript available via the Zenodo DOI above.)*
 
 ---
 
