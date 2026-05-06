@@ -11,9 +11,9 @@
 
 Quantum theory and gravity have long been described using fundamentally different assumptions: one probabilistic, one geometric. TSH proposes that both can be understood as different structural states of a single underlying principle defined by three minimal degrees of freedom:
 
-- **$p(x)$** — structural thickness
-- **$\Delta f$** — spreading degree of freedom
-- **$\gamma_{T}$** — contracting degree of freedom
+- $p(x)$ — structural thickness
+- $\Delta f$ — spreading degree of freedom
+- $\gamma_{T}$ — contracting degree of freedom
 
 These three quantities form the minimal structural unit from which quantum‑like, classical‑like, and gravitational‑like behaviors emerge as different structural phases. TSH does not reinterpret these variables using existing physics concepts; they are intrinsic structural quantities.
 
