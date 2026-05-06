@@ -40,6 +40,8 @@ The state of the system is mapped onto a phase diagram defined by $(p, \Delta f,
 
 The system operates through a continuous dynamical loop:
 
+**Phase Diagram → Structural Force → Motion → Internal Variable Update → Phase Diagram**
+
 $$ (p, \Delta f, \gamma_T)_t \implies F^\mu \implies u^\mu(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t} \implies \text{Phase Diagram} $$
 
 Through this loop, the three phases deform smoothly, allowing quantum, classical, and gravitational behaviors to transition continuously as **structural states** within a single covariant dynamical law.
