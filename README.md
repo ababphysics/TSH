@@ -10,14 +10,14 @@
 
 For over a century, quantum theory has flourished as a probabilistic framework, while gravity has remained a deterministic geometric theory. Because these two descriptions rely on fundamentally different assumptions, no minimal common structural unit has ever been identified from which both could be derived—until now.
 
-The **Thickness Structure Hypothesis (TSH)** presents a solution to this problem by demonstrating that quantum, classical, and gravitational behaviors can all be described using only **three minimal structural quantities.**
+The **Thickness Structure Hypothesis (TSH)** presents a solution to this problem by demonstrating that quantum, classical, and gravitational behaviors can all be described using only **three minimal degrees of freedom.**
 
-#### 1. The Three Structural Quantities
+#### 1. Three Degrees of Freedom ($p, \Delta f, \gamma_T$)
 These three quantities are irreducible, non-substitutable, and represent the fundamental physical nature of the field:
 
-- **$p(x)$ (Existence Thickness)**: A scalar field representing the structural property of "how strongly" something exists at a location. Both quantum spreading and gravitational localization are described on the same baseline as different structural states of $p(x)$.
-- **$\Delta f$ (Spreading Degree of Freedom)**: An internal scalar field representing the tendency of the thickness to spread out.
-- **$\gamma_T$ (Contracting Degree of Freedom)**: An internal scalar field representing the tendency of the thickness to contract.
+- **$p(x)$ (Existence Thickness)**: A scalar field representing the structural property of thickness. Both quantum spreading and gravitational localization are described on the same baseline as different structural states of $p(x)$, determined by its internal degrees of freedom ($\Delta f, \gamma_T$).
+- **$\Delta f$ (Spreading DOF)**: The internal degree of freedom governing the "spreading direction" of the thickness structure.
+- **$\gamma_T$ (Contracting DOF)**: The internal degree of freedom governing the "contracting direction" of the thickness structure.
 
 #### 2. The Unified Dynamical Equation
 The motion of the system is governed by a single covariant equation:
@@ -33,10 +33,7 @@ This equation integrates three structurally distinct contributions:
 > **"The next-step trajectory = the quantum tendency to spread + the structural force (the competition between $\Delta f$ and $\gamma_T$)."**
 
 #### 3. Three Phases and Continuous Unification
-The state of the system is mapped onto a phase diagram defined by $(p, \Delta f, \gamma_T)$, resulting in three distinct regimes:
-1. **Stable Phase** (Quantum behavior)
-2. **Composite Phase** (Classical behavior)
-3. **Core Phase** (Gravitational/Measurement behavior)
+The state of the system is mapped onto a phase diagram defined by $(p, \Delta f, \gamma_T)$, resulting in three distinct regimes: **Stable (Quantum), Composite (Classical), and Core (Gravitational/Measurement).**
 
 The system operates through a continuous dynamical loop:
 
@@ -210,29 +207,27 @@ which exactly reproduces the geodesic equation of General Relativity.
 ## 5. Computational Reduction via Phase Diagram Structure
 
 The structural tensor equation of TSH is:
-
 $$ E_{\mu\nu}^{\text{TSH}} = G_{\mu\nu} + U_{\mu\nu} $$
 
 where all structural contributions arise solely from the internal variables $p(x)$, $\Delta f$, and $\gamma_T$.
 
-A key computational feature of TSH is that the structural force $F_\mu$ is not computed from PDEs. Instead, it is obtained directly from a two‑dimensional $\Delta f – \gamma_T$ phase diagram, replacing complex differential operators with a compact structural lookup.
+A key computational feature of TSH is that the structural force $F_\mu$ is obtained directly from a two‑dimensional $\Delta f – \gamma_T$ phase diagram. This means that the update of the system is determined by a compact structural map, rather than by evaluating multiple independent physical laws.
 
 ### Computational Advantages
-- **No Schrödinger PDE**
-- **No Navier–Stokes PDE**
-- **No Einstein PDE**
-- All interactions unified into a single $p$-field update
-- GPU execution with $O(N)$ scaling
-- Phase transitions handled by table lookup (no branching)
+- **Unified Logic**: All interactions are unified into a single $p$‑field update loop.
+- **GPU Scaling**: The update loop runs on GPU with $O(N)$ scaling.
+- **Direct Lookup**: Phase switching is handled by direct phase‑diagram lookup.
+- **Zero Branching**: No branching between different physical regimes.
+- **Synchronous Processing**: Quantum, classical, and gravitational behaviors are processed in the same structural cycle.
 
 ### Resulting Performance Gains
-- **Quantum wave evolution**: 50–100× faster
-- **Fluid / smoke simulation**: 30–80× faster
+- **Quantum-like wave behavior**: 50–100× faster
+- **Fluid-like behavior**: 30–80× faster
 - **100k interacting particles**: 200–300× faster
-- **Quantum + gravity hybrid**: previously impossible → 0.5–2 ms
-- **AI inverse physics**: 100–1000× fewer trials
+- **Quantum + gravity hybrid behavior**: real-time (0.5–2 ms)
+- **AI inverse-physics tasks**: 100–1000× fewer trials
 
-The $\Delta f – \gamma_T$ phase diagram therefore provides not only a unified physical description but also a unified computational framework, enabling real‑time simulation of quantum, classical, and gravitational behavior within a single structural loop.
+The $\Delta f – \gamma_T$ phase diagram therefore provides not only a unified physical description but also a unified computational framework, enabling real‑time simulation of quantum, classical, and gravitational behavior within a single structural update loop.
 
 ---
 
