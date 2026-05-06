@@ -21,6 +21,7 @@ These three quantities are irreducible, non-substitutable, and represent the fun
 
 #### 2. The Unified Dynamical Equation
 The motion of the system is governed by a single covariant equation:
+
 $$ \frac{D u^\mu}{D\tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T) $$
 
 This equation integrates three structurally distinct contributions:
@@ -38,6 +39,7 @@ The state of the system is mapped onto a phase diagram defined by $(p, \Delta f,
 3. **Core Phase** (Gravitational/Measurement behavior)
 
 The system operates through a continuous dynamical loop:
+
 $$ (p, \Delta f, \gamma_T)_t \implies F^\mu \implies u^\mu(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t} \implies \text{Phase Diagram} $$
 
 Through this loop, the three phases deform smoothly, allowing quantum, classical, and gravitational behaviors to transition continuously as **structural states** within a single covariant dynamical law.
