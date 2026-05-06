@@ -15,7 +15,7 @@ The **Thickness Structure Hypothesis (TSH)** presents a solution to this problem
 #### 1. Three Degrees of Freedom ($p, \Delta f, \gamma_T$)
 These three quantities are irreducible, non-substitutable, and represent the fundamental physical nature of the field:
 
-- **$p(x)$ (Existence Thickness)**: A scalar field representing the structural property of thickness. Both quantum spreading and gravitational localization are described on the same baseline as different structural states of $p(x)$, determined by its internal degrees of freedom ($\Delta f, \gamma_T$).
+- **$p(x)$ (Existence Thickness)**: A scalar field representing the structural property of thickness. Both quantum spreading and gravitational localization are described on the same baseline as differences in the structural state formed by $p(x)$, $\Delta f$, and $\gamma_T$.
 - **$\Delta f$ (Spreading DOF)**: The internal degree of freedom governing the "spreading direction" of the thickness structure.
 - **$\gamma_T$ (Contracting DOF)**: The internal degree of freedom governing the "contracting direction" of the thickness structure.
 
