@@ -28,7 +28,10 @@
 > - **Core phase**: Defined by $(\Delta f, \gamma_T)$ in the Core region. Not equivalent to gravitational collapse, measurement postulate, or relativistic curvature.
 >
 > #### Structural Dynamics Loop
-> - **Loop**: $(p, \Delta f, \gamma_T)_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t}$
+> - **Loop**:
+>
+> $$ (p, \Delta f, \gamma_T)_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_T)_{t+\delta t} $$
+>
 >   - **Definition**: Continuous update cycle of internal structural variables.
 >   - **Not equivalent to**: wavefunction time evolution, classical trajectory update, GR curvature evolution, or PDE time‑stepping.
 >
