@@ -252,6 +252,7 @@ which exactly reproduces the geodesic equation of General Relativity.
 ## 5. Computational Reduction via Phase Diagram Structure
 
 The structural tensor equation of TSH is:
+
 $$ E_{\mu\nu}^{\text{TSH}} = G_{\mu\nu} + U_{\mu\nu} $$
 
 where all structural contributions arise solely from the internal variables $p(x)$, $\Delta f$, and $\gamma_T$.
