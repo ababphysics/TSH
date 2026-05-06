@@ -279,9 +279,7 @@ The $\Delta f – \gamma_T$ phase diagram therefore provides not only a unified 
 
 ## 6. License
 
-All code and scripts in this repository are released under the MIT License.  
-The Thickness Structure Hypothesis paper (PDF and HTML) in the data/ directory,  
-the figures (e.g., Figure_1.png),  
+All code and scripts in this repository are released under the MIT License.    
 the theoretical content in this README,  
 and the website content in the docs/ directory  
 are © 2026 Hirokazu Abe.  
