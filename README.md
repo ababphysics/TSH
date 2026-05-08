@@ -1,5 +1,4 @@
 # Thickness Structure Hypothesis (TSH)
-**Unified Structural Principle + Executable Structural Engine**
 
 **Author:** Hirokazu Abe (2026)  
 **Zenodo DOI:** [https://zenodo.org/records/20078368](https://zenodo.org/records/20078368)  
