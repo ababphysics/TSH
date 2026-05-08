@@ -176,7 +176,7 @@ The TSH engine's computational efficiency follows directly from its structural a
 
 ### Design Consequence
 
-Because the $\Delta f$–$\gamma_{T}$ phase diagram encodes all behavioral transitions as a lookup rather than as separate physical laws, the update cycle remains structurally identical across all phases — enabling GPU parallelism without approximation switching or branching overhead.
+Because the $\Delta f\text{–}\gamma_{T}$ phase diagram encodes all behavioral transitions as a lookup rather than as separate physical laws, the update cycle remains structurally identical across all phases — enabling GPU parallelism without approximation switching or branching overhead.
 
 ---
 
