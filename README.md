@@ -54,7 +54,9 @@ The system evolves through a continuous loop:
 
 $$ (p, \Delta f, \gamma_{T})_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_{T})_{t+\delta t} $$
 
-This loop allows smooth transitions among the three regimes within a single structural framework.
+By continuously iterating this loop, the three structural phases (Stable / Composite / Core) deform smoothly, and quantum-like, classical-like, and gravitational-like behaviors transition continuously — as structural states — within a single covariant dynamics.
+
+In other words, TSH enables the three domains of quantum, classical, and gravitational behavior to be computed directly from this single equation of motion alone.
 
 ---
 
