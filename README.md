@@ -7,7 +7,7 @@
 
 Thickness Structure Hypothesis (TSH) is a structural model for unified physics, describing quantum, classical, and gravitational behavior within a single Quantum Gravity–class framework based on three internal variables ($p, \Delta f, \gamma_{T}$).
 
-The purpose of this README is to provide an overview demonstrating that the unified equations for quantum, gravitational, and classical interactions hold as a consistent and executable physical model.
+This repository contains the **executable Structural Engine** and conceptual overview. The full mathematical details are available in the Zenodo manuscript.
 
 ---
 
