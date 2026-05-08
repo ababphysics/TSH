@@ -158,7 +158,7 @@ A Python API (`tsh_ai_api.py`) that allows AI systems to interact with the TSH s
 - **Apply** — `edit_material()` rewrites physical constants ($\alpha$, $\beta$, $k_\text{tension}$, `collapse_rate`) in `materials.json`. The simulator reloads this file and the structural behavior changes in real time.
 - **Compile** — `export_compiler_results()` writes phase-boundary thresholds to `compiler_out.json` for downstream use.
 
-This loop enables AI-driven exploration of the $\Delta f$–$\gamma_{T}$ phase space and optimization of structural behavior — without modifying the TSH structural laws themselves.
+This loop enables AI-driven exploration of the $\Delta f\text{–}\gamma_{T}$ phase space and optimization of structural behavior — without modifying the TSH structural laws themselves.
 
 ---
 
