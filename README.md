@@ -5,13 +5,7 @@
 **Zenodo DOI:** [https://zenodo.org/records/20078368](https://zenodo.org/records/20078368)  
 *(For detailed academic derivations, complete mathematical formulations, and theoretical proofs, please refer to the full manuscript available via the Zenodo DOI above.)*
 
-TSH is a minimal unified quantum gravity framework that describes **quantum, classical, and gravitational behaviors** within a single action principle using only **three internal variables**: existence thickness $p(x)$, spreading deviation $\Delta f$, and contracting tension $\gamma_T$.
-
-The core of the theory is a **single unified equation of motion**:
-
-$$\frac{D u^\mu}{D \tau} = -\nabla^\mu \ln p + F^\mu(\Delta f, \gamma_T)$$
-
-from which quantum spreading, classical trajectories, and gravitational geodesic motion emerge as different structural phases of the same system.
+Thickness Structure Hypothesis (TSH) is a structural model for unified physics, describing quantum, classical, and gravitational behavior within a single Quantum Gravity–class framework based on three internal variables ($p, \Delta f, \gamma_{T}$).
 
 This repository contains the **executable Structural Engine** and conceptual overview. The full mathematical details are available in the Zenodo manuscript.
 
