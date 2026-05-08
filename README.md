@@ -149,36 +149,24 @@ A GPU-accelerated execution stack (Unity ECS + HLSL compute + Python) that imple
 **Implementation Files**
 `TSHUnifiedForce.compute` / `TSHCore.cs` / `TSHFieldCompiler.cs` / `TSHPositionUpdateSystem.cs` / `TSH_Core.py`
 
-### 6.2 TSH AI Structural Engine — Structural Exploration Interface
+### 6.2 TSH AI Structural Engine -- Structural Exploration Interface
 
-A Python API (`tsh_ai_api.py`) that allows AI systems to interact with the TSH structural simulation through a standard Observe → Infer → Apply → Verify loop.
+A Python API (`tsh_ai_api.py`) that allows AI systems to interact with the TSH structural simulation through a standard Observe -- Infer -- Apply -- Verify loop.
 
-- **Observe** — `get_observables()` retrieves structural quantities ($m_\text{eff}$, $E_\text{total}$, $\Phi_\text{struct}$, $\Delta f$, $\gamma_{T}$, phase distance) per structural element. `export_observables()` saves them as `.npy` arrays for use with PyTorch / TensorFlow.
-- **Evaluate** — `evaluate_phase_topology()` scores core density, strong-phase coverage, and structural entropy from the $p(x)$ field. `evaluate_irreversibility()` measures collapse efficiency and resistance to phase reversal.
-- **Apply** — `edit_material()` rewrites physical constants ($\alpha$, $\beta$, $k_\text{tension}$, `collapse_rate`) in `materials.json`. The simulator reloads this file and the structural behavior changes in real time.
-- **Compile** — `export_compiler_results()` writes phase-boundary thresholds to `compiler_out.json` for downstream use.
+- **Observe** -- `get_observables()` retrieves structural quantities ($m_\text{eff}$, $E_\text{total}$, $\Phi_\text{struct}$, $\Delta f$, $\gamma_{T}$, phase distance) per structural element. `export_observables()` saves them as `.npy` arrays for use with PyTorch / TensorFlow.
+- **Evaluate** -- `evaluate_phase_topology()` scores core density, strong-phase coverage, and structural entropy from the $p(x)$ field. `evaluate_irreversibility()` measures collapse efficiency and resistance to phase reversal.
+- **Apply** -- `edit_material()` rewrites physical constants ($\alpha$, $\beta$, $k_\text{tension}$, `collapse_rate`) in `materials.json`. The simulator reloads this file and the structural behavior changes in real time.
+- **Compile** -- `export_compiler_results()` writes phase-boundary thresholds to `compiler_out.json` for downstream use.
 
-This loop enables AI-driven exploration of the $\Delta f\text{–}\gamma_{T}$ phase space and optimization of structural behavior — without modifying the TSH structural laws themselves.
+This loop enables AI-driven exploration of the $\Delta f\text{--}\gamma_{T}$ phase space and optimization of structural behavior -- without modifying the TSH structural laws themselves.
 
 ---
 
-## 7. Computational Performance — Structural Design Characteristics
+## 7. Computational Performance -- Structural Design Characteristics
 
 The TSH engine's computational efficiency follows directly from its structural architecture. All three behavioral domains (quantum-like, classical-like, gravitational-like) are handled by a **single GPU kernel** (`CSMain`) with no separate code paths per domain.
 
 ### Architectural Properties (verified in implementation)
-
-- **Single kernel dispatch** — `CSMain` computes $p(x)$, $\Delta f$, $\gamma_{T}$, phase, force, and position update in one pass
-- **Phase determined by threshold comparison** — no iterative solver or regime-specific evaluation; `p_total` is compared against `c1` / `c2` directly
-- **No inter-domain branching** — the same kernel runs identically regardless of whether an element is in Stable, Composite, or Core phase
-- **$O(N)$ neighbor search** — Uniform Grid Spatial Hash; designed to support 100M+ structural elements
-- **AI Inverse Physics Solver** — backpropagation-based optimizer (`tsh_ai_api.py`) finds material constants from target phase topologies, reducing parameter search cost
-
-### Design Consequence
-
-Because the $\Delta f\text{–}\gamma_{T}$ phase diagram encodes all behavioral transitions as a lookup rather than as separate physical laws, the update cycle remains structurally identical across all phases — enabling GPU parallelism without approximation switching or branching overhead.
-
-### Concrete Computation Reduction (derived from implementation)
 
 | Source of reduction | Conventional approach | TSH |
 |---|---|---|
@@ -187,16 +175,56 @@ Because the $\Delta f\text{–}\gamma_{T}$ phase diagram encodes all behavioral 
 | Kernel count | Multiple (quantum / classical / GR) | 1 (`CSMain`) handles all phases |
 | Force synthesis | Multiple independent laws evaluated | Single structural force $-\alpha \nabla \ln p$ + channel terms |
 
-**Neighbor search reduction example** (from `TSH_Core.py` → `TSHUnifiedForce.compute`):
+**Neighbor search reduction** (`TSH_Core.py` to `TSHUnifiedForce.compute`):
 
-- Reference Python implementation: explicitly labeled `# Exact O(N^2) Physical Loop`
-- Optimized GPU implementation: Spatial Hash with `CELL_SIZE` grid → each element searches only 3×3×3 = 27 neighboring cells
-- For $N = 1{,}000$: neighbor evaluations reduced from $\sim 10^6$ to $\sim O(N)$
-- For $N = 100{,}000$: from $\sim 10^{10}$ to $\sim O(N)$ — documented target capacity: **100M+ structural elements**
+- Reference Python: explicitly labeled `# Exact O(N^2) Physical Loop`
+- GPU implementation: Spatial Hash -- each element searches only 3x3x3 = 27 neighboring cells
+- $N = 1{,}000$: evaluations reduced from $\sim 10^6$ to $\sim O(N)$
+- $N = 100{,}000$: from $\sim 10^{10}$ to $\sim O(N)$ -- target capacity: **100M+ structural elements**
 
-**AI parameter search** (`tsh_ai_api.py`): backpropagation-based optimizer (`evaluate_phase_topology` + `edit_material`) finds $\alpha$/$\beta$ constants from target phase topologies — replacing manual grid search over the $\Delta f\text{–}\gamma_{T}$ phase space.
+Because the $\Delta f\text{–}\gamma_{T}$ phase diagram encodes all behavioral transitions as a lookup, the update cycle remains structurally identical across all phases — enabling GPU parallelism without approximation switching or branching overhead.
+
+### 🎮 Game / Interactive Physics
+
+| Feature | Implementation | File |
+|---|---|---|
+| 60 FPS real-time | `FPS=60`, `SUBSTEPS=8` (480 updates/sec) | `ultimate_tsh_simulator.py` |
+| Unity ECS (DOTS) | `IJobEntity` + `ScheduleParallel()` parallel jobs | `TSHPositionUpdateSystem.cs` |
+| Burst compilation | `[BurstCompile]` CPU native optimization | `TSHPositionUpdateSystem.cs` |
+| GPU compute shader | `[numthreads(64,1,1)]` single kernel all phases | `TSHUnifiedForce.compute` |
+| Runtime hot-reload | `HotReloadMaterials()` JSON update without restart | `TSHCore.cs` |
+| Physics Compiler | Generates HLSL constants from material assets at edit time | `TSHFieldCompiler.cs` |
+| 3D visualization | Phase Map / Channel Map / Boundary Map (3D textures) | `TSHUnifiedForce.compute` |
+| Relativistic speed cap | Lorentz factor correction + velocity limit enforcement | `TSHPositionUpdateSystem.cs` |
+
+### 🔬 Scientific Simulation
+
+| Feature | Implementation | File |
+|---|---|---|
+| Verified baseline | ``DO NOT MODIFY. VERIFIED BASELINE FOR UNITY/GPU PORTS.`` | ``TSH_Core.py`` |
+| Collapse dynamics | $f_\text{collapse} = \Lambda \cdot e^{-t/\tau} \cdot e^{-d/L} \cdot \hat{n}$ | ``TSH_Core.py`` |
+| Proper time | `tau += DT / gamma` per element | All implementations |
+| Irreversible $\gamma_{T}$ | Monotonic accumulation -- arrow of time | All implementations |
+| Core phase lock-in | Reverse transition blocked when `delta_f > 0.05` | All implementations |
+| Standard Model domain | q1=EM, q2=Strong, q3=Weak, q4=Higgs | `official_documentation_EN.md` |
+| Condensed matter | q1=Charge, q2=Spin, q3=SO-interaction, q4=Order param | `official_documentation_EN.md` |
+| Dark sector | q1-q4 mapped to Dark Coupling / Dark Energy | `official_documentation_EN.md` |
+
+### 🤖 AI
+
+| Feature | Implementation | File |
+|---|---|---|
+| GPU to CPU perception | `GetParticleDataFromGPU()` for AI observation | `TSHCore.cs` |
+| AI to GPU application | `HotReloadMaterials()` applies optimized laws instantly | `TSHCore.cs` |
+| Observable export | `export_observables()` outputs `.npy` (PyTorch / TensorFlow) | `tsh_ai_api.py` |
+| Phase topology score | `evaluate_phase_topology()`: core_density, structural_entropy | `tsh_ai_api.py` |
+| RL reward function | `evaluate_irreversibility()`: irreversibility_score | `tsh_ai_api.py` |
+| Material rewrite | `edit_material()`: alpha, beta, k_tension, collapse_rate | `tsh_ai_api.py` |
+| Inverse physics solver | Backpropagation finds alpha/beta from target phase topology | `official_documentation_EN.md` |
+| Observe-Infer-Apply-Verify | JSON-driven parameter space iterative loop | `AI_Implementation_Manual_EN.md` |
 
 ---
+
 
 ## 8. Executable Structural Model
 
