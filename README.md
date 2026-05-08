@@ -15,11 +15,14 @@ The purpose of this README is to provide an overview demonstrating that the unif
 
 Quantum theory and gravity have long been described using fundamentally different assumptions: one probabilistic, one geometric. TSH proposes that both can be understood as different structural states of a single underlying principle defined by three minimal degrees of freedom:
 
-- $p(x)$ — structural thickness
-- $\Delta f$ — spreading degree of freedom
-- $\gamma_{T}$ — contracting degree of freedom
+- $p(x)$ — **Existence intensity**: a scalar field with the structural property of "existence thickness."  
+  Both the state observed as quantum-like spreading and the state observed as gravitational localization are described on a unified basis as differences in the structural states taken by $p(x)$, $\Delta f$, and $\gamma_{T}$.
 
-These three quantities form the minimal structural unit from which quantum‑like, classical‑like, and gravitational‑like behaviors emerge as different structural phases. TSH does not reinterpret these variables using existing physics concepts; they are intrinsic structural quantities.
+- $\Delta f$ — **Internal degree of freedom in the "spreading direction"** of the thickness structure.
+
+- $\gamma_{T}$ — **Internal degree of freedom in the "contracting direction"** of the thickness structure.
+
+These three quantities cannot be further reduced, cannot be replaced by any other physical quantity, and must carry physical content — making them the minimal structural principle.
 
 ---
 
