@@ -65,11 +65,71 @@ In other words, TSH enables the three domains of quantum, classical, and gravita
 
 ---
 
-## 4. TSH Execution Stack — Structural Engine & AI Structural Engine
+## 4. Interaction Slots — Open Integration Architecture
+
+The structural action of TSH is defined by a minimal principle that depends solely on $p(x)$, $\Delta f$, and $\gamma_{T}$. Because of this, even when external interactions (gauge fields, matter fields, etc.) are added:
+
+- The structural dynamics of TSH **do not change**
+- The update rules for the three internal degrees of freedom **do not change**
+- The phase diagram (Stable / Composite / Core) **does not change**
+
+This means that the internal structure of TSH is **completely independent of external interactions** — and any external interaction can be integrated simply by **appending it to the right-hand side** of the tensor equation.
+
+### Integrations Made Possible
+
+The TSH tensor equation provides a hierarchical set of interaction slots into which external interactions can be freely inserted:
+
+- Standard Model (SM)
+- GUTs (SO(10), etc.)
+- Effective field theories from string theory
+- General matter fields: fluid, Higgs, Yang–Mills, Dirac, etc.
+
+Furthermore, because the slots have a **parallel structure**:
+
+- Multiple matter fields can be stacked without contradiction
+- Multiple gauge fields can be stacked without contradiction
+- Weak, strong, and electromagnetic interactions can be placed side by side without contradiction
+- Multiple instances of the same type of interaction can be accumulated without contradiction
+- Different types of interactions can be added simultaneously without contradiction
+
+In short, TSH means:
+
+> *"Whether matter, gauge field, or force — singly or in combination — any mix can be integrated."*
+
+---
+
+## 5. Phase-Diagram-Driven Computation Reduction
+
+Another major feature of TSH is that the $\Delta f$–$\gamma_{T}$ phase diagram is structured to reduce **the computational cost itself**.
+
+In conventional physics models, separate equations, separate approximations, and separate branching logic are required for:
+
+- The quantum domain
+- The classical domain
+- The gravitational domain
+
+In TSH, however:
+
+- The phase diagram **uniquely determines which phase the system is in**
+- The phase diagram **directly returns which structural force to apply**
+- The phase diagram **directly provides the update rule for the next step**
+
+As a result, all computation is **completed within a single update loop**:
+
+- **Zero branching**
+- **Zero approximation switching**
+- **No need to evaluate multiple physical laws**
+- **Runs at $O(N)$ on GPU**
+
+This yields a structure that is nearly impossible to achieve in conventional physics simulation.
+
+---
+
+## 6. TSH Execution Stack — Structural Engine & AI Structural Engine
 
 TSH is not only a theoretical framework; it is an executable structural environment that directly runs the structural dynamics defined by $p(x), \Delta f, \gamma_{T}$.
 
-### 4.1 TSH Structural Engine — Unified Structural Engine
+### 6.1 TSH Structural Engine — Unified Structural Engine
 
 A GPU‑accelerated execution layer that computes the evolution of the structural field $p(x)$ and its associated terms $\Delta f$ and $\gamma_{T}$ in real time.
 
@@ -87,7 +147,7 @@ A GPU‑accelerated execution layer that computes the evolution of the structura
 - Exploration of phase‑diagram behavior
 *(No references to particles, fluids, forces, or other existing‑physics entities.)*
 
-### 4.2 TSH AI Structural Engine — Structural Exploration Interface
+### 6.2 TSH AI Structural Engine — Structural Exploration Interface
 
 A programmable interface for AI systems to observe structural states, explore configuration space, and evaluate structural behavior.
 
@@ -99,7 +159,7 @@ This enables iterative exploration without altering the underlying TSH laws.
 
 ---
 
-## 5. Computational Performance — Phase‑Diagram‑Driven Reduction
+## 7. Computational Performance — Phase‑Diagram‑Driven Reduction
 
 The TSH structural engine achieves significant computational efficiency because the system update is determined directly by a compact $\Delta f - \gamma_{T}$ phase diagram, rather than by evaluating multiple independent physical laws.
 
@@ -121,7 +181,7 @@ These gains arise from the structural phase‑diagram architecture, which unifie
 
 ---
 
-## 6. Executable Structural Model
+## 8. Executable Structural Model
 
 <div align="center">
   <img src="assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
@@ -138,7 +198,7 @@ This allows real‑time simulation of structural behavior across the three phase
 
 ---
 
-## 7. License
+## 9. License
 
 - **Code and Scripts**: MIT License.
 - **Theoretical Content**: The TSH paper (PDF/HTML), theoretical content in this README, and figures are © 2026 Hirokazu Abe. Unauthorized redistribution is prohibited.
