@@ -47,9 +47,14 @@ This is why it holds as an equation of motion:
 
 ## 3. Structural Phases and Continuous Transitions
 
-The internal variables define a structural phase diagram with three regimes: **Stable phase, Composite phase, and Core phase.**
+The internal state $(p, \Delta f, \gamma_{T})$ is organized into three structural phases:
 
-The system evolves through a continuous loop:
+- **Stable phase**: quantum-like behavior
+- **Composite phase**: classical-like behavior
+- **Core phase**: gravitational / observational behavior
+
+The system computes the following loop as a continuous function:
+
 **Phase Diagram → Structural Force → Motion → Updated Variables → Phase Diagram**
 
 $$ (p, \Delta f, \gamma_{T})_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_{T})_{t+\delta t} $$
