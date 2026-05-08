@@ -131,53 +131,52 @@ TSH is not only a theoretical framework; it is an executable structural environm
 
 ### 6.1 TSH Structural Engine — Unified Structural Engine
 
-A GPU‑accelerated execution layer that computes the evolution of the structural field $p(x)$ and its associated terms $\Delta f$ and $\gamma_{T}$ in real time.
+A GPU-accelerated execution stack (Unity ECS + HLSL compute + Python) that implements the TSH structural dynamics in real time.
 
-**Features**
-- Single structural field $p(x)$ representing existence‑thickness
-- Automatic transitions among the three structural phases (Stable → Composite → Core)
-- Direct execution of unified structural dynamics
-- GPU compute implementation with $O(N)$ scaling
-- Three‑layer visualization: Phase Map / Channel Map / Boundary Map
-- Implemented in Unity ECS, Python, and HLSL
+**Core Implementation**
+- Structural field $p(x)$ computed as a Gaussian-weighted sum over neighboring structural elements (`p_total`)
+- $\Delta f$ and $\gamma_{T}$ updated per step from field gradients and accumulated tension
+- Phase determined from $p(x)$ against material-defined thresholds (`strong_threshold`, `core_threshold`); irreversible lock into Core phase enforced
+- 4 abstract interaction channels (`charges.xyzw`: EM / Strong / Weak / Custom) — interaction domain switchable via `materials.json`
+- Relativistic extension: 4-velocity $u^{\mu}$, Lorentz factor $\gamma$, and proper time $\tau$ per structural element
+- $O(N)$ neighbor search via Spatial Hash (supports 100M+ elements)
 
-**Use Cases**
-- Real‑time observation of structural evolution
-- Structural behavior for interactive media and research
-- Exploration of phase‑diagram behavior
-*(No references to particles, fluids, forces, or other existing‑physics entities.)*
+**3D Volumetric Visualization (3 HLSL kernels)**
+- **Phase Map** (`_BaseFieldTex`): R = phase state, G = $\Delta f$ (interference), B = $\gamma_{T}$ (collapse intensity)
+- **Channel Map** (`_ChannelFieldTex`): q1–q4 interaction channels rendered as hue-coded volume
+- **Boundary Map** (`_BoundaryTex`): Procedural contour lines at phase-transition boundaries
+
+**Implementation Files**
+`TSHUnifiedForce.compute` / `TSHCore.cs` / `TSHFieldCompiler.cs` / `TSHPositionUpdateSystem.cs` / `TSH_Core.py`
 
 ### 6.2 TSH AI Structural Engine — Structural Exploration Interface
 
-A programmable interface for AI systems to observe structural states, explore configuration space, and evaluate structural behavior.
+A Python API (`tsh_ai_api.py`) that allows AI systems to interact with the TSH structural simulation through a standard Observe → Infer → Apply → Verify loop.
 
-- **Layer 1 — Perception**: Exports machine‑readable structural data (`.npy` tensors, `materials.json`, `compiler_out.json`).
-- **Layer 2 — Exploration**: AI can scan configuration sets, evaluate phase behavior, and infer structural outcomes.
-- **Layer 3 — Agency**: AI can modify configuration parameters, regenerate structural boundaries, and execute updated structural configurations.
+- **Observe** — `get_observables()` retrieves structural quantities ($m_\text{eff}$, $E_\text{total}$, $\Phi_\text{struct}$, $\Delta f$, $\gamma_{T}$, phase distance) per structural element. `export_observables()` saves them as `.npy` arrays for use with PyTorch / TensorFlow.
+- **Evaluate** — `evaluate_phase_topology()` scores core density, strong-phase coverage, and structural entropy from the $p(x)$ field. `evaluate_irreversibility()` measures collapse efficiency and resistance to phase reversal.
+- **Apply** — `edit_material()` rewrites physical constants ($\alpha$, $\beta$, $k_\text{tension}$, `collapse_rate`) in `materials.json`. The simulator reloads this file and the structural behavior changes in real time.
+- **Compile** — `export_compiler_results()` writes phase-boundary thresholds to `compiler_out.json` for downstream use.
 
-This enables iterative exploration without altering the underlying TSH laws.
+This loop enables AI-driven exploration of the $\Delta f$–$\gamma_{T}$ phase space and optimization of structural behavior — without modifying the TSH structural laws themselves.
 
 ---
 
-## 7. Computational Performance — Phase‑Diagram‑Driven Reduction
+## 7. Computational Performance — Structural Design Characteristics
 
-The TSH structural engine achieves significant computational efficiency because the system update is determined directly by a compact $\Delta f - \gamma_{T}$ phase diagram, rather than by evaluating multiple independent physical laws.
+The TSH engine's computational efficiency follows directly from its structural architecture. All three behavioral domains (quantum-like, classical-like, gravitational-like) are handled by a **single GPU kernel** (`CSMain`) with no separate code paths per domain.
 
-This enables a unified update loop with:
-- **Single $p$-field update**
-- **Direct phase‑diagram lookup**
-- **Zero branching** across regimes
-- **GPU‑friendly $O(N)$ scaling**
-- **Synchronous processing** of quantum‑like, classical‑like, and gravitational‑like behavior
+### Architectural Properties (verified in implementation)
 
-### Performance Characteristics (Measured in the TSH Simulator)
-- **Quantum‑like wave behavior**: 50–100× faster
-- **Fluid‑like structural behavior**: 30–80× faster
-- **100k interacting structural elements**: 200–300× faster
-- **Quantum + gravity hybrid behavior**: real‑time (0.5–2 ms per step)
-- **AI inverse‑physics tasks**: 100–1000× fewer trials required
+- **Single kernel dispatch** — `CSMain` computes $p(x)$, $\Delta f$, $\gamma_{T}$, phase, force, and position update in one pass
+- **Phase determined by threshold comparison** — no iterative solver or regime-specific evaluation; `p_total` is compared against `c1` / `c2` directly
+- **No inter-domain branching** — the same kernel runs identically regardless of whether an element is in Stable, Composite, or Core phase
+- **$O(N)$ neighbor search** — Uniform Grid Spatial Hash; designed to support 100M+ structural elements
+- **AI Inverse Physics Solver** — backpropagation-based optimizer (`tsh_ai_api.py`) finds material constants from target phase topologies, reducing parameter search cost
 
-These gains arise from the structural phase‑diagram architecture, which unifies all behaviors into a single update cycle.
+### Design Consequence
+
+Because the $\Delta f$–$\gamma_{T}$ phase diagram encodes all behavioral transitions as a lookup rather than as separate physical laws, the update cycle remains structurally identical across all phases — enabling GPU parallelism without approximation switching or branching overhead.
 
 ---
 
