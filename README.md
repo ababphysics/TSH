@@ -2,7 +2,7 @@
 **Unified Structural Principle + Executable Structural Engine**
 
 **Author:** Hirokazu Abe (2026)  
-**Zenodo DOI:** [10.5281/zenodo.20078368](10.5281/zenodo.20078368)  
+**Zenodo DOI:** [https://zenodo.org/records/20078368](https://zenodo.org/records/20078368)  
 *(For detailed academic derivations, complete mathematical formulations, and theoretical proofs, please refer to the full manuscript available via the Zenodo DOI above.)*
 
 Thickness Structure Hypothesis (TSH) is a structural model for unified physics, describing quantum, classical, and gravitational behavior within a single Quantum Gravity–class framework based on three internal variables ($p, \Delta f, \gamma_{T}$).
