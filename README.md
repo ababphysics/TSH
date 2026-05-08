@@ -100,7 +100,7 @@ In short, TSH means:
 
 ## 5. Phase-Diagram-Driven Computation Reduction
 
-Another major feature of TSH is that the $\Delta f$–$\gamma_{T}$ phase diagram is structured to reduce **the computational cost itself**.
+Another major feature of TSH is that the $\Delta f\text{–}\gamma_{T}$ phase diagram is structured to reduce **the computational cost itself**.
 
 In conventional physics models, separate equations, separate approximations, and separate branching logic are required for:
 
