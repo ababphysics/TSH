@@ -1,4 +1,5 @@
 # Thickness Structure Hypothesis (TSH)
+**Unified Structural Principle + Executable Structural Engine**
 
 **Author:** Hirokazu Abe (2026)  
 **Zenodo DOI:** [https://zenodo.org/records/20078368](https://zenodo.org/records/20078368)  
@@ -176,6 +177,24 @@ The TSH engine's computational efficiency follows directly from its structural a
 ### Design Consequence
 
 Because the $\Delta f\text{–}\gamma_{T}$ phase diagram encodes all behavioral transitions as a lookup rather than as separate physical laws, the update cycle remains structurally identical across all phases — enabling GPU parallelism without approximation switching or branching overhead.
+
+### Concrete Computation Reduction (derived from implementation)
+
+| Source of reduction | Conventional approach | TSH |
+|---|---|---|
+| Neighbor search | $O(N^2)$ pairwise evaluation | $O(N)$ Uniform Grid Spatial Hash |
+| Phase / regime decision | Separate solver per domain | Single threshold comparison (`p_total > c1`, `c2`) |
+| Kernel count | Multiple (quantum / classical / GR) | 1 (`CSMain`) handles all phases |
+| Force synthesis | Multiple independent laws evaluated | Single structural force $-\alpha \nabla \ln p$ + channel terms |
+
+**Neighbor search reduction example** (from `TSH_Core.py` → `TSHUnifiedForce.compute`):
+
+- Reference Python implementation: explicitly labeled `# Exact O(N^2) Physical Loop`
+- Optimized GPU implementation: Spatial Hash with `CELL_SIZE` grid → each element searches only 3×3×3 = 27 neighboring cells
+- For $N = 1{,}000$: neighbor evaluations reduced from $\sim 10^6$ to $\sim O(N)$
+- For $N = 100{,}000$: from $\sim 10^{10}$ to $\sim O(N)$ — documented target capacity: **100M+ structural elements**
+
+**AI parameter search** (`tsh_ai_api.py`): backpropagation-based optimizer (`evaluate_phase_topology` + `edit_material`) finds $\alpha$/$\beta$ constants from target phase topologies — replacing manual grid search over the $\Delta f\text{–}\gamma_{T}$ phase space.
 
 ---
 
