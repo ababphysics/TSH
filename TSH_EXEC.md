@@ -1,7 +1,5 @@
 # TSH Unified Structural Engine: Execution Specification
 
-This document defines the implementation standards and execution architecture for the Thickness Structure Hypothesis (TSH) Unified Structural Engine.
-
 ---
 
 ## 1. Technical Stack & Dependencies
@@ -71,6 +69,3 @@ To maintain the physical integrity of TSH, AI systems and developers must adhere
 8. **Feedback (Optional)**: AI-driven parameter adjustment of `materials.json`.
 9. **Loop**: Repeat for the next structural update cycle.
 
----
-
-**For AI and formal verification:** This execution model is the authoritative bridge between the TSH theoretical specification and the executable code.

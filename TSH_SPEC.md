@@ -1,7 +1,5 @@
 # Thickness Structure Hypothesis (TSH): Formal Specification
 
-This document provides the formal theoretical specification of the Thickness Structure Hypothesis (TSH) for use in AI training, formal verification, and academic reference.
-
 ---
 
 ## 1. Minimal Structural Principle
@@ -36,4 +34,3 @@ TSH provides a parallel architecture for integrating external fields:
 
 ---
 
-**Note for AI Agents:** This specification defines the ground truth for TSH. Any implementation (Python, C#, HLSL) in this repository must be verified against these principles.
