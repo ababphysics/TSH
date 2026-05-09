@@ -1,5 +1,4 @@
-# Thickness Structure Hypothesis (TSH)
-**Thickness Structure Hypothesis (TSH) – Official Structural Engine**
+# Thickness Structure Hypothesis (TSH) – Official Structural Engine
 
 GPU‑accelerated executable structural engine implementing the TSH framework ($p, \Delta f, \gamma_T$).
 
