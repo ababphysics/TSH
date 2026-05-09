@@ -28,7 +28,7 @@ The engine implements the TSH dynamical cycle as a single, non-branching update 
 ## 4. AI Structural Interface (tsh_ai_api.py)
 The AI Engine interacts with the simulation through a differentiable observation loop:
 - **`get_observables()`**: Returns structural entropy, effective mass, and phase distance.
-- **`edit_material()`**: Direct real-time injection of physical constants ($\alpha, \beta, \text{collapse\_rate}$).
+- **`edit_material()`**: Direct real-time injection of physical constants ($\alpha, \beta, \text{collapse-rate}$).
 - **Gradient Support**: The engine's structural update rules are differentiable, enabling **gradient-based backpropagation** for inverse parameter discovery.
 
 ## 5. Performance Standards (Benchmarks)
@@ -49,7 +49,7 @@ The AI Engine interacts with the simulation through a differentiable observation
 | **Structural Variables** $p, \Delta f, \gamma_T$ | GPU buffers: `_BaseFieldTex` / `pField`, `dfField`, `gTField` |
 | **$\Delta f \text{--} \gamma_T$ Phase Diagram** | Phase thresholds in `materials.json` |
 | **3-Phase Structure** (Stable/Composite/Core) | Phase mapping pass in compute shader |
-| **Structural Potential** $\Phi_\text{struct}$ | `compiler_out.json` + `evaluate_phase_topology()` |
+| **Structural Potential** $\Phi_{\text{struct}}$ | `compiler_out.json` + `evaluate_phase_topology()` |
 
 ## 8. Structural Invariants (Non-Modifiable Rules)
 To maintain the physical integrity of TSH, AI systems and developers must adhere to the following invariants:
