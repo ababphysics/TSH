@@ -32,5 +32,10 @@ TSH provides a parallel architecture for integrating external fields:
 - **Neighbor Search**: $O(N)$ efficiency using Uniform Grid Spatial Hashing.
 - **Parallelism**: Single-kernel execution (GPU compute) for all phases, ensuring zero-branching overhead.
 
+## 6. Structural Action
+The unified structural dynamics of TSH can be generated from the following minimal action:
+$$S = \int d^4x [L_{\text{GR}} + p \ln p + (\nabla p)^2 + \Phi_{\text{struct}}(p, \Delta f, \gamma_T)]$$
+This action defines the minimal structural principle from which the unified equation of motion follows.
+
 ---
 
