@@ -215,9 +215,6 @@ This design enables GPU parallelism without approximation switching or branching
 
 ---
 
----
-
-
 ## 8. Executable Structural Model
 
 <div align="center">
