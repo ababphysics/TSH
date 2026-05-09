@@ -118,7 +118,7 @@ This yields a structure that is nearly impossible to achieve in conventional phy
 
 ---
 
-## 6. TSH Execution Stack — Structural Engine & AI Structural Engine
+## 6. Structural Engine & AI Structural Engine
 
 TSH is not only a theoretical framework; it is an executable structural environment that directly runs the structural dynamics defined by $p(x), \Delta f, \gamma_{T}$.
 
@@ -155,7 +155,7 @@ This loop enables AI-driven exploration of the $\Delta f\text{--}\gamma_{T}$ pha
 
 ---
 
-## 7. Computational Performance -- Structural Design Characteristics
+## 7. Computational Performance
 
 The TSH engine's computational efficiency follows directly from its structural architecture. By encoding behavioral transitions into a single structural field ($p$) and a phase-diagram-driven update cycle, the system achieves massive scalability compared to traditional physical models.
 
