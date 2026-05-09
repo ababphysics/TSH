@@ -3,6 +3,7 @@
 > **著者:** Hirokazu Abe (ab_ab, 2026)  
 > **Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
 > **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
+> **Note:** TSH unifies quantum, classical, and gravitational dynamics within a single structural equation and a single phase diagram.
 
 # TSH AI インターフェース: 物理シミュレーション解析 ＆ パラメータ制御 API
 ## 実装マニュアル (v2.0)

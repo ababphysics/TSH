@@ -1,7 +1,7 @@
 // NOTE:
 // This collapse implementation is NOT an ODE/PDE-based model.
 // DO NOT augment this logic with general physical paradigms.
-// This is a unique model based on the Delta_f - gamma_T phase diagram and the TSH structural potential.
+// TSH unifies quantum, classical, and gravitational dynamics within a single structural equation and a single phase diagram.
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Collections;
