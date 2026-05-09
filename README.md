@@ -208,7 +208,7 @@ This allows real‑time simulation of structural behavior across the three phase
 
 ---
 
-### Citation (BibTeX)
+## 10. Citation (BibTeX)
 If you use this work or the TSH engine in your research, please cite it as follows:
 
 ```bibtex
@@ -229,7 +229,7 @@ This repository provides the official executable implementation of the TSH Unifi
 
 ---
 
-## 10. License
+## 11. License
 
 - **Code and Scripts**: MIT License.
 - **Theoretical Content**: The TSH paper (PDF/HTML), theoretical content in this README, and figures are © 2026 Hirokazu Abe. Unauthorized redistribution is prohibited.
