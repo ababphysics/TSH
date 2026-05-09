@@ -18,7 +18,8 @@ If you use this work or the TSH engine in your research, please cite it as follo
   publisher    = {Zenodo},
   version      = {v2.0},
   doi          = {10.5281/zenodo.18492753},
-  url          = {https://doi.org/10.5281/zenodo.18492753}
+  url          = {https://doi.org/10.5281/zenodo.18492753},
+  note         = {Also known as ab\_ab}
 }
 ```
 
