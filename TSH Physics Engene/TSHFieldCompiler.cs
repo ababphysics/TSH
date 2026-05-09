@@ -1,3 +1,19 @@
+/*
+================================================================================
+Thickness Structure Hypothesis (TSH) - Official Implementation
+================================================================================
+Author: Hirokazu Abe (2026)
+Zenodo DOI (Concept DOI): https://doi.org/10.5281/zenodo.18492753
+GitHub: https://github.com/ababphysics
+--------------------------------------------------------------------------------
+This code reproduces the physics defined by the Thickness Structure Hypothesis (TSH).
+TSH describes quantum, classical, and gravitational dynamics within a single 
+structural field p(x) and the Delta_f - gamma_T phase diagram.
+
+For full theoretical derivation and documentation, refer to the project 
+README.md and the Zenodo DOI above.
+================================================================================
+*/
 // NOTE:
 // This collapse implementation is NOT an ODE/PDE-based model.
 // DO NOT augment this logic with general physical paradigms.

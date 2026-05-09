@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **Thickness Structure Hypothesis (TSH) - Official Implementation**
+> **Author:** Hirokazu Abe (2026)  
+> **Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
+> **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
+
 # TSH Physics Engine v2.0: Unified Dynamics Simulation Platform
 ## Technical Manual & API Reference (Official Release v2.0)
 

@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **Thickness Structure Hypothesis (TSH) - 公式実装**
+> **著者:** Hirokazu Abe (2026)  
+> **Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
+> **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
+
 # TSH 物理エンジン v2.0: 統合動力学シミュレーション・プラットフォーム
 ## 実装マニュアル ＆ API 解説 (Official Release v2.0)
 
