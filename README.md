@@ -22,7 +22,15 @@ If you use this work or the TSH engine in your research, please cite it as follo
 }
 ```
 
-**Keywords:** Quantum Gravity, Unified Physics, Structural Dynamics, Covariant Equations, Physics Engine, GPU Acceleration
+Thickness Structure Hypothesis (TSH)
+**Unified Structural Principle + Executable Structural Engine**
+
+TSH is a structural physics framework that unifies quantum, classical, and 
+gravitational behavior using a single existence‑thickness field $p(x)$ and the 
+$\Delta f – \gamma_T$ phase diagram. Unlike conventional theories based on PDEs or force laws, 
+TSH describes dynamics through structural competition between spreading ($\Delta f$) 
+and contracting ($\gamma_T$), producing quantum interference, classical trajectories, 
+and measurement‑induced collapse within one unified equation of motion.
 
 ---
 
