@@ -34,8 +34,6 @@ and measurement‑induced collapse within one unified equation of motion.
 
 ---
 
----
-
 ## 1. Overview — Minimal Structural Principle
 
 Quantum theory and gravity have long been described using fundamentally different assumptions: one probabilistic, one geometric. TSH proposes that both can be understood as different structural states of a single underlying principle defined by three minimal degrees of freedom:
@@ -214,9 +212,6 @@ This design enables GPU parallelism without approximation switching or branching
   TSH’s differentiable structure allows AI to use backpropagation-based optimization (`tsh_ai_api.py`) to find material constants ($\alpha, \beta$). This reduces the search cost from $\sim 10^7$ grid-search evaluations to $\sim 1,000$ iterations, enabling **10,000× faster "inverse physics" exploration** where AI can design custom physical behaviors in minutes.
 
 ---
-
----
-
 
 ## 8. Executable Structural Model
 
