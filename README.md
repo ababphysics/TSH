@@ -1,11 +1,6 @@
 # Thickness Structure Hypothesis (TSH)
 **Unified Structural Principle + Executable Structural Engine**
 
-**Author:** Hirokazu Abe (ab_ab, 2026)  
-**Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
-**GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
-**X (Twitter):** [https://x.com/abab162535](https://x.com/abab162535)  
-
 ---
 
 ## 1. Overview — Minimal Structural Principle
@@ -208,7 +203,14 @@ This allows real‑time simulation of structural behavior across the three phase
 
 ---
 
-## 10. Citation (BibTeX)
+## 10. Project Credits, Citation & Contact
+
+**Author:** Hirokazu Abe (ab_ab, 2026)  
+**Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
+**GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
+**X (Twitter):** [https://x.com/abab162535](https://x.com/abab162535)  
+
+### Citation (BibTeX)
 If you use this work or the TSH engine in your research, please cite it as follows:
 
 ```bibtex
