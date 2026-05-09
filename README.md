@@ -19,7 +19,7 @@ These three quantities cannot be further reduced, cannot be replaced by any othe
 
 ---
 
-## 2. Unified Structural Dynamics (Conceptual Summary)
+## 2. Unified Structural Dynamics
 
 The motion of TSH is described by the following single covariant equation:
 
