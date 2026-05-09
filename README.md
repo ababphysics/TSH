@@ -204,7 +204,9 @@ The TSH engine's computational efficiency follows directly from its structural a
 
 This design enables GPU parallelism without approximation switching or branching overhead, as the update cycle remains structurally identical regardless of whether an element is in a quantum-like, classical-like, or gravitational-like phase.
 
-### Benchmarks & Verified Scalability
+---
+
+## 8. Benchmarks & Verified Scalability
 
 The following performance characteristics are verified using the included implementation and demonstrate the computational advantages of the TSH structural engine compared to traditional iterative and grid-based solvers:
 
@@ -219,7 +221,7 @@ The following performance characteristics are verified using the included implem
 
 ---
 
-## 8. Executable Structural Model
+## 9. Executable Structural Model
 
 <div align="center">
   <img src="assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
@@ -236,7 +238,7 @@ This allows real‑time simulation of structural behavior across the three phase
 
 ---
 
-## 9. License
+## 10. License
 
 - **Code and Scripts**: MIT License.
 - **Theoretical Content**: The TSH paper (PDF/HTML), theoretical content in this README, and figures are © 2026 Hirokazu Abe. Unauthorized redistribution is prohibited.
