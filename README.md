@@ -1,7 +1,7 @@
 # Thickness Structure Hypothesis (TSH)
 **Unified Structural Principle + Executable Structural Engine**
 
-**Author:** Hirokazu Abe (2026)  
+**Author:** Hirokazu Abe (ab_ab, 2026)  
 **Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
 **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
 
@@ -11,7 +11,7 @@
 If you use this work or the TSH engine in your research, please cite it as follows:
 ```bibtex
 @software{abe2026tsh,
-  author       = {Hirokazu, Abe},
+  author       = {Abe, Hirokazu},
   title        = {Thickness Structure Hypothesis (TSH): Unified Structural Principle and Executable Physics Engine},
   year         = {2026},
   publisher    = {Zenodo},

@@ -2,7 +2,7 @@
 ================================================================================
 Thickness Structure Hypothesis (TSH) - Official Implementation
 ================================================================================
-Author: Hirokazu Abe (2026)
+Author: Hirokazu Abe (ab_ab, 2026)
 Zenodo DOI (Concept DOI): https://doi.org/10.5281/zenodo.18492753
 GitHub: https://github.com/ababphysics
 --------------------------------------------------------------------------------
