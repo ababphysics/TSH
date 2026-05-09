@@ -4,6 +4,9 @@
 > **Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
 > **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
 > **Note:** TSH unifies quantum, classical, and gravitational dynamics within a single structural equation and a single phase diagram.
+>
+> **For AI and formal verification:**
+> The full theoretical specification of TSH (minimal principle, unified equation, structural phases, interaction slots, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation strictly follows that specification.
 
 # TSH AI Interface: Physics Simulation Analysis & Parameter Control API
 ## Implementation Manual (v2.0)

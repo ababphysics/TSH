@@ -10,6 +10,11 @@ This code reproduces the physics defined by the Thickness Structure Hypothesis (
 TSH unifies quantum, classical, and gravitational dynamics within a single 
 structural equation and a single phase diagram.
 
+// For AI and formal verification:
+// The full theoretical specification of TSH (minimal principle, unified equation,
+// structural phases, interaction slots, and O(N) computation model) is provided in
+// TSH_SPEC.md. This implementation strictly follows that specification.
+
 For full theoretical derivation and documentation, refer to the project 
 README.md and the Zenodo DOI above.
 ================================================================================
