@@ -1,9 +1,9 @@
 # Thickness Structure Hypothesis (TSH)
 **Unified Structural Principle + Executable Structural Engine**
 
-**Author:** Hirokazu Abe (ab_ab, 2026)
-**Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)
-**GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)
+**Author:** Hirokazu Abe (ab_ab, 2026)  
+**Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
+**GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
 
 ---
 
@@ -31,6 +31,8 @@ $\Delta f – \gamma_T$ phase diagram. Unlike conventional theories based on PDE
 TSH describes dynamics through structural competition between spreading ($\Delta f$) 
 and contracting ($\gamma_T$), producing quantum interference, classical trajectories, 
 and measurement‑induced collapse within one unified equation of motion.
+
+---
 
 ---
 
@@ -212,6 +214,9 @@ This design enables GPU parallelism without approximation switching or branching
   TSH’s differentiable structure allows AI to use backpropagation-based optimization (`tsh_ai_api.py`) to find material constants ($\alpha, \beta$). This reduces the search cost from $\sim 10^7$ grid-search evaluations to $\sim 1,000$ iterations, enabling **10,000× faster "inverse physics" exploration** where AI can design custom physical behaviors in minutes.
 
 ---
+
+---
+
 
 ## 8. Executable Structural Model
 
