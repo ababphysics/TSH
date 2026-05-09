@@ -58,7 +58,7 @@ In other words, TSH enables the three domains of quantum, classical, and gravita
 
 ---
 
-## 4. Interaction Slots — Open Integration Architecture
+## 4. Interaction Slots
 
 The structural action of TSH is defined by a minimal principle that depends solely on $p(x)$, $\Delta f$, and $\gamma_{T}$. Because of this, even when external interactions (gauge fields, matter fields, etc.) are added:
 
