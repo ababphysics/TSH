@@ -1,4 +1,4 @@
-# TSH Unified Structural Engine: Execution Specification (TSH_EXEC.md)
+# TSH Unified Structural Engine: Execution Specification
 
 This document defines the implementation standards and execution architecture for the Thickness Structure Hypothesis (TSH) Unified Structural Engine.
 
