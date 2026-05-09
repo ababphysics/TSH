@@ -34,8 +34,6 @@ and measurement‑induced collapse within one unified equation of motion.
 
 ---
 
----
-
 ## 1. Overview — Minimal Structural Principle
 
 Quantum theory and gravity have long been described using fundamentally different assumptions: one probabilistic, one geometric. TSH proposes that both can be understood as different structural states of a single underlying principle defined by three minimal degrees of freedom:
