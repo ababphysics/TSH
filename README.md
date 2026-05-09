@@ -1,6 +1,8 @@
 # Thickness Structure Hypothesis (TSH)
-## Thickness Structure Hypothesis (TSH) – Official Structural Engine
-GPU‑accelerated executable structural engine implementing the TSH framework (p, Δf, γT). ##
+**Thickness Structure Hypothesis (TSH) – Official Structural Engine**
+
+GPU‑accelerated executable structural engine implementing the TSH framework ($p, \Delta f, \gamma_T$).
+
 ---
 
 ## 1. Overview — Minimal Structural Principle
