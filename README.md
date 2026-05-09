@@ -57,7 +57,7 @@ These three quantities cannot be further reduced, cannot be replaced by any othe
 
 The motion of TSH is described by the following single covariant equation:
 
-$$\frac{Du^{\mu}}{D\tau} = -\nabla^{\mu} \ln p + F^{\mu}(\Delta f,\, \gamma_{T})$$
+$$\frac{Du^{\mu}}{D\tau} = -\nabla^{\mu} \ln p + F^{\mu}(\Delta f, \gamma_{T})$$
 
 This equation integrates three contributions:
 
