@@ -8,36 +8,6 @@
 
 ---
 
-### Citation (BibTeX)
-If you use this work or the TSH engine in your research, please cite it as follows:
-
-```bibtex
-@ab_ab2026tsh,
-  author       = {Abe, Hirokazu},
-  title        = {Thickness Structure Hypothesis (TSH): Unified Structural Principle and Executable Physics Engine},
-  year         = {2026},
-  publisher    = {Zenodo},
-  version      = {v2.0},
-  doi          = {10.5281/zenodo.18492753},
-  url          = {https://doi.org/10.5281/zenodo.18492753},
-  note         = {Also known as ab\_ab}
-}
-```
-
-Thickness Structure Hypothesis (TSH)
-**Unified Structural Principle + Executable Structural Engine**
-
-TSH is a structural physics framework that unifies quantum, classical, and 
-gravitational behavior using a single existence‑thickness field $p(x)$ and the 
-$\Delta f–\gamma_T$ phase diagram.
-
-This repository provides the official executable implementation of the TSH 
-Unified Structural Engine. For the full theoretical derivation, mathematical 
-formulation, and proofs, please refer to the Zenodo DOI:  
-[https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)
-
----
-
 ## 1. Overview — Minimal Structural Principle
 
 Quantum theory and gravity have long been described using fundamentally different assumptions: one probabilistic, one geometric. TSH proposes that both can be understood as different structural states of a single underlying principle defined by three minimal degrees of freedom:
@@ -235,6 +205,27 @@ The **Ultimate TSH Simulator** provides a fully runnable implementation of the s
 - Evolving thickness distribution $p(x)$
 
 This allows real‑time simulation of structural behavior across the three phases.
+
+---
+
+### Citation (BibTeX)
+If you use this work or the TSH engine in your research, please cite it as follows:
+
+```bibtex
+@ab_ab2026tsh,
+  author       = {Abe, Hirokazu},
+  title        = {Thickness Structure Hypothesis (TSH): Unified Structural Principle and Executable Physics Engine},
+  year         = {2026},
+  publisher    = {Zenodo},
+  version      = {v2.0},
+  doi          = {10.5281/zenodo.18492753},
+  url          = {https://doi.org/10.5281/zenodo.18492753},
+  note         = {Also known as ab\_ab}
+}
+```
+
+This repository provides the official executable implementation of the TSH Unified Structural Engine. For the full theoretical derivation, mathematical formulation, and proofs, please refer to the Zenodo DOI:  
+[https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)
 
 ---
 
