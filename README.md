@@ -193,7 +193,7 @@ The following performance characteristics are verified using the included implem
 
 ---
 
-### 💡 Why is TSH so fast?
+### Why is TSH so fast?
 The **$\Delta f\text{–}\gamma_T$ phase diagram** offloads all computational decision-making—such as switching between quantum, classical, and gravitational regimes—allowing the simulator to operate within a **single, unified $O(N)$ update loop** regardless of the physical domain.
 
 ---
