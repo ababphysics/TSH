@@ -2,7 +2,7 @@
 **Unified Structural Principle + Executable Structural Engine**
 
 **Author:** Hirokazu Abe (ab_ab, 2026)  
-**Zenodo DOI:** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
+**Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
 **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
 
 ---
@@ -27,10 +27,12 @@ Thickness Structure Hypothesis (TSH)
 
 TSH is a structural physics framework that unifies quantum, classical, and 
 gravitational behavior using a single existence‑thickness field $p(x)$ and the 
-$\Delta f – \gamma_T$ phase diagram. Unlike conventional theories based on PDEs or force laws, 
-TSH describes dynamics through structural competition between spreading ($\Delta f$) 
-and contracting ($\gamma_T$), producing quantum interference, classical trajectories, 
-and measurement‑induced collapse within one unified equation of motion.
+$\Delta f–\gamma_T$ phase diagram.
+
+This repository provides the official executable implementation of the TSH 
+Unified Structural Engine. For the full theoretical derivation, mathematical 
+formulation, and proofs, please refer to the Zenodo DOI:  
+[https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)
 
 ---
 
