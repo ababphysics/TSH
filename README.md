@@ -1,13 +1,30 @@
 # Thickness Structure Hypothesis (TSH)
 **Unified Structural Principle + Executable Structural Engine**
 
-**Author:** Hirokazu Abe (2026)  
-**Zenodo DOI:** [https://zenodo.org/records/20078368](https://zenodo.org/records/20078368)  
-*(For detailed academic derivations, complete mathematical formulations, and theoretical proofs, please refer to the full manuscript available via the Zenodo DOI above.)*
+**Author:** Hirokazu Abe (ab_ab, 2026)
+**Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)
+**GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)
 
-Thickness Structure Hypothesis (TSH) is a structural model for unified physics, describing quantum, classical, and gravitational behavior within a single Quantum Gravity–class framework based on three internal variables ($p, \Delta f, \gamma_{T}$).
+---
 
-This repository contains the **executable Structural Engine** and conceptual overview. The full mathematical details are available in the Zenodo manuscript.
+### Citation (BibTeX)
+If you use this work or the TSH engine in your research, please cite it as follows:
+
+```bibtex
+@ab_ab2026tsh,
+  author       = {Hirokazu, Abe (ab_ab)},
+  title        = {Thickness Structure Hypothesis (TSH): Unified Structural Principle and Executable Physics Engine},
+  year         = {2026},
+  publisher    = {Zenodo},
+  version      = {v2.0},
+  doi          = {10.5281/zenodo.18492753},
+  url          = {https://doi.org/10.5281/zenodo.18492753}
+}
+```
+
+**Keywords:** Quantum Gravity, Unified Physics, Structural Dynamics, Covariant Equations, Physics Engine, GPU Acceleration
+
+---
 
 ---
 
