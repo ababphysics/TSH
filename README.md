@@ -1,5 +1,4 @@
 # Thickness Structure Hypothesis (TSH)
-**Unified Structural Principle + Executable Structural Engine**
 
 ---
 
