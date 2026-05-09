@@ -11,7 +11,7 @@
 If you use this work or the TSH engine in your research, please cite it as follows:
 ```bibtex
 @software{ab_ab2026tsh,
-  author       = {Abe, Hirokazu (ab_ab)},
+  author       = {Hirokazu, Abe (ab_ab)},
   title        = {Thickness Structure Hypothesis (TSH): Unified Structural Principle and Executable Physics Engine},
   year         = {2026},
   publisher    = {Zenodo},
