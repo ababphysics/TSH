@@ -246,4 +246,4 @@ This repository provides the official executable implementation of the TSH Unifi
 ## 11. License
 
 - **Code and Scripts**: MIT License.
-- **Theoretical Content**: The TSH paper (PDF/HTML), theoretical content in this README, and figures are © 2026 Hirokazu Abe. Unauthorized redistribution is prohibited.
+- **Theoretical Content**: The TSH paper (PDF/HTML), `TSH_SPEC.md`, `TSH_EXEC.md`, theoretical content in this README, and figures are © 2026 Hirokazu Abe. Unauthorized redistribution is prohibited.
