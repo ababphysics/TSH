@@ -22,12 +22,12 @@ The state space of $(\Delta f, \gamma_T)$ is organized into three discrete struc
 2. **Composite Phase (Classical-like)**: Balanced $\Delta f$ and $\gamma_T$. Governed by trajectories and stable structures.
 3. **Core Phase (Gravitational-like)**: High $\gamma_T$, low $\Delta f$. Governed by irreversible collapse and singularity-like localization.
 
-## 4. Interaction Slots (Open Integration Architecture)
+## 4. Interaction Slots
 TSH provides a parallel architecture for integrating external fields:
 - **Geometry Slot**: General Relativity metric $g_{\mu\nu}$.
 - **Matter/Gauge Slots**: External forces/potentials are appended to the right-hand side of the unified equation without altering the core structural update rules.
 
-## 5. Computational Model (O(N) Complexity)
+## 5. Computational Model
 - **Direct Update**: Behavioral transitions are computed via phase thresholds rather than iterative solvers.
 - **Neighbor Search**: $O(N)$ efficiency using Uniform Grid Spatial Hashing.
 - **Parallelism**: Single-kernel execution (GPU compute) for all phases, ensuring zero-branching overhead.
