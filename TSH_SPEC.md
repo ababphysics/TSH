@@ -22,7 +22,7 @@ The state space of $(\Delta f, \gamma_T)$ is organized into three discrete struc
 2. **Composite (classical)**: Balanced $\Delta f$ and $\gamma_T$. Governed by trajectories and stable structures.
 3. **Core (gravitational/measurement)**: High $\gamma_T$, low $\Delta f$. Governed by irreversible collapse and singularity-like localization.
 
-## 4. Hierarchical Interaction Slot
+## 4. Interaction Slots
 TSH provides a parallel architecture for integrating external fields:
 - **Geometry Slot**: General Relativity metric $g_{\mu\nu}$.
 - **Matter/Gauge Slots**: External forces/potentials are appended to the right-hand side of the unified equation without altering the core structural update rules.

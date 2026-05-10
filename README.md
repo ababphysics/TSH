@@ -58,7 +58,7 @@ In other words, TSH enables the three domains of quantum, classical, and gravita
 
 ---
 
-## 4. Hierarchical Interaction Slot
+## 4. Interaction Slots
 
 The structural action of TSH is defined by a minimal principle that depends solely on $p(x)$, $\Delta f$, and $\gamma_{T}$. Because of this, even when external interactions (gauge fields, matter fields, etc.) are added:
 
@@ -70,7 +70,7 @@ This means that the internal structure of TSH is **completely independent of ext
 
 ### Integrations Made Possible
 
-The TSH tensor equation provides a hierarchical set of Hierarchical Interaction Slot into which external interactions can be freely inserted:
+The TSH tensor equation provides a hierarchical set of interaction slots into which external interactions can be freely inserted:
 
 - Standard Model (SM)
 - GUTs (SO(10), etc.)
