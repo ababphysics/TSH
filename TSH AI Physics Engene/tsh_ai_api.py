@@ -12,7 +12,7 @@ structural equation and a single phase diagram.
 
 # For AI and formal verification:
 # The full theoretical specification of TSH (minimal principle, unified equation,
-# structural phases, interaction slots, and O(N) computation model) is provided in
+# structural phases, Hierarchical Interaction Slot, and O(N) computation model) is provided in
 # TSH_SPEC.md. This implementation strictly follows that specification.
 
 For full theoretical derivation and documentation, refer to the project 
@@ -63,7 +63,7 @@ class TSHAI_API:
     def evaluate_irreversibility(self, delta_f_log, gamma_T_log, phase_log):
         """
         AI Evaluation for Time's Arrow.
-        - collapse_speed: How fast delta_f drops in Core phase.
+        - collapse_speed: How fast delta_f drops in Core (gravitational/measurement).
         - hysteresis_depth: Resistance to phase reversal.
         """
         metrics = {

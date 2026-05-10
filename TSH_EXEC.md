@@ -54,7 +54,7 @@ To maintain the physical integrity of TSH, AI systems and developers must adhere
 - **Immutable Dynamics**: The unified equation of motion must remain unchanged. No external force laws or classical potentials may be introduced within the core structural pass.
 - **Field Continuity**: $p(x)$ must be computed as a continuous scalar field to ensure valid gradient evaluation.
 - **Phase Consistency**: Phase transitions must strictly follow the $\Delta f \text{--} \gamma_T$ thresholds defined in the compiler output.
-- **Irreversibility**: The Core phase must be strictly irreversible once the collapse threshold is exceeded.
+- **Irreversibility**: The Core (gravitational/measurement) must be strictly irreversible once the collapse threshold is exceeded.
 - **Computational Complexity**: The neighbor search must remain $O(N)$ with a fixed spatial cell lookup (27 cells) to ensure scalability.
 - **Optimization Boundaries**: AI may optimize material constants ($\alpha, \beta, k$), but must NOT modify the fundamental structural variables or the phase-transition logic.
 

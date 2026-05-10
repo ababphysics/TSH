@@ -4,22 +4,22 @@ GPU‑accelerated executable structural engine implementing the TSH framework ($
 
 ---
 
-## 1. Minimal Structural Principle
+## 1. Unified Structural Principle
 
 Quantum theory and gravity have long been described using fundamentally different assumptions: one probabilistic, one geometric. TSH proposes that both can be understood as different structural states of a single underlying principle defined by three minimal degrees of freedom:
 
-- $p(x)$ — **Existence intensity**: a scalar field with the structural property of "existence thickness."  
+- $p(x)$ — **existence thickness**: a scalar field with the structural property of "existence thickness."  
   Both the state observed as quantum-like spreading and the state observed as gravitational localization are described on a unified basis as differences in the structural states taken by $p(x)$, $\Delta f$, and $\gamma_{T}$.
 
 - $\Delta f$ — **Internal degree of freedom in the "spreading direction"** of the thickness structure.
 
 - $\gamma_{T}$ — **Internal degree of freedom in the "contracting direction"** of the thickness structure.
 
-These three quantities cannot be further reduced, cannot be replaced by any other physical quantity, and must carry physical content — making them the minimal structural principle.
+These three quantities cannot be further reduced, cannot be replaced by any other physical quantity, and must carry physical content — making them the Unified Structural Principle.
 
 ---
 
-## 2. Unified Structural Dynamics
+## 2. Unified Dynamical Equation
 
 The motion of TSH is described by the following single covariant equation:
 
@@ -42,9 +42,9 @@ This is why it holds as an equation of motion:
 
 The internal state $(p, \Delta f, \gamma_{T})$ is organized into three structural phases:
 
-- **Stable phase**: quantum-like behavior
-- **Composite phase**: classical-like behavior
-- **Core phase**: gravitational / observational behavior
+- **Stable (quantum)**: quantum behavior
+- **Composite (classical)**: classical behavior
+- **Core (gravitational/measurement)**: gravitational / observational behavior
 
 The system computes the following loop as a continuous function:
 
@@ -52,13 +52,13 @@ The system computes the following loop as a continuous function:
 
 $$ (p, \Delta f, \gamma_{T})_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_{T})_{t+\delta t} $$
 
-By continuously iterating this loop, the three structural phases (Stable / Composite / Core) deform smoothly, and quantum-like, classical-like, and gravitational-like behaviors transition continuously — as structural states — within a single covariant dynamics.
+By continuously iterating this loop, the three structural phases (Stable / Composite / Core) deform smoothly, and quantum-like, classical-like, and gravitational behaviors transition continuously — as structural states — within a single covariant dynamics.
 
 In other words, TSH enables the three domains of quantum, classical, and gravitational behavior to be computed directly from this single equation of motion alone.
 
 ---
 
-## 4. Interaction Slots
+## 4. Hierarchical Interaction Slot
 
 The structural action of TSH is defined by a minimal principle that depends solely on $p(x)$, $\Delta f$, and $\gamma_{T}$. Because of this, even when external interactions (gauge fields, matter fields, etc.) are added:
 
@@ -70,7 +70,7 @@ This means that the internal structure of TSH is **completely independent of ext
 
 ### Integrations Made Possible
 
-The TSH tensor equation provides a hierarchical set of interaction slots into which external interactions can be freely inserted:
+The TSH tensor equation provides a hierarchical set of Hierarchical Interaction Slot into which external interactions can be freely inserted:
 
 - Standard Model (SM)
 - GUTs (SO(10), etc.)
@@ -129,7 +129,7 @@ A GPU-accelerated execution stack (Unity ECS + HLSL compute + Python) that imple
 **Core Implementation**
 - Structural field $p(x)$ computed as a Gaussian-weighted sum over neighboring structural elements (`p_total`)
 - $\Delta f$ and $\gamma_{T}$ updated per step from field gradients and accumulated tension
-- Phase determined from $p(x)$ against material-defined thresholds (`strong_threshold`, `core_threshold`); irreversible lock into Core phase enforced
+- Phase determined from $p(x)$ against material-defined thresholds (`strong_threshold`, `core_threshold`); irreversible lock into Core (gravitational/measurement) enforced
 - 4 abstract interaction channels (`charges.xyzw`: EM / Strong / Weak / Custom) — interaction domain switchable via `materials.json`
 - Relativistic extension: 4-velocity $u^{\mu}$, Lorentz factor $\gamma$, and proper time $\tau$ per structural element
 - $O(N)$ neighbor search via Spatial Hash (supports 100M+ elements)

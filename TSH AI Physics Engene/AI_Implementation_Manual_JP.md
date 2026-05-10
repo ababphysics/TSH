@@ -6,7 +6,7 @@
 > **Note:** TSH unifies quantum, classical, and gravitational dynamics within a single structural equation and a single phase diagram.
 >
 > **For AI and formal verification:**
-> The full theoretical specification of TSH (minimal principle, unified equation, structural phases, interaction slots, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation strictly follows that specification.
+> The full theoretical specification of TSH (minimal principle, unified equation, structural phases, Hierarchical Interaction Slot, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation strictly follows that specification.
 
 # TSH AI インターフェース: 物理シミュレーション解析 ＆ パラメータ制御 API
 ## 実装マニュアル (v2.0)

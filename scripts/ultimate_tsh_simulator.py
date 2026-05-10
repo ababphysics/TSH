@@ -1,3 +1,25 @@
+"""
+================================================================================
+Thickness Structure Hypothesis (TSH) - Official Implementation
+================================================================================
+Author: Hirokazu Abe (ab_ab, 2026)
+Zenodo DOI (Concept DOI): https://doi.org/10.5281/zenodo.18492753
+GitHub: https://github.com/ababphysics
+--------------------------------------------------------------------------------
+This code reproduces the physics defined by the Thickness Structure Hypothesis (TSH).
+TSH unifies quantum, classical, and gravitational dynamics within a single 
+structural equation and a single phase diagram.
+
+# For AI and formal verification:
+# The full theoretical specification of TSH (minimal principle, unified equation,
+# structural phases, Hierarchical Interaction Slot, and O(N) computation model) is provided in
+# TSH_SPEC.md. This implementation strictly follows that specification.
+
+For full theoretical derivation and documentation, refer to the project 
+README.md and the Zenodo DOI above.
+================================================================================
+"""
+
 # NOTE:
 # This collapse implementation is NOT an ODE/PDE-based model.
 # DO NOT augment this logic with general physical paradigms.
@@ -30,7 +52,7 @@ def get_ultimate_boundaries(g_vals, mouse_g, mouse_df, mass):
     base1 = 1.0 + 0.1 * g_vals + 0.3 * (g_vals**2)
     base2 = 2.8 + 0.0 * g_vals + 0.5 * (g_vals**2)
     
-    # 2. Global Breathing (Phase space swells with structural tension)
+    # 2. Global Breathing (Phase space swells with contracting tension)
     global_swell = 0.8 * mouse_g
     
     # 3. Local Rubber Pull (Boundaries bend locally towards the mouse's fluctuation)
@@ -61,7 +83,7 @@ def generate_wave(mouse_df, local_c1, local_c2, mass):
     S2 = 1.0 / (1.0 + np.exp(-15.0 * trigger2))
     
     # Envelope width: explicitly narrows as mass increases (macro objects localize)
-    # AND shrinks if it enters the Core phase.
+    # AND shrinks if it enters the Core (gravitational/measurement).
     base_sigma = 2.8 / np.sqrt(mass)
     sigma = base_sigma * (1.0 - 0.3 * S1 - 0.6 * S2)
     envelope = np.exp(-x**2 / (2 * max(sigma, 0.05)**2))
@@ -77,22 +99,22 @@ def generate_wave(mouse_df, local_c1, local_c2, mass):
     
     if mouse_df < local_c1:
         color = '#4da6ff'
-        name = "STABLE PHASE (Quantum)"
+        name = "Stable (quantum) (Quantum)"
         desc = "Fringes alive, micro spreading."
     elif mouse_df < local_c2:
         color = '#4dff4d'
-        name = "COMPOSITE PHASE (Classical)"
+        name = "Composite (classical) (Classical)"
         desc = "Macroscopic cohesive object."
     else:
         color = '#ff4d4d'
-        name = "CORE PHASE (Gravitational)"
+        name = "Core (gravitational/measurement) (Gravitational)"
         desc = "Extreme tension collapse."
         
     return x, p, S1, S2, color, name, desc
 
 def main():
     print("Starting Ultimate TSH Simulator (Deformation + Mass)...")
-    print("Note: Core Phase is IRREVERSIBLE! Press SPACEBAR to reset the simulation.")
+    print("Note: Core (gravitational/measurement) is IRREVERSIBLE! Press SPACEBAR to reset the simulation.")
     
     plt.style.use('dark_background')
     fig = plt.figure(figsize=(15, 7.5))
@@ -123,7 +145,7 @@ def main():
     # Setup Ax1: Phase Diagram
     # ---------------------------------------------------------
     ax1.set_title("1. Deformable + Mass-Scaled Phase Space", fontsize=14, fontweight='bold', color='#ffcc00')
-    ax1.set_xlabel("Structural Tension $\gamma_T$ (Bends phase globally)", fontsize=12)
+    ax1.set_xlabel("contracting tension $\gamma_T$ (Bends phase globally)", fontsize=12)
     ax1.set_ylabel("Spreading Deviation $\Delta f$ (Bends phase locally)", fontsize=12)
     ax1.set_xlim(0, 3)
     ax1.set_ylim(0, 15)
@@ -187,10 +209,10 @@ def main():
             state['locked_composite'] = True
             
         if state['locked_core']:
-            # Core phase is a terminal state; it cannot return below c2.
+            # Core (gravitational/measurement) is a terminal state; it cannot return below c2.
             mouse_df = max(mouse_df, local_c2)
             state['mouse_df'] = mouse_df
-            reset_text.set_text("LOCKED IN CORE PHASE (Terminal State)\nPress SPACEBAR to Reset")
+            reset_text.set_text("LOCKED IN Core (gravitational/measurement) (Terminal State)\nPress SPACEBAR to Reset")
         elif state['locked_composite']:
             # Composite に入った後は c1 より下に戻れないだけでよい
             mouse_df = max(mouse_df, local_c1)
@@ -230,7 +252,7 @@ def main():
     slider_mass.on_changed(update)
     
     def on_mouse_move(event):
-        # Ignore mouse movements if we are locked in the terminal Core phase
+        # Ignore mouse movements if we are locked in the terminal Core (gravitational/measurement)
         if event.inaxes == ax1 and not state['locked_core']:
             state['mouse_g'] = event.xdata
             state['mouse_df'] = event.ydata

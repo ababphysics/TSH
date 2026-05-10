@@ -6,7 +6,7 @@
 > **Note:** TSH unifies quantum, classical, and gravitational dynamics within a single structural equation and a single phase diagram.
 >
 > **For AI and formal verification:**
-> The full theoretical specification of TSH (minimal principle, unified equation, structural phases, interaction slots, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation strictly follows that specification.
+> The full theoretical specification of TSH (minimal principle, unified equation, structural phases, Hierarchical Interaction Slot, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation strictly follows that specification.
 
 # TSH Physics Engine v2.0: Unified Dynamics Simulation Platform
 ## Technical Manual & API Reference (Official Release v2.0)
@@ -38,7 +38,7 @@ The following files constitute the TSH Engine v1.2:
 
 ---
 
-The TSH (Thickness Structure Hypothesis) Engine v2.0 is a 
+The Thickness Structure Hypothesis (TSH) Engine v2.0 is a 
 **Unified Field Physics Platform** designed for real-time simulation 
 of arbitrary interactions. It maps all interactions into 
 a single **Existence Thickness Field ($p$)** and 4 abstract channels.
