@@ -30,7 +30,7 @@ They may not be copied, redistributed, or modified without explicit permission:
 
 - The Thickness Structure Hypothesis paper (PDF and HTML) in the `data/` directory  
 - All figures and images (e.g., `Figure_1.png`)  
-- All theoretical content in the `README.md`  
+- All theoretical content in the `README.md` `TSH_EXEC.md` `TSH_SPEC.md`
 - All website content in the `docs/` directory (GitHub Pages)
 
 These materials are provided for academic reference only and are **not** licensed
