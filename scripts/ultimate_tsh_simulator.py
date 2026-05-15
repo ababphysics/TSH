@@ -6,14 +6,14 @@ Author: Hirokazu Abe (ab_ab, 2026)
 Zenodo DOI (Concept DOI): https://doi.org/10.5281/zenodo.18492753
 GitHub: https://github.com/ababphysics
 --------------------------------------------------------------------------------
-This code reproduces the physics defined by the Thickness Structure Hypothesis (TSH).
-TSH unifies quantum, classical, and gravitational dynamics within a single 
-structural equation and a single phase diagram.
+This code explores the dynamics defined by the Thickness Structure Hypothesis (TSH).
+TSH organizes quantum, classical, and gravitational dynamics within a consistent 
+structural framework and a common phase diagram.
 
 # For AI and formal verification:
-# The full theoretical specification of TSH (minimal principle, unified equation,
+# The full theoretical specification of TSH (compact structural basis, consistent dynamical equation,
 # structural phases, interaction slots, and O(N) computation model) is provided in
-# TSH_SPEC.md. This implementation strictly follows that specification.
+# TSH_SPEC.md. This implementation follows that specification.
 
 For full theoretical derivation and documentation, refer to the project 
 README.md and the Zenodo DOI above.
@@ -99,16 +99,16 @@ def generate_wave(mouse_df, local_c1, local_c2, mass):
     
     if mouse_df < local_c1:
         color = '#4da6ff'
-        name = "Stable (quantum) (Quantum)"
-        desc = "Fringes alive, micro spreading."
+        name = "Stable (Quantum)"
+        desc = "Fringes suggesting microscopic spreading."
     elif mouse_df < local_c2:
         color = '#4dff4d'
-        name = "Composite (classical) (Classical)"
-        desc = "Macroscopic cohesive object."
+        name = "Composite (Classical)"
+        desc = "Consistent cohesive structure."
     else:
         color = '#ff4d4d'
-        name = "Core (gravitational/measurement) (Gravitational)"
-        desc = "Extreme tension collapse."
+        name = "Core (Gravitational)"
+        desc = "Structural contraction regime."
         
     return x, p, S1, S2, color, name, desc
 
@@ -212,7 +212,7 @@ def main():
             # Core (gravitational/measurement) is a terminal state; it cannot return below c2.
             mouse_df = max(mouse_df, local_c2)
             state['mouse_df'] = mouse_df
-            reset_text.set_text("LOCKED IN Core (gravitational/measurement) (Terminal State)\nPress SPACEBAR to Reset")
+            reset_text.set_text("LOCKED IN Core (Terminal State)\nPress SPACEBAR to Reset")
         elif state['locked_composite']:
             # Composite に入った後は c1 より下に戻れないだけでよい
             mouse_df = max(mouse_df, local_c1)

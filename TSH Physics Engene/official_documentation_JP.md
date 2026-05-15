@@ -3,12 +3,12 @@
 > **著者:** Hirokazu Abe (ab_ab, 2026)  
 > **Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
 > **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
-> **Note:** TSH unifies quantum, classical, and gravitational dynamics within a single structural equation and a single phase diagram.
+> **Note:** TSH proposes an approach for organizing quantum, classical, and gravitational dynamics within a consistent structural equation and a common phase diagram.
 >
 > **For AI and formal verification:**
-> The full theoretical specification of TSH (minimal principle, unified equation, structural phases, interaction slots, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation strictly follows that specification.
+> The full theoretical specification of TSH (compact structural basis, consistent dynamical equation, structural phases, interaction slots, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation follows that specification.
 
-# TSH 物理エンジン v2.0: 統合動力学シミュレーション・プラットフォーム
+# TSH 物理エンジン v2.0: 構造動力学シミュレーション・プラットフォーム
 ## 実装マニュアル ＆ API 解説 (Official Release v2.0)
 
 ---
@@ -20,7 +20,7 @@
 - **TSH_Core.py** (TSH 基礎方程式コード)
   - TSH の物理法則および動力学方程式を厳密に定義した「確定済み」のコア実装。
 - **TSHUnifiedForce.compute** (GPU 演算コア)
-  - v1.0 統一動力学演算と 3D 相図のボリューム描画を担当する中核。
+  - 一貫した動力学演算と 3D 相図のボリューム描画を担当する中核。
 - **TSHCore.cs** (C# マスターコア)
   - 粒子のデータ構造とマテリアル・プリセット資産を定義する法典。
 - **TSHFieldCompiler.cs** (物理法則コンパイラ)
@@ -40,17 +40,17 @@
 
 ### 1. アーキテクチャ概要 (v2.0)
 
-Thickness Structure Hypothesis (TSH) エンジン v2.0 は、任意の物理相互作用を
-リアルタイムでシミュレートするための **統合場物理プラットフォーム** です。
-すべての相互作用を単一の **存在厚み場 ($p$)** と、
-4 つの抽象チャネル ($q_1 \sim q_4$) に集約して演算します。
+Thickness Structure Hypothesis (TSH) エンジン v2.0 は、各種の物理相互作用を
+リアルタイムでシミュレートするための **構造物理プラットフォーム** です。
+すべての相互作用を **存在厚み場 ($p$)** と、
+4 つの抽象チャネル ($q_1 \sim q_4$) に整理して演算します。
 本エンジンが採用する動力学方程式は **TSH_Core.py** において数学的に確定されています。
 
 ### 2. 物理仕様 ＆ 不可逆性ダイナミクス
 
 エンジン内のすべての力は、存在厚み場の勾配から導出されます。v1.1 より、物理的な「時間の矢」を再現するための不可逆性ロジックが導入されました。
 
-#### 統合動力学方程式:
+#### 一貫した動力学方程式:
 **F_total = F_struct + Σ F_channel,k + F_collapse**
 
 - **F_struct**: 構造的凝集力。

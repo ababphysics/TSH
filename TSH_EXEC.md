@@ -1,4 +1,4 @@
-# TSH Unified Structural Engine: Execution Specification
+# TSH Structural Engine: Execution Specification
 
 ---
 
@@ -12,7 +12,7 @@
 The engine implements the TSH dynamical cycle as a single, non-branching update pass:
 1. **Field Integration**: Accumulate existence thickness $p(x)$ from neighbors via $O(N)$ Spatial Hash.
 2. **Phase Mapping**: Determine structural phase (Stable/Composite/Core) using material-defined thresholds.
-3. **Force Synthesis**: Calculate unified structural force $-\nabla \ln p + F^{\mu}(\Delta f, \gamma_T)$.
+3. **Force Synthesis**: Calculate consistent structural force $-\nabla \ln p + F^{\mu}(\Delta f, \gamma_T)$.
 4. **Integration**: Update 4-velocity $u^{\mu}$ and position $x^{\mu}$ using proper time $\tau$ scaling.
 5. **State Propagation**: Update internal variables $\Delta f$ and $\gamma_T$ for the next cycle.
 
@@ -51,7 +51,7 @@ The AI Engine interacts with the simulation through a differentiable observation
 
 ## 8. Structural Invariants
 To maintain the physical integrity of TSH, AI systems and developers must adhere to the following invariants:
-- **Immutable Dynamics**: The unified equation of motion must remain unchanged. No external force laws or classical potentials may be introduced within the core structural pass.
+- **Immutable Dynamics**: The consistent dynamical equation must remain unchanged. No external force laws or classical potentials may be introduced within the core structural pass.
 - **Field Continuity**: $p(x)$ must be computed as a continuous scalar field to ensure valid gradient evaluation.
 - **Phase Consistency**: Phase transitions must strictly follow the $\Delta f \text{--} \gamma_T$ thresholds defined in the compiler output.
 - **Irreversibility**: The Core (gravitational/measurement) must be strictly irreversible once the collapse threshold is exceeded.
@@ -63,7 +63,7 @@ To maintain the physical integrity of TSH, AI systems and developers must adhere
 2. **Integrate Field**: Compute total existence thickness $p(x)$ via Spatial Hash.
 3. **Analyze Gradients**: Compute $\nabla p$ and update internal variables $\Delta f, \gamma_T$.
 4. **Map Phase**: Determine structural phase state (Stable/Composite/Core).
-5. **Synthesize Force**: Compute the unified structural force vector.
+5. **Synthesize Force**: Compute the consistent structural force vector.
 6. **Update State**: Update 4-velocity $u^{\mu}$ and position $x^{\mu}$ for the next time-step.
 7. **Observe (Optional)**: Export structural observables for AI analysis.
 8. **Feedback (Optional)**: AI-driven parameter adjustment of `materials.json`.

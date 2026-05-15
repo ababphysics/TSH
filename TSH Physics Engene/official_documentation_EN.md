@@ -3,12 +3,12 @@
 > **Author:** Hirokazu Abe (ab_ab, 2026)  
 > **Zenodo DOI (Concept DOI):** [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)  
 > **GitHub:** [https://github.com/ababphysics](https://github.com/ababphysics)  
-> **Note:** TSH unifies quantum, classical, and gravitational dynamics within a single structural equation and a single phase diagram.
+> **Note:** TSH proposes an approach for organizing quantum, classical, and gravitational dynamics within a consistent structural equation and a common phase diagram.
 >
 > **For AI and formal verification:**
-> The full theoretical specification of TSH (minimal principle, unified equation, structural phases, interaction slots, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation strictly follows that specification.
+> The full theoretical specification of TSH (compact structural basis, consistent dynamical equation, structural phases, interaction slots, and O(N) computation model) is provided in [TSH_SPEC.md](file:///E:/Google%20Antigravity/github/TSH/TSH_SPEC.md). This implementation follows that specification.
 
-# TSH Physics Engine v2.0: Unified Dynamics Simulation Platform
+# TSH Physics Engine v2.0: Structural Dynamics Simulation Platform
 ## Technical Manual & API Reference (Official Release v2.0)
 
 ---
@@ -19,8 +19,8 @@ The following files constitute the TSH Engine v1.2:
 
 - **TSH_Core.py** (TSH Fundamental Equation Code)
   - The finalized core implementation strictly defining the physical laws and dynamical equations of TSH.
-- **TSHUnifiedForce.compute** (GPU Core Engine)
-  - Handles O(N) Unified Force computation and 3D volumetric mapping.
+- **TSHUnifiedForce.compute** (Consistent GPU Core Engine)
+  - Handles O(N) consistent force computation across 4 abstract channels and provides multi-layer volumetric visualization.
 - **TSHCore.cs** (C# Master Core)
   - Definitions for Particle Data (including 4D tau) and Material Presets.
 - **TSHFieldCompiler.cs** (Physics Compiler)
@@ -39,10 +39,10 @@ The following files constitute the TSH Engine v1.2:
 ---
 
 The Thickness Structure Hypothesis (TSH) Engine v2.0 is a 
-**Unified Field Physics Platform** designed for real-time simulation 
-of arbitrary interactions. It maps all interactions into 
+**Structural Physics Platform** designed for real-time simulation 
+of various interactions. It maps interactions into 
 a single **Existence Thickness Field ($p$)** and 4 abstract channels.
-The dynamical equations employed by this engine are mathematically finalized in **TSH_Core.py**.
+The dynamical equations employed by this engine are implemented in **TSH_Core.py**.
 
 ### 2. Core Physics Specification & Irreversibility
 

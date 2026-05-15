@@ -6,14 +6,14 @@ Author: Hirokazu Abe (ab_ab, 2026)
 Zenodo DOI (Concept DOI): https://doi.org/10.5281/zenodo.18492753
 GitHub: https://github.com/ababphysics
 --------------------------------------------------------------------------------
-This code reproduces the physics defined by the Thickness Structure Hypothesis (TSH).
-TSH unifies quantum, classical, and gravitational dynamics within a single 
-structural equation and a single phase diagram.
+This code explores the dynamics defined by the Thickness Structure Hypothesis (TSH).
+TSH organizes quantum, classical, and gravitational dynamics within a consistent 
+structural framework and a common phase diagram.
 
 // For AI and formal verification:
-// The full theoretical specification of TSH (minimal principle, unified equation,
+// The full theoretical specification of TSH (compact structural basis, consistent dynamical equation,
 // structural phases, interaction slots, and O(N) computation model) is provided in
-// TSH_SPEC.md. This implementation strictly follows that specification.
+// TSH_SPEC.md. This implementation follows that specification.
 
 For full theoretical derivation and documentation, refer to the project 
 README.md and the Zenodo DOI above.
@@ -33,7 +33,7 @@ namespace TSH.Core
     ================================================================================
     TSH Physics Engine v1.0 (Official Release)
     ================================================================================
-    Master Core definitions for the Grand Unified Universal OS.
+    Definitions for the Structural Dynamic OS.
     ================================================================================
     */
 
@@ -110,7 +110,7 @@ namespace TSH.Core
         public int materialId;
     }
 
-    [CreateAssetMenu(fileName = "TSHMaterial", menuName = "TSH/Unified Material v1.0")]
+    [CreateAssetMenu(fileName = "TSHMaterial", menuName = "TSH/Consistent Material v1.0")]
     public class TSHMaterialAsset : ScriptableObject
     {
         public string materialName;
