@@ -172,33 +172,7 @@ This design enables GPU parallelism without approximation switching or branching
 
 ---
 
-## 8. Benchmarks & Verified Scalability
-
-The following performance characteristics are verified using the included implementation and demonstrate the computational advantages of the TSH structural engine compared to traditional iterative and grid-based solvers:
-
-- **Game & Interactive Physics: Breaking the Iteration Barrier**  
-  While traditional physics engines require 10–20 iterations per frame to resolve constraints, TSH replaces this with a **single direct structural update**. Combined with an $O(N)$ Spatial Hash, it enables real‑time interaction with millions of elements.  
-  *   **Up to 1,000,000× speedup** for large-scale systems (100,000+ elements).  
-  *   Maintains a constant **60 FPS** even in massive, high-density scenes.
-
-- **Scientific Simulation: Bridging the $O(N^3)$ Complexity Gap**  
-  Simulations involving quantum mechanics and general relativity typically scale at $O(N^3)$. TSH collapses this complexity into $O(N)$ structural field updates, with complex phenomena like wavefunction collapse processed as $O(1)$ scalar updates.  
-  *   **$\sim 1,000,000\times$ reduction in computational operations** for a 1,000-particle system.  
-  *   Hybrid quantum-gravitational behaviors—previously computationally infeasible—can now run in **real time on a consumer PC**.
-
-- **AI & Inverse Physics: Differentiable Optimization**  
-  Traditional search for physical constants requires $\sim 10^7$ stochastic trials. Because the TSH engine is differentiable and returns gradients, optimization converges in orders of magnitude fewer steps.  
-  *   Search cost reduced to **$\sim 1,000$ iterations (100–1,000× efficiency gain)**.  
-  *   Enables **real-time "Inverse Design,"** where AI optimizes physical parameters to match target behaviors in minutes.
-
----
-
-### Why is TSH so fast?
-The **$\Delta f\text{–}\gamma_T$ phase diagram** offloads all computational decision-making—such as switching between quantum, classical, and gravitational regimes—allowing the simulator to operate within a **single consistent $O(N)$ update loop** regardless of the physical domain.
-
----
-
-## 9. Executable Structural Model
+## 8. Executable Structural Model
 
 <div align="center">
   <img src="assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
@@ -215,7 +189,7 @@ This allows real‑time simulation of structural behavior across the three phase
 
 ---
 
-## 10. Project Credits, Citation & Contact
+## 9. Project Credits, Citation & Contact
 
 This project is independently developed and maintained by the author; voluntary support for continued development is appreciated.
 
