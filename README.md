@@ -48,7 +48,7 @@ The internal state $(p, \Delta f, \gamma_{T})$ is organized into three structura
 
 The system computes the following loop as a continuous function:
 
-**Phase Diagram → Structural Force → Motion → Updated Variables → Phase Diagram**
+**thickness field → internal variables → phase diagram → structural force → motion**
 
 $$ (p, \Delta f, \gamma_{T})_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_{T})_{t+\delta t} $$
 
