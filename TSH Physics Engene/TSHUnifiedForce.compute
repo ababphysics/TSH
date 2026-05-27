@@ -98,7 +98,7 @@ void CSMain (uint3 id : SV_DispatchThreadID)
     for(int k=0; k<4; k++) grad_p_channels[k] = float3(0,0,0);
 
     // --- Optimized Neighbor Search (Spatial Hash) ---
-    int3 grid_pos = (int3)(p.pos / _GridCellSize);
+    int3 grid_pos = (int3)floor(p.pos / _GridCellSize);
     for (int z = -1; z <= 1; z++) {
         for (int y = -1; y <= 1; y++) {
             for (int x = -1; x <= 1; x++) {
@@ -195,7 +195,7 @@ void CSVisualizer3D (uint3 id : SV_DispatchThreadID)
     float max_p = 0;
 
     // Optimized grid-based sampling for 3D textures
-    int3 grid_pos = (int3)(worldPos / _GridCellSize);
+    int3 grid_pos = (int3)floor(worldPos / _GridCellSize);
     for (int z = -1; z <= 1; z++) {
         for (int y = -1; y <= 1; y++) {
             for (int x = -1; x <= 1; x++) {
