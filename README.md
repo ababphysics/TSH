@@ -178,7 +178,7 @@ The following performance characteristics are verified using the included implem
 
 - **Game & Interactive Physics: Breaking the Iteration Barrier**  
   While traditional physics engines require 10–20 iterations per frame to resolve constraints, TSH replaces this with a **single direct structural update**. Combined with an $O(N)$ Spatial Hash, it enables real‑time interaction with millions of elements.  
-  *   **Up to 1,000,000× speedup** for large-scale systems (100,000+ elements).  
+  *   **Significant speedups (orders of magnitude) over naive CPU implementations.** for large-scale systems (100,000+ elements).  
   *   Maintains a constant **60 FPS** even in massive, high-density scenes.
 
 - **Scientific Simulation: Bridging the $O(N^3)$ Complexity Gap**  
