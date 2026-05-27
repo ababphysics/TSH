@@ -183,7 +183,7 @@ The following performance characteristics are verified using the included implem
 
 - **Scientific Simulation: Bridging the $O(N^3)$ Complexity Gap**  
   Simulations involving quantum mechanics and general relativity typically scale at $O(N^3)$. TSH collapses this complexity into $O(N)$ structural field updates, with complex phenomena like wavefunction collapse processed as $O(1)$ scalar updates.  
-  *   **$\sim 1,000,000\times$ reduction in computational operations** for a 1,000-particle system.  
+  *   **$Significant speedups (orders of magnitude) over naive CPU implementations.$ reduction in computational operations** for a 1,000-particle system.  
   *   quantum‑like and gravity‑like behaviors within the model**.
 
 - **AI & Inverse Physics: Differentiable Optimization**  
