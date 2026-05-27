@@ -50,7 +50,7 @@ The system computes the following loop as a continuous function:
 
 **thickness field → internal variables → phase diagram → structural force → motion**
 
-$$ (p, \Delta f, \gamma_{T})_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_{T})_{t+\delta t} $$
+$(p, \Delta f, \gamma T)_t \longrightarrow (\Delta f, \gamma T)_t \longrightarrow F_t^\mu \longrightarrow u^\mu(t + \delta t) \longrightarrow (p, \Delta f, \gamma T)_{t + \delta t}$
 
 By continuously iterating this loop, the three structural phases (Stable / Composite / Core) deform smoothly, and quantum-like, classical-like, and gravitational behaviors transition continuously — as structural states — within a single covariant dynamics.
 
