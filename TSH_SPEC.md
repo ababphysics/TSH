@@ -27,15 +27,9 @@ TSH provides a parallel architecture for integrating external fields:
 - **Geometry Slot**: General Relativity metric $g_{\mu\nu}$.
 - **Matter/Gauge Slots**: External forces/potentials are appended to the right-hand side of the unified equation without altering the core structural update rules.
 
-## 5. Computational Model
-- **Direct Update**: Behavioral transitions are computed via phase thresholds rather than iterative solvers.
-- **Neighbor Search**: $O(N)$ efficiency using Uniform Grid Spatial Hashing.
-- **Parallelism**: Single-kernel execution (GPU compute) for all phases, ensuring zero-branching overhead.
-
-## 6. Structural Action
+## 5. Structural Action
 The Unified Dynamical Equation of TSH can be generated from the following minimal action:
 $$S = \int d^4x [L_{\text{GR}} + p \ln p + (\nabla p)^2 + \Phi_{\text{struct}}(p, \Delta f, \gamma_T)]$$
 This action defines the Unified Structural Principle from which the unified equation of motion follows.
 
 ---
-
