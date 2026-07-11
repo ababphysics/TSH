@@ -1,6 +1,6 @@
-# Thickness Structure Hypothesis (TSH) – Official Structural Engine
+# Thickness Structure Hypothesis (TSH) – Unified Theoretical Framework
 
-GPU‑accelerated executable structural engine implementing the TSH framework ($p, \Delta f, \gamma_T$).
+Theoretical formulation of the Thickness Structure Hypothesis ($p, \Delta f, \gamma_T$), a unified structural framework connecting quantum phenomena and gravitational localization.
 
 ---
 
@@ -46,15 +46,15 @@ The internal state $(p, \Delta f, \gamma_{T})$ is organized into three structura
 - **Composite (classical)**: classical behavior
 - **Core (gravitational/measurement)**: gravitational / observational behavior
 
-The system computes the following loop as a continuous function:
+The system describes the following loop as a continuous relation:
 
-**thickness field → internal variables → phase diagram → structural force → motion**
+**Phase Diagram → Structural Force → Motion → Updated Variables → Phase Diagram**
 
-$$(p, \Delta f, \gamma T)_t \longrightarrow (\Delta f, \gamma T)_t \longrightarrow F_t^\mu \longrightarrow u^\mu(t + \delta t) \longrightarrow (p, \Delta f, \gamma T)_{t + \delta t}$$
+$$ (p, \Delta f, \gamma_{T})_{t} \implies F^{\mu} \implies u^{\mu}(t+\delta t) \implies (p, \Delta f, \gamma_{T})_{t+\delta t} $$
 
-By continuously iterating this loop, the three structural phases (Stable / Composite / Core) deform smoothly, and quantum-like, classical-like, and gravitational behaviors transition continuously — as structural states — within a single covariant dynamics.
+By iterating this loop, the three structural phases (Stable / Composite / Core) deform smoothly, and quantum-like, classical-like, and gravitational behaviors transition continuously — as structural states — within a single covariant dynamics.
 
-In other words, TSH enables the three domains of quantum, classical, and gravitational behavior to be computed directly from this single equation of motion alone.
+In other words, TSH enables the three domains of quantum, classical, and gravitational behavior to be formulated directly from this single equation of motion alone.
 
 ---
 
@@ -63,7 +63,7 @@ In other words, TSH enables the three domains of quantum, classical, and gravita
 The structural action of TSH is defined by a minimal principle that depends solely on $p(x)$, $\Delta f$, and $\gamma_{T}$. Because of this, even when external interactions (gauge fields, matter fields, etc.) are added:
 
 - The structural dynamics of TSH **do not change**
-- The update rules for the three internal degrees of freedom **do not change**
+- The update relations for the three internal degrees of freedom **do not change**
 - The phase diagram (Stable / Composite / Core) **does not change**
 
 This means that the internal structure of TSH is **completely independent of external interactions** — and any external interaction can be integrated simply by **appending it to the right-hand side** of the tensor equation.
@@ -91,11 +91,11 @@ In short, TSH means:
 
 ---
 
-## 5. Phase-Diagram-Driven Computation Reduction
+## 5. Phase-Diagram Formulation
 
-Another major feature of TSH is that the $\Delta f\text{–}\gamma_{T}$ phase diagram is structured to reduce **the computational cost itself**.
+A major theoretical feature of TSH is that the $\Delta f\text{–}\gamma_{T}$ phase diagram unifies structural regimes without requiring separate fundamental laws.
 
-In conventional physics models, separate equations, separate approximations, and separate branching logic are required for:
+In conventional physics models, separate equations and separate assumptions are required for:
 
 - The quantum domain
 - The classical domain
@@ -104,101 +104,14 @@ In conventional physics models, separate equations, separate approximations, and
 In TSH, however:
 
 - The phase diagram **uniquely determines which phase the system is in**
-- The phase diagram **directly returns which structural force to apply**
-- The phase diagram **directly provides the update rule for the next step**
+- The phase diagram **directly provides the structural force relation**
+- The phase diagram **directly provides the continuous transition across regimes**
 
-As a result, all computation is **completed within a single update loop**:
-
-- **Zero branching**
-- **Zero approximation switching**
-- **No need to evaluate multiple physical laws**
-- **Runs at $O(N)$ on GPU**
-
-This yields a structure that is nearly impossible to achieve in conventional physics simulation.
+This yields a unified theoretical architecture that seamlessly bridges microscopic spreading and macroscopic localization.
 
 ---
 
-## 6. Structural Engine & AI Structural Engine
-
-TSH is not only a theoretical framework; it is an executable structural environment that directly runs the structural dynamics defined by $p(x), \Delta f, \gamma_{T}$.
-
-### 6.1 TSH Structural Engine — Unified Structural Engine
-
-A GPU-accelerated execution stack (Unity ECS + HLSL compute + Python) that implements the TSH structural dynamics in real time.
-
-**Core Implementation**
-- Structural field $p(x)$ computed as a Gaussian-weighted sum over neighboring structural elements (`p_total`)
-- $\Delta f$ and $\gamma_{T}$ updated per step from field gradients and accumulated tension
-- Phase determined from $p(x)$ against material-defined thresholds (`strong_threshold`, `core_threshold`); irreversible lock into Core (gravitational/measurement) enforced
-- 4 abstract interaction channels (`charges.xyzw`: EM / Strong / Weak / Custom) — interaction domain switchable via `materials.json`
-- Relativistic extension: 4-velocity $u^{\mu}$, Lorentz factor $\gamma$, and proper time $\tau$ per structural element
-- $O(N)$ neighbor search via Spatial Hash (supports 100M+ elements)
-
-**3D Volumetric Visualization (3 HLSL kernels)**
-- **Phase Map** (`_BaseFieldTex`): R = phase state, G = $\Delta f$ (interference), B = $\gamma_{T}$ (collapse intensity)
-- **Channel Map** (`_ChannelFieldTex`): q1–q4 interaction channels rendered as hue-coded volume
-- **Boundary Map** (`_BoundaryTex`): Procedural contour lines at phase-transition boundaries
-
-**Implementation Files**
-`TSHUnifiedForce.compute` / `TSHCore.cs` / `TSHFieldCompiler.cs` / `TSHPositionUpdateSystem.cs` / `TSH_Core.py`
-
-### 6.2 TSH AI Structural Engine -- Structural Exploration Interface
-
-A Python API (`tsh_ai_api.py`) that allows AI systems to interact with the TSH structural simulation through a standard Observe -- Infer -- Apply -- Verify loop.
-
-- **Observe** -- `get_observables()` retrieves structural quantities ($m_\text{eff}$, $E_\text{total}$, $\Phi_\text{struct}$, $\Delta f$, $\gamma_{T}$, phase distance) per structural element. `export_observables()` saves them as `.npy` arrays for use with PyTorch / TensorFlow.
-- **Evaluate** -- `evaluate_phase_topology()` scores core density, strong-phase coverage, and structural entropy from the $p(x)$ field. `evaluate_irreversibility()` measures collapse efficiency and resistance to phase reversal.
-- **Apply** -- `edit_material()` rewrites physical constants ($\alpha$, $\beta$, $k_\text{tension}$, `collapse_rate`) in `materials.json`. The simulator reloads this file and the structural behavior changes in real time.
-- **Compile** -- `export_compiler_results()` writes phase-boundary thresholds to `compiler_out.json` for downstream use.
-
-This loop enables AI-driven exploration of the $\Delta f\text{--}\gamma_{T}$ phase space and optimization of structural behavior -- without modifying the TSH structural laws themselves.
-
----
-
-## 7. Computational Performance
-
-The TSH engine's computational efficiency follows directly from its structural architecture. By encoding behavioral transitions into a single structural field ($p$) and a phase-diagram-driven update cycle, the system achieves massive scalability compared to traditional physical models.
-
-### Architectural Properties (verified in implementation)
-
-| Source of reduction | Conventional approach | TSH Implementation | Computational Gain |
-|---|---|---|---|
-| **Neighbor search** | $O(N^2)$ pairwise evaluation | $O(N)$ Uniform Grid Spatial Hash | **$\sim 3.7 \times 10^7 \times$** (for 100M elements) |
-| **Regime decision** | Separate solvers / PDE branching | Single threshold comparison (`c1`, `c2`) | **Zero-branching** overhead |
-| **Kernel count** | Multiple (Quantum / Classical / GR) | Single GPU kernel (`CSMain`) | **Single-pass** execution |
-| **Force synthesis** | Multiple independent laws | Unified structural force $-\alpha \nabla \ln p$ | **$O(1)$** force synthesis |
-
-This design enables GPU parallelism without approximation switching or branching overhead, as the update cycle remains structurally identical regardless of whether an element is in a quantum-like, classical-like, or gravitational-like phase.
-
----
-
-## 8. Benchmarks & Verified Scalability
-
-The following performance characteristics are verified using the included implementation and demonstrate the computational advantages of the TSH structural engine compared to traditional iterative and grid-based solvers:
-
-- **Game & Interactive Physics: Breaking the Iteration Barrier**  
-  While traditional physics engines require 10–20 iterations per frame to resolve constraints, TSH replaces this with a **single direct structural update**. Combined with an $O(N)$ Spatial Hash, it enables real‑time interaction with millions of elements.  
-  *   **Significant speedups (orders of magnitude) over naive CPU implementations.** for large-scale systems (100,000+ elements).  
-  *   Maintains a constant **60 FPS** even in massive, high-density scenes.
-
-- **Scientific Simulation: Bridging the $O(N^3)$ Complexity Gap**  
-  Simulations involving quantum mechanics and general relativity typically scale at $O(N^3)$. TSH collapses this complexity into $O(N)$ structural field updates, with complex phenomena like wavefunction collapse processed as $O(1)$ scalar updates.  
-  *   **$Significant speedups (orders of magnitude) over naive CPU implementations.$ reduction in computational operations** for a 1,000-particle system.  
-  *   quantum‑like and gravity‑like behaviors within the model**.
-
-- **AI & Inverse Physics: Differentiable Optimization**  
-  Traditional search for physical constants requires $\sim 10^7$ stochastic trials. Because the TSH engine is differentiable and returns gradients, optimization converges in orders of magnitude fewer steps.  
-  *   Search cost reduced to **$\sim 1,000$ iterations (100–1,000× efficiency gain)**.  
-  *   Enables **real-time "Inverse Design,"** where AI optimizes physical parameters to match target behaviors in minutes.
-
----
-
-### Why is TSH so fast?
-The **$\Delta f\text{–}\gamma_T$ phase diagram** offloads all computational decision-making—such as switching between quantum, classical, and gravitational regimes—allowing the simulator to operate within a **single, unified $O(N)$ update loop** regardless of the physical domain.
-
----
-
-## 9. Executable Structural Model
+## 6. Executable Structural Model
 
 <div align="center">
   <img src="assets/simulation_demo.gif" width="700" alt="TSH Simulation Demo">
@@ -215,9 +128,9 @@ This allows real‑time simulation of structural behavior across the three phase
 
 ---
 
-## 10. Project Credits, Citation & Contact
+## 7. Project Credits, Citation & Contact
 
-This project is independently developed and maintained by the author; voluntary support for continued development is appreciated.
+This project is independently developed and maintained by the author.
 
 
 **Author:** Hirokazu Abe (ab_ab, 2026)  
@@ -226,27 +139,25 @@ This project is independently developed and maintained by the author; voluntary 
 **X (Twitter):** [https://x.com/abab162535](https://x.com/abab162535)  
 
 ### Citation (BibTeX)
-If you use this work or the TSH engine in your research, please cite it as follows:
+If you refer to the TSH theoretical framework in your research, please cite it as follows:
 
 ```bibtex
 @ab_ab2026tsh,
   author       = {Abe, Hirokazu},
-  title        = {Thickness Structure Hypothesis (TSH): Unified Structural Principle and Executable Physics Engine},
+  title        = {Thickness Structure Hypothesis (TSH): Unified Structural Principle},
   year         = {2026},
   publisher    = {Zenodo},
-  version      = {v2.0},
   doi          = {10.5281/zenodo.18492753},
   url          = {https://doi.org/10.5281/zenodo.18492753},
   note         = {Also known as ab\_ab}
 }
 ```
 
-This repository provides the official executable implementation of the TSH Unified Structural Engine. For the full theoretical derivation, mathematical formulation, and proofs, please refer to the Zenodo DOI:  
+For the full theoretical derivation, mathematical formulation, and proofs, please refer to the Zenodo DOI:  
 [https://doi.org/10.5281/zenodo.18492753](https://doi.org/10.5281/zenodo.18492753)
 
 ---
 
-## 11. License
+## 8. Copyright & License
 
-- **Code and Scripts**: MIT License.
-- **Theoretical Content**: The TSH paper (PDF/HTML), `TSH_SPEC.md`, `TSH_EXEC.md`, theoretical content in this README, and figures are © 2026 Hirokazu Abe. Unauthorized redistribution is prohibited.
+All theoretical formulations, concepts, texts, and mathematical derivations described in this repository and associated papers are © 2026 Hirokazu Abe. All rights reserved.
